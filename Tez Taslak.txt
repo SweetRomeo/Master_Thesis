@@ -1,3 +1,12 @@
+Tez Konusu: 5G ve Wireless Teknolojilerinde kullanılan Şifreleme Algoritmaların Analizi
+
+Tarih boyunca insanlar birbirlere gizli verileri gönderirken özellikle 3.kişilerin ellerine geçmemesini hedeflenmiştir.
+Söz konusu veriler gizlenirken geçmişten günümüze pek çok farklı yöntem kullanılmıştır. Buna verilebilecek en önemli örneklerden biri Almanların 2.Dünya savaşında haberleşmede kullanmış olduğu Enigma makinesidir. 
+Enigma her ne kadar şimdiki teknolojiye göre son derece kırılması kolay bir şifreleme sistemine sahipse de o dönem bilgisayarın henüz bulunmayışından dolayı çözmesi son derece zor bir algoritmaya
+sahipti. O zamandan günümüze şifreleme algoritmalarında ciddi anlamda bir gelişme göze çarpmaktadır. Bu tez çalışmasında da hayatımıza yeni yeni girmekte olan 5G teknolojilerde hangi algoritmaların kullanıma daha elverişli 
+olduğunun analizi yapılmıştır.
+
+5G teknolojisi Nesnelerin interneti(IoT/Internet of Things) ortamını temel alarak ortaya konulmuştur.  
 Günümüzde 5G teknolojisi başta Çin olmak üzere pek çok baz istasyonunda kullanılmaktadır. 5G teknolojisinin sık kullanımıyla birlikte
 Huawei, Ulak, Ericsson ve benzeri firmalar, baz istasyonları yoluyla haberleşen çeşitli cihazların çeşitli verilerini almayı hedeflemektedir. 
 Söz konusu veriler alınırken bu verilerin üçüncü kişilerin eline geçmemesi başta KVKK(Kişisel Verilerin Korunumu Kanunu) ihlali olmak üzere pek çok açıdan son derece önemlidir. 
@@ -11,11 +20,9 @@ Bu algoritmaları incelerken öncelikli kategori olarak incelenmesi son derece �
 Kategori kapsamında ele alınacak kısımlar ise kullanılacak olan algoritmaların hangilerinin simetrik hangilerinin asimetrik olmasına bağlı olarak kullandıkları private mı public mi olmasının incelenmesi ve elde edilen sonuçların 
 değerlendirilmesi yapılmıştır. 
 Private Key kullanan algoritmalar çoğunlukla public key kullanan algoritmalara göre daha güvenli olsa da durum her zaman böyle değildir. Bu tez çalışması kapsamında 5G teknolojilerinde yazı, bitsel veri veya dosya taşınmasında hangi şifreleme 
-algoritmalarının daha 
-verimli, uyumlu ve güvenilir olduğu incelenerek değerlendirilecektir. Burada değerlendirilecek parametrelerden en önemlisi incelenecek algoritmaların güvenlik açısından yeterliliğidir. 
+algoritmalarının daha verimli, uyumlu ve güvenilir olduğu incelenerek değerlendirilecektir. Burada değerlendirilecek parametrelerden en önemlisi incelenecek algoritmaların güvenlik açısından yeterliliğidir. 
 Bunun nedeni bu tarz gizli verilerin üçüncü şahısların eline geçmesi durumunda hem KVKK'nın ihlal durumu söz konusu olabilir aynı zamanda da bu verilerin kötüye kullanımı durumunda hem 
-kişilere hem de kurumlara ciddi sonuçlar da meydana gelebilir. 
-İkinci önemli parametre ise şüphesiz ki verimliliktir çünkü, algoritmaların sadece kırılması zor olması özellikle söz konusu 5G ve Wireless teknolojileri olduğunda tek başına yeterli değildir. 
+kişilere hem de kurumlara ciddi sonuçlar da meydana gelebilir. İkinci önemli parametre ise şüphesiz ki verimliliktir çünkü, algoritmaların sadece kırılması zor olması özellikle söz konusu 5G ve Wireless teknolojileri olduğunda tek başına yeterli değildir. 
 Kırılmasının zor olmasının yanında Baz istasyonlarında olmazsa olmaz bir eleman olan BBU bölümünün bellek alanı şüphesiz ki sınırlı ve efektif kullanımı gerektiğinden dolayı, algoritmaların 
 en az güvenliği kadar verimliliği ve hızı da son derece önemli parametrelerdir. 
 Bu tez çalışmasında söz konusu analizler yapılırken C++ programlama dilinin özellikleri yoğun bir şekilde kullanılarak sonuçlar olabildiğince kesine yakın bir şekilde elde edilecektir. 
@@ -28,6 +35,7 @@ teknolojilerine daha uygun olduğunun tespit edilip elde edilen sonuçlardan gra
 2-) Teşekkür
 3-) Giriş
 	- Problemin tanımı ve Analizi
+	
 	- Tezin literatür katkısı ve yenilikleri
 	- Daha önceden bu konuda yapılmış olan çalışmaların incelenmesi
 4-) Arkaplan bilgiler
@@ -38,8 +46,12 @@ teknolojilerine daha uygun olduğunun tespit edilip elde edilen sonuçlardan gra
                 Bunun yanı sıra sürekli gelişmekte olan bir dil olması da seçilebilirlik olarak C++ dilini ön planda tutmaktadır. Her 3 senede bir toplanan C++ Standart Komitesi dile sürekli ekleme yapmaktadır. Bu da dilin sürekli olarak 
                 gelişmekte olan teknolojiye uyumlu olarak kalmasını sağlamaktadır. Özet geçmek gerekirse C++ dilinin bu tez çalışmasında tercih edilme sebebi sektörde yaygın bir şekilde kullanılması ve dilin sürekli gelişmesidir.   
 		- Pek çok sektörde kullanılıyor olması
-		
+                - Optimizasyonunun yüksek olması
+		- Sürekli gelişmekte olan bir dil olması
+		- Yeni teknolojileri uyum sağlama açısından uygun olması
 	- Yapılmış olan benzer çalışmalar
+                1-) Shancang Lia, Li Da Xub ve Shanshan Zhaoe tarafından yazılmış olan 5G Internet of Things: A survey makalesi 5G teknolojilerinde IoT kullanımı hakkında önemli bilgiler vermektedir.
+		2-) 
 	- Konu hakkında ön bilgi
 		- 5G ve Wireless Nedir?
 		- BBU ve RRU Nedir?
