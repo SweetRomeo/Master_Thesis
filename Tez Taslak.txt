@@ -1,17 +1,18 @@
 Günümüzde 5G teknolojisi başta Çin olmak üzere pek çok baz istasyonunda kullanılmaktadır. 5G teknolojisinin sık kullanımıyla birlikte
 Huawei, Ulak, Ericsson ve benzeri firmalar, baz istasyonları yoluyla haberleşen çeşitli cihazların çeşitli verilerini almayı hedeflemektedir. 
-Söz konusu veriler alınırken bu verilerin üçüncü kişilerin eline geçmemesi başka KVKK(Kişisel Verilerin Korunumu Kanunu) ihlali olmak üzere pek çok açıdan son derece önemlidir. 
-Bu sebeple telekominikasyon firmaları bu verilerin şifrelenmesinde çeşitli algoritmalar kullanmaktadır. Şifrelenmesi hedeflenen bu veriler FTP(File Transfer Protocol) ile taşınacak olan dosyalar, bir yazı veya en basitinden bir binary veri olabilir. 
+Söz konusu veriler alınırken bu verilerin üçüncü kişilerin eline geçmemesi başta KVKK(Kişisel Verilerin Korunumu Kanunu) ihlali olmak üzere pek çok açıdan son derece önemlidir. 
+Bu sebeple telekominikasyon firmaları bu verilerin şifrelenmesinde çeşitli algoritmalar kullanmaktadır. Şifrelenmesi hedeflenen bu veriler FTP(File Transfer Protocol) ile taşınacak olan dosyalar, login aşamasında kullanılancak olan 
+username veya password gibi güvenli taşınması gereken bir yazı veya en basitinden çeşitli cihazların baz istasyonlarına gönderdiği veya aldığı bir binary veri olabilir. 
 Bu tez çalışmasında verilerin şifrelenmesinde kullanılan söz konusu algoritmaların farklı durumlar için temelde performans olmak üzere birkaç açıdan incelenip sonuçların değerlendirilmesi hedeflenmektedir. 
-Bu değerlendirme işlemi yapılırken sadece veri şifreleme algoritmalarında değil ve aynı zamanda da socket programlamada kullanılan popüler bir üçünçü parti kütüphane olan, OpenSSL kütüphanesi kullanılacaktır. 
+Bu değerlendirme işlemi yapılırken sadece veri şifreleme algoritmalarında değil ve aynı zamanda da güvenli socket programlamada kullanılan TLS/SSL gibi protokollerin de bulunduğu, son derece popüler bir üçüncü parti kütüphane olan, OpenSSL kütüphanesi kullanılmıştır. 
 OpenSSL kütüphanesinde bulunan ve bu tez çalışması kapsamında incelenecek olan bazı algoritmalar: DSA, RSA, AES, Seed, Cast5, Dh, Camellia, Chacha20 şeklinde sıralanabilir. Bu algoritmaları incelerken öncelikli kategori olarak incelenmesi son derece önemlidir. Kategori 
-kapsamında ele alınacak kısımlar ise kullanılacak olan algoritmaların hangilerinin simetrik hangilerinin asimetrik olmasına bağlı olarak kullandıkları private mı public mi olmasının incelenmesi ve elde edilen sonuçların değerlendirilmesi son derece önemlidir. 
+kapsamında ele alınacak kısımlar ise kullanılacak olan algoritmaların hangilerinin simetrik hangilerinin asimetrik olmasına bağlı olarak kullandıkları private mı public mi olmasının incelenmesi ve elde edilen sonuçların değerlendirilmesi yapılmıştır. 
 Private Key kullanan algoritmalar çoğunlukla public key kullanan algoritmalara göre daha güvenli olsa da durum her zaman böyle değildir. Bu tez çalışması kapsamında 5G teknolojilerinde yazı, bitsel veri veya dosya taşınmasında hangi şifreleme algoritmalarının daha 
 verimli, uyumlu ve güvenilir olduğu incelenerek değerlendirilecektir. Burada değerlendirilecek parametrelerden en önemlisi incelenecek algoritmaların güvenlik açısından yeterliliğidir. 
 Bunun nedeni bu tarz gizli verilerin üçüncü şahısların eline geçmesi durumunda hem KVKK'nın ihlal durumu söz konusu olabilir aynı zamanda da bu verilerin kötüye kullanımı durumunda hem kişilere hem de kurumlara ciddi sonuçlar da meydana gelebilir. 
 İkinci önemli parametre ise şüphesiz ki verimliliktir çünkü, algoritmaların sadece kırılması zor olması özellikle söz konusu 5G ve Wireless teknolojileri olduğunda tek başına yeterli değildir. 
 Kırılmasının zor olmasının yanında Baz istasyonlarında olmazsa olmaz bir eleman olan BBU bölümünün bellek alanı şüphesiz ki sınırlı ve efektif kullanımı gerektiğinden dolayı, algoritmaların en az güvenliği kadar verimliliği ve hızı da son derece önemli parametrelerdir. 
-Bu tez çalışmasında söz konusu analizler yapılırken C++ programlama dilinin özellikleri yoğun bir şekilde kullanılarak sonuçlar olabildiğince kesine yakın bir şekilde elde edilecektir. Burada C++ dilinin neden tercih edileceğinden bu tez kapsamında detaylı bir şekilde bahsedilecektir. 
+Bu tez çalışmasında söz konusu analizler yapılırken C++ programlama dilinin özellikleri yoğun bir şekilde kullanılarak sonuçlar olabildiğince kesine yakın bir şekilde elde edilecektir. Burada C++ dilinin neden tercih edileceğinden bu tez kapsamında detaylı bir şekilde bahsedilecektir. Özetle bu tez kapsamında OpenSSL üçüncü parti kütüphanesinin C++ diline entegrasyonu ile birlikte çeşitli parametreler değiştirilerek(Şifrelenicek yazının uzunluğu, şifrelenecek dosya büyüklüğü vb.) hangi algoritma veya algoritmaların entegrasyon açısından 5G ve Wireless teknolojilerine daha uygun olduğunun tespit edilip elde edilen sonuçlardan grafiğe dökülmüştür. 
 
 İçindekiler:
 1-) Özet/ Abstract
@@ -22,7 +23,13 @@ Bu tez çalışmasında söz konusu analizler yapılırken C++ programlama dilin
 	- Daha önceden bu konuda yapılmış olan çalışmaların incelenmesi
 4-) Arkaplan bilgiler
 	- Neden C++ dili kullaniliyor?
-	 	C++ dilinin kullanim sebeplerinden en onemlisi pek cok diger programlama diline kiyasla cok daha 
+		C++ dili son derece zor ve karmaşık bir dil olmasına rağmen programlama dillerinin reytinglerini karşılaştıran en popüler web sitelerinden biri olan Tiobe index'de ikinic sıraya yükselmiştir. Bu da gösteriyor ki C++ dilinin 
+		popülerliği son derece yüksek. C++ dili gömülü yazılım, Oyun geliştirilmesi, Yapay zeka sistemlerinin geliştirilmesi ve savunma sanayi uygulamaları gibi pek çok alanda son derece yaygın kullanılan bir programlama dilidir.
+	 	C++ dilinin kullanim sebeplerinden başka bir tanesi pek cok diger programlama diline kiyasla cok daha hızlı çalışmasıdır. Bununla birlikte verimin kritik olduğu uygulamalarda C++ vazgeçilmez bir programlama dili konumundadır. 
+                Bunun yanı sıra sürekli gelişmekte olan bir dil olması da seçilebilirlik olarak C++ dilini ön planda tutmaktadır. Her 3 senede bir toplanan C++ Standart Komitesi dile sürekli ekleme yapmaktadır. Bu da dilin sürekli olarak 
+                gelişmekte olan teknolojiye uyumlu olarak kalmasını sağlamaktadır. Özet geçmek gerekirse C++ dilinin bu tez çalışmasında tercih edilme sebebi sektörde yaygın bir şekilde kullanılması ve dilin sürekli gelişmesidir.   
+		- Pek çok sektörde kullanılıyor olması
+		
 	- Yapılmış olan benzer çalışmalar
 	- Konu hakkında ön bilgi
 		- 5G ve Wireless Nedir?
