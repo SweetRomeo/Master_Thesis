@@ -51,9 +51,13 @@ teknolojilerine daha uygun olduğunun tespit edilip elde edilen sonuçlardan gra
 		- Yeni teknolojileri uyum sağlama açısından uygun olması
 	- Yapılmış olan benzer çalışmalar
                 1-) Shancang Lia, Li Da Xub ve Shanshan Zhaoe tarafından yazılmış olan 5G Internet of Things: A survey makalesi 5G teknolojilerinde IoT kullanımı hakkında önemli bilgiler vermektedir.
-		2-) 
+		2-) Security for 4G and 5G Cellular Networks: A Survey of Existing Authentication and Privacy
+		3-) Analysis the Structures of Some Symmetric Cipher Algorithms Suitable for the Security of IoT Devices
+                4-) Yang J, Thomas J, Alexander M., Spectral analysis of ZUC-256, In: Proceedings of the 27th Annual Fast Software Encryption Conference, 2020.
+		5-) 
 	- Konu hakkında ön bilgi
 		- 5G ve Wireless Nedir?
+		- IoT cihazlarda 5G teknolojisi
 		- BBU ve RRU Nedir?
 		- Simetrik ve Asimetrik Algoritmalar
 		- Private/Public Key
@@ -61,8 +65,10 @@ teknolojilerine daha uygun olduğunun tespit edilip elde edilen sonuçlardan gra
 		- OpenSSL Kütüphanesinde bulunan ve bu tez çalışmasında kullanılacak olan algoritmalar
 5-) Algoritmaların Test Edilmesi
 6-) Test Caselere bağlı olarak sonuçların değerlendirilmesi
+Burada bahsedilen test caselerin başında şifrelenecek verilerin tipleri gelmektedir. Şifrelenmesi düşünülen veri bir yazı bir dosya veya bir binary veri olabilir.
 7-) Sonuç
-8-) Kaynakça  
+Oluşturulan farklı test caselerle birlikte durumlar incelenerek bir sonuca ulaşılacaktır.
+8-) Kaynakça(Referanslar)  
 
 Anahtar Sözcükler: 5G, Wireless, Simetrik/Asimetrik Algoritmalar, Public/Private Key, AES,
 Chacha20, RSA, DSA, Seed, Cast5, Dh, Camellia
