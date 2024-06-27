@@ -54,7 +54,8 @@ teknolojilerine daha uygun olduğunun tespit edilip elde edilen sonuçlardan gra
 		2-) Security for 4G and 5G Cellular Networks: A Survey of Existing Authentication and Privacy
 		3-) Analysis the Structures of Some Symmetric Cipher Algorithms Suitable for the Security of IoT Devices
                 4-) Yang J, Thomas J, Alexander M., Spectral analysis of ZUC-256, In: Proceedings of the 27th Annual Fast Software Encryption Conference, 2020.
-		5-) 
+		5-) Combined and Robust SNOW-ZUC Algorithm Based on Chaotic System
+		6-) 
 	- Konu hakkında ön bilgi
 		- 5G ve Wireless Nedir?
 		- IoT cihazlarda 5G teknolojisi
