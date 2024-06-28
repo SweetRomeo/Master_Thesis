@@ -35,21 +35,32 @@ teknolojilerine daha uygun olduğunun tespit edilip elde edilen sonuçlardan gra
 Bana desteklerini esirgemeyen ... kisilere ve ... kurumlara tesekkur ederim.
 3-) Giriş
 	- Problemin tanımı ve Analizi
-	geçmişten günümüze veri güvenlik pek çok farklı alanda son derece önemlidir. Mobil cihazların hayatımıza girişiyle beraber Cloud teknolojileri gibi verilerin depo edilmesinde kullanılan pek çok farklı yöntem de hayatımıza girmiş oldu. Bu geliş her ne kadar çoğu açıdan iyi olsa da bu tarz depolama alanlarının hayatımıza girişiyle birlikte veri güvenliği tehlikesi de aynı oranda artmıştır. Bundan dolayı verilerin güvenliğinin güvenliklerinin sağlanması için çeşitli yöntemler kullanılmaya başlandı. Bu yöntemlerden biri de şüphesiz veri şifrelemede kullanılan algoritmalardır. Bu tez çalışması da temelde bu algoritmaların günümüz teknolojisinde son derece önemli bir yer sahip olan 5G teknolojisinde kullanılan şifreleme algoritmalarını incelemektedir. Yapılan incelemeler sonucunda da hangi algoritmanın uygunluk açısından Wireless ve 5G  teknolojilerine daha uygun olduğunun bulunmasıdır. 
+	geçmişten günümüze veri güvenlik pek çok farklı alanda son derece önemlidir. Mobil cihazların hayatımıza girişiyle beraber Cloud teknolojileri gibi verilerin depo edilmesinde kullanılan pek çok farklı 
+	yöntem de hayatımıza girmiş oldu. Bu geliş her ne kadar çoğu açıdan iyi olsa da bu tarz depolama alanlarının hayatımıza girişiyle birlikte veri güvenliği tehlikesi de aynı oranda artmıştır. Bundan dolayı 
+	verilerin güvenliğinin güvenliklerinin sağlanması için çeşitli yöntemler kullanılmaya başlandı. Bu yöntemlerden biri de şüphesiz veri şifrelemede kullanılan algoritmalardır. Bu tez çalışması da temelde bu 
+	algoritmaların günümüz teknolojisinde son derece önemli bir yer sahip olan 5G teknolojisinde kullanılan şifreleme algoritmalarını incelemektedir. Yapılan incelemeler sonucunda da hangi algoritmanın 
+	uygunluk açısından Wireless ve 5G  teknolojilerine daha uygun olduğunun bulunmasıdır. 
 	- Tezin literatür katkısı ve yenilikleri
 	Her ne kadar veri şifreleme algoritmalarının incelesinin yapıldığı tezler ve makaleler 
 	- Daha önceden bu konuda yapılmış olan çalışmaların incelenmesi
 4-) Arkaplan bilgiler
 	- Neden C++ dili kullaniliyor?
-		C++ dili son derece zor ve karmaşık bir dil olmasına rağmen programlama dillerinin reytinglerini karşılaştıran en popüler web sitelerinden biri olan Tiobe index'de ikinic sıraya yükselmiştir. Bu da gösteriyor ki C++ dilinin 
-		popülerliği son derece yüksek. C++ dili gömülü yazılım, Oyun geliştirilmesi, Yapay zeka sistemlerinin geliştirilmesi ve savunma sanayi uygulamaları gibi pek çok alanda son derece yaygın kullanılan bir programlama dilidir.
-	 	C++ dilinin kullanim sebeplerinden başka bir tanesi pek cok diger programlama diline kiyasla cok daha hızlı çalışmasıdır. Bununla birlikte verimin kritik olduğu uygulamalarda C++ vazgeçilmez bir programlama dili konumundadır. 
-                Bunun yanı sıra sürekli gelişmekte olan bir dil olması da seçilebilirlik olarak C++ dilini ön planda tutmaktadır. Her 3 senede bir toplanan C++ Standart Komitesi dile sürekli ekleme yapmaktadır. Bu da dilin sürekli olarak 
-                gelişmekte olan teknolojiye uyumlu olarak kalmasını sağlamaktadır. Özet geçmek gerekirse C++ dilinin bu tez çalışmasında tercih edilme sebebi sektörde yaygın bir şekilde kullanılması ve dilin sürekli gelişmesidir. Gelişmekte olan
-		teknolojiyle beraber C++ dilinin sahip olduğu araçlarda da artmaktadır. Bunun en önemli nedenlerinden biri daha önce de bahsedildiği gibi her 3 senede bir toplanan C++ standart komitesidir. Bundan dolayı C++ dili ortama uyum 
+		C++ dili son derece zor ve karmaşık bir dil olmasına rağmen programlama dillerinin reytinglerini karşılaştıran en popüler web sitelerinden biri olan Tiobe index'de ikinic sıraya yükselmiştir. Bu da 
+		gösteriyor ki C++ dilinin 
+		popülerliği son derece yüksek. C++ dili gömülü yazılım, Oyun geliştirilmesi, Yapay zeka sistemlerinin geliştirilmesi ve savunma sanayi uygulamaları gibi pek çok alanda son derece yaygın kullanılan 
+		bir programlama dilidir.
+	 	C++ dilinin kullanim sebeplerinden başka bir tanesi pek cok diger programlama diline kiyasla cok daha hızlı çalışmasıdır. Bununla birlikte verimin kritik olduğu uygulamalarda C++ vazgeçilmez bir 
+		programlama dili konumundadır. 
+                Bunun yanı sıra sürekli gelişmekte olan bir dil olması da seçilebilirlik olarak C++ dilini ön planda tutmaktadır. Her 3 senede bir toplanan C++ Standart Komitesi dile sürekli ekleme yapmaktadır. Bu 
+		da dilin sürekli olarak 
+                gelişmekte olan teknolojiye uyumlu olarak kalmasını sağlamaktadır. Özet geçmek gerekirse C++ dilinin bu tez çalışmasında tercih edilme sebebi sektörde yaygın bir şekilde kullanılması ve dilin 
+		sürekli gelişmesidir. Gelişmekte olan
+		teknolojiyle beraber C++ dilinin sahip olduğu araçlarda da artmaktadır. Bunun en önemli nedenlerinden biri daha önce de bahsedildiği gibi her 3 senede bir toplanan C++ standart komitesidir. Bundan 
+		dolayı C++ dili ortama uyum 
 		sağlama konusunda pek çok programlama dilinden üstündür diyebiliriz. Bu da gene C++ dilinin seçilebilirlik olarak üstün olduğu bir diğer noktadır.
 		- Pek çok sektörde kullanılıyor olması
-		C++ programlama dili savunma sanayi, gömülü yazılım, haberleşme teknolojileri, yapay zeka uygulamaları ve oyun tasarımları gibi pek çok farklı alanda kullanılmaktadır. Özellikle verimin son derece kritik olduğu sektörlerde C++ 
+		C++ programlama dili savunma sanayi, gömülü yazılım, haberleşme teknolojileri, yapay zeka uygulamaları ve oyun tasarımları gibi pek çok farklı alanda kullanılmaktadır. Özellikle verimin son derece 
+		kritik olduğu sektörlerde C++ 
 		neredeyse vazgeçilmez bir programlama dilidir.
                 - Optimizasyonunun yüksek olması
 		C++, pek çok dile göre çok daha hızlı çalıştığından dolayı seçilebilirlik açısından verimin kritik olduğu yerlerde çok üstün olduğu şüphesizdir.
@@ -68,7 +79,8 @@ Bana desteklerini esirgemeyen ... kisilere ve ... kurumlara tesekkur ederim.
 		- 5G ve Wireless Nedir?
 		- IoT cihazlarda 5G teknolojisi
 		- BBU ve RRU Nedir?
-		- Simetrik ve Asimetrik Algoritmalar
+		- Simetrik ve Asimetrik Veri şifreleme Algoritmaları
+		Temelde şifreleme deşifrelemede aynı anahtarın kullanıldığı algoritmalara simetrik algoritma
 		- Private/Public Key
 		- OpenSSL Kütüphanesi
 		- OpenSSL Kütüphanesinde bulunan ve bu tez çalışmasında kullanılacak olan algoritmalar
