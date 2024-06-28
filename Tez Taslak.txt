@@ -4,9 +4,8 @@ Tarih boyunca insanlar birbirlere gizli verileri gönderirken özellikle 3.kişi
 Söz konusu veriler gizlenirken geçmişten günümüze pek çok farklı yöntem kullanılmıştır. Buna verilebilecek en önemli örneklerden biri Almanların 2.Dünya savaşında haberleşmede kullanmış olduğu Enigma makinesidir. 
 Enigma her ne kadar şimdiki teknolojiye göre son derece kırılması kolay bir şifreleme sistemine sahipse de o dönem bilgisayarın henüz bulunmayışından dolayı çözmesi son derece zor bir algoritmaya
 sahipti. O zamandan günümüze şifreleme algoritmalarında ciddi anlamda bir gelişme göze çarpmaktadır. Bu tez çalışmasında da hayatımıza yeni yeni girmekte olan 5G teknolojilerde hangi algoritmaların kullanıma daha elverişli 
-olduğunun analizi yapılmıştır.
-
-5G teknolojisi Nesnelerin interneti(IoT/Internet of Things) ortamını temel alarak ortaya konulmuştur.  
+olduğunun analizi yapılmıştır. Şifreleme algoritmalarındaki gelişmelerin yanı sıra verilerin gönderim hızı da ciddi anlamda artmıştır. Özellikle 5G teknolojisinin hayatımıza girmesiyle birlikte 4G içerisinde maksimum hızı 300 Mbps olan mobil 
+cihazlar 5000 Mbps hıza ulaşmıştır. Bunun en önemli katkılarından biri 5G teknolojisi ile birlikte Nesnelerin interneti(IoT/Internet of Things) ortamına zemin hazırlanmıştır.  
 Günümüzde 5G teknolojisi başta Çin olmak üzere pek çok baz istasyonunda kullanılmaktadır. 5G teknolojisinin sık kullanımıyla birlikte
 Huawei, Ulak, Ericsson ve benzeri firmalar, baz istasyonları yoluyla haberleşen çeşitli cihazların çeşitli verilerini almayı hedeflemektedir. 
 Söz konusu veriler alınırken bu verilerin üçüncü kişilerin eline geçmemesi başta KVKK(Kişisel Verilerin Korunumu Kanunu) ihlali olmak üzere pek çok açıdan son derece önemlidir. 
@@ -28,7 +27,7 @@ en az güvenliği kadar verimliliği ve hızı da son derece önemli parametrele
 Bu tez çalışmasında söz konusu analizler yapılırken C++ programlama dilinin özellikleri yoğun bir şekilde kullanılarak sonuçlar olabildiğince kesine yakın bir şekilde elde edilecektir. 
 Burada C++ dilinin neden tercih edileceğinden bu tez kapsamında detaylı bir şekilde bahsedilecektir. Özetle bu tez kapsamında OpenSSL üçüncü parti kütüphanesinin C++ diline entegrasyonu 
 ile birlikte çeşitli parametreler değiştirilerek(Şifrelenicek yazının uzunluğu, şifrelenecek dosya büyüklüğü vb.) hangi algoritma veya algoritmaların entegrasyon açısından 5G ve Wireless 
-teknolojilerine daha uygun olduğunun tespit edilip elde edilen sonuçlardan grafiğe dökülmüştür. 
+teknolojilerine daha uygun olduğunun tespit edilip elde edilen sonuçlardan grafiğe dökülmüştür. Grafiğe dökülen sonuçlar son durumda değerlendirilip bir sonuca ulaşılmıştır.
 
 İçindekiler:
 1-) Özet/ Abstract
@@ -44,9 +43,14 @@ teknolojilerine daha uygun olduğunun tespit edilip elde edilen sonuçlardan gra
 		popülerliği son derece yüksek. C++ dili gömülü yazılım, Oyun geliştirilmesi, Yapay zeka sistemlerinin geliştirilmesi ve savunma sanayi uygulamaları gibi pek çok alanda son derece yaygın kullanılan bir programlama dilidir.
 	 	C++ dilinin kullanim sebeplerinden başka bir tanesi pek cok diger programlama diline kiyasla cok daha hızlı çalışmasıdır. Bununla birlikte verimin kritik olduğu uygulamalarda C++ vazgeçilmez bir programlama dili konumundadır. 
                 Bunun yanı sıra sürekli gelişmekte olan bir dil olması da seçilebilirlik olarak C++ dilini ön planda tutmaktadır. Her 3 senede bir toplanan C++ Standart Komitesi dile sürekli ekleme yapmaktadır. Bu da dilin sürekli olarak 
-                gelişmekte olan teknolojiye uyumlu olarak kalmasını sağlamaktadır. Özet geçmek gerekirse C++ dilinin bu tez çalışmasında tercih edilme sebebi sektörde yaygın bir şekilde kullanılması ve dilin sürekli gelişmesidir.   
+                gelişmekte olan teknolojiye uyumlu olarak kalmasını sağlamaktadır. Özet geçmek gerekirse C++ dilinin bu tez çalışmasında tercih edilme sebebi sektörde yaygın bir şekilde kullanılması ve dilin sürekli gelişmesidir. Gelişmekte olan
+		teknolojiyle beraber C++ dilinin sahip olduğu araçlarda da artmaktadır. Bunun en önemli nedenlerinden biri daha önce de bahsedildiği gibi her 3 senede bir toplanan C++ standart komitesidir. Bundan dolayı C++ dili ortama uyum 
+		sağlama konusunda pek çok programlama dilinden üstündür diyebiliriz. Bu da gene C++ dilinin seçilebilirlik olarak üstün olduğu bir diğer noktadır.
 		- Pek çok sektörde kullanılıyor olması
+		C++ programlama dili savunma sanayi, gömülü yazılım, haberleşme teknolojileri, yapay zeka uygulamaları ve oyun tasarımları gibi pek çok farklı alanda kullanılmaktadır. Özellikle verimin son derece kritik olduğu sektörlerde C++ 
+		neredeyse vazgeçilmez bir programlama dilidir.
                 - Optimizasyonunun yüksek olması
+		C++, pek çok dile göre çok daha hızlı çalıştığından dolayı seçilebilirlik açısından verimin kritik olduğu yerlerde çok üstün olduğu şüphesizdir.
 		- Sürekli gelişmekte olan bir dil olması
 		- Yeni teknolojileri uyum sağlama açısından uygun olması
 	- Yapılmış olan benzer çalışmalar
