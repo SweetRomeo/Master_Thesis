@@ -80,8 +80,10 @@ Bana desteklerini esirgemeyen ... kisilere ve ... kurumlara tesekkur ederim.
 		- IoT cihazlarda 5G teknolojisi
 		- BBU ve RRU Nedir?
 		- Simetrik ve Asimetrik Veri şifreleme Algoritmaları
-		Temelde şifreleme deşifrelemede aynı anahtarın kullanıldığı algoritmalara simetrik algoritma
+		Temelde şifreleme deşifrelemede aynı anahtarın kullanıldığı algoritmalara simetrik algoritma ve hep şifreleme hem de deşifreleme işlemi için farklı şifreleme anahtarının kullanıldığı algoritmalara 
+	        asi
 		- Private/Public Key
+		- Asimetrik - Simetrik Algoritmaların 
 		- OpenSSL Kütüphanesi
 		- OpenSSL Kütüphanesinde bulunan ve bu tez çalışmasında kullanılacak olan algoritmalar
 5-) Algoritmaların Test Edilmesi
