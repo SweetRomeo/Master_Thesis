@@ -89,6 +89,7 @@ Bana desteklerini esirgemeyen ... kisilere ve ... kurumlara tesekkur ederim.
 		sadece şifrelemede kullanılır. 
 		- Asimetrik - Simetrik Algoritmaların Avantajlar ve Dezavantajları olarak incelenmesi
 		- OpenSSL Kütüphanesi
+		OpenSSL Kütüphanesi TLS ve SSL gibi güvenlik 
 		- OpenSSL Kütüphanesinde bulunan ve bu tez çalışmasında kullanılacak olan algoritmalar
 5-) Algoritmaların Test Edilmesi
 6-) Test Caselere bağlı olarak sonuçların değerlendirilmesi
