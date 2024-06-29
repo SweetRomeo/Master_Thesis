@@ -77,13 +77,17 @@ Bana desteklerini esirgemeyen ... kisilere ve ... kurumlara tesekkur ederim.
 		8-) An overview of cryptographic primitives for possible use in 5G and beyond. 
 	- Konu hakkında ön bilgi
 		- 5G ve Wireless Nedir?
-		- IoT cihazlarda 5G teknolojisi
+		- IoT cihazlarda 5G teknolojisi 
 		- BBU ve RRU Nedir?
+		Baz istasyonlarında 2 temel komponent bulunmaktadır. Bunlar BBU ve RRU'dur. Sinyal almaya yarıyan baz istasyonu bölümüne RRU denir. 
 		- Simetrik ve Asimetrik Veri şifreleme Algoritmaları
 		Temelde şifreleme deşifrelemede aynı anahtarın kullanıldığı algoritmalara simetrik algoritma ve hep şifreleme hem de deşifreleme işlemi için farklı şifreleme anahtarının kullanıldığı algoritmalara 
-	        asi
+	        asimetrik algoritma adı verilir. 
 		- Private/Public Key
-		- Asimetrik - Simetrik Algoritmaların 
+		Asimetrik algoritmalarda Prıvate key kullanılırken simetrik algoritmalar public key kullanmaktadır. Private key kullanıcılar tarafından bilinmeyen anahtarlardır. private key deşifrelemede 
+		kullanılır. Şifreleme için ise daima bir public key kullanımı söz konusudur. Public keyler Simetrik algoritmalarda hep şifreleme hem de de deşifrelemede kullanılırken Asimetrik algoritmalarda
+		sadece şifrelemede kullanılır. 
+		- Asimetrik - Simetrik Algoritmaların Avantajlar ve Dezavantajları olarak incelenmesi
 		- OpenSSL Kütüphanesi
 		- OpenSSL Kütüphanesinde bulunan ve bu tez çalışmasında kullanılacak olan algoritmalar
 5-) Algoritmaların Test Edilmesi
