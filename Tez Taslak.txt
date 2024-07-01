@@ -95,12 +95,15 @@ Bana desteklerini esirgemeyen ... kisilere ve ... kurumlara tesekkur ederim.
 		Bunun yüksek lisans tez kapsamında OpenSSL kütüphanesinde bulunan algoritmalar incelenmiştir. Bu algoritmalardan C++ konu yazılırken de kullanılan 	
 		algoritmalar: AES, DSA, RSA, Chacha20,  Dh, Camellia gibi algoritmalardır. 
 5-) Algoritmaların Test Edilmesi
-	Algoritmaların test edilmesi noktasında ise github linkinde bulunan C++ programı kullanılacaktır.
+	Algoritmaların test edilmesi noktasında ise github linkinde bulunan C++ programı kullanılacaktır. Bu bölümde github linkinde yer alan kodun açıklaması, algoritmaları nasıl test ettiği ve algoritmaların 
+	çözüm hızının nasıl hesaplandığı açıklacaktır. 
 6-) Test Caselere bağlı olarak sonuçların değerlendirilmesi
+	Bu bölümde şifrelenecek olan verilerdeki parametreler ile oynanarak elde edilecek olan sonuçlar analiz edilecektir.
 Burada bahsedilen test caselerin başında şifrelenecek verilerin tipleri gelmektedir. Şifrelenmesi düşünülen veri bir yazı bir dosya veya bir binary veri olabilir.
 7-) Sonuç
-Oluşturulan farklı test caselerle birlikte durumlar incelenerek bir sonuca ulaşılacaktır.
+Oluşturulan farklı test caselerle(Verilerin uzunluk değişimleri, şifrelenecek olan verilerin tipleri vb.) birlikte durumlar incelenerek bir sonuca ulaşılacaktır. Elde edilen sonuçlardan bir grafik oluşturulup seçilebilirlik açısından 5G ve Wireless tarafına ne kadar uyumlu olan algoritma veya algoritmalar seçilecektir.
 8-) Kaynakça(Referanslar)  
+Bu bölümde atıf yapılacak olan yüksek lisans veya doktora tezleri yer alıcaktır. Ayrıca konu hakkında yazılmış olan makaler de gene bu alanda yer alacaktır.
 
 Anahtar Sözcükler: 5G, Wireless, Simetrik/Asimetrik Algoritmalar, Public/Private Key, AES,
 Chacha20, RSA, DSA, Seed, Cast5, Dh, Camellia
