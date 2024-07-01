@@ -95,6 +95,7 @@ Bana desteklerini esirgemeyen ... kisilere ve ... kurumlara tesekkur ederim.
 		Bunun yüksek lisans tez kapsamında OpenSSL kütüphanesinde bulunan algoritmalar incelenmiştir. Bu algoritmalardan C++ konu yazılırken de kullanılan 	
 		algoritmalar: AES, DSA, RSA, Chacha20,  Dh, Camellia gibi algoritmalardır. 
 5-) Algoritmaların Test Edilmesi
+	Algoritmaların test edilmesi noktasında ise github linkinde bulunan C++ programı kullanılacaktır.
 6-) Test Caselere bağlı olarak sonuçların değerlendirilmesi
 Burada bahsedilen test caselerin başında şifrelenecek verilerin tipleri gelmektedir. Şifrelenmesi düşünülen veri bir yazı bir dosya veya bir binary veri olabilir.
 7-) Sonuç
