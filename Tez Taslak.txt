@@ -89,8 +89,11 @@ Bana desteklerini esirgemeyen ... kisilere ve ... kurumlara tesekkur ederim.
 		sadece şifrelemede kullanılır. 
 		- Asimetrik - Simetrik Algoritmaların Avantajlar ve Dezavantajları olarak incelenmesi
 		- OpenSSL Kütüphanesi
-		OpenSSL Kütüphanesi TLS ve SSL gibi haberleşme protokollerinin yanı sıra Asimetrik ve simetrik algoritmalarını içeren 
+		OpenSSL Kütüphanesi TLS ve SSL gibi haberleşme protokollerinin yanı sıra Asimetrik ve simetrik şifreleme algoritmalarını içeren başta haberleşme alanı olmak üzere pek alanda son derece sık 
+		kullanılan bir 3.parti kütüphanedir.   
 		- OpenSSL Kütüphanesinde bulunan ve bu tez çalışmasında kullanılacak olan algoritmalar
+		Bunun yüksek lisans tez kapsamında OpenSSL kütüphanesinde bulunan algoritmalar incelenmiştir. Bu algoritmalardan C++ konu yazılırken de kullanılan 	
+		algoritmalar: AES, DSA, RSA, Chacha20,  Dh, Camellia gibi algoritmalardır. 
 5-) Algoritmaların Test Edilmesi
 6-) Test Caselere bağlı olarak sonuçların değerlendirilmesi
 Burada bahsedilen test caselerin başında şifrelenecek verilerin tipleri gelmektedir. Şifrelenmesi düşünülen veri bir yazı bir dosya veya bir binary veri olabilir.
