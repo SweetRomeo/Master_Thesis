@@ -34,7 +34,7 @@ teknolojilerine daha uygun olduğunun tespit edilip elde edilen sonuçlardan gra
 İçindekiler:
 1-) Özet/ Abstract
 2-) Teşekkür
-Bana desteklerini esirgemeyen ... kisilere ve ... kurumlara tesekkur ederim.
+Bana desteklerini esirgemeyen danışman hocam Dr. Öğr. Gör. Uğur Kesen ve çalışmakta olduğum Huawei Telekominikasyona tesekkür ederim.
 3-) Giriş
 	- Problemin tanımı ve Analizi
 	geçmişten günümüze veri güvenlik pek çok farklı alanda son derece önemlidir. Mobil cihazların hayatımıza girişiyle beraber Cloud teknolojileri gibi verilerin depo edilmesinde kullanılan pek çok farklı 
