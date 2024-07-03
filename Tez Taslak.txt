@@ -91,12 +91,19 @@ Bana desteklerini esirgemeyen danışman hocam Dr. Öğr. Gör. Uğur Kesen ve �
 		sadece şifrelemede kullanılır. 
 		- Hashing
 		- Data Integrity
-		- Encryption(Şifreleme)
+		- Encryption(Şifreleme) ve Decryption(Deşifreleme)
 		Bir yazının şifrelenmeden önceki hali Plain Text olarak adlandırılırken, bu yazının şifrelendikten sonraki hali Cipher Text olarak isimlendirilir. Plain Text aynı zamanda Şifrelenmiş bir Cipher 
 		Text'in deşifrelenmesiyle elde edilen yazı olarak da isimlendirilebilir. Şifrelemenin en bilinen tiplerinden biri basit şifrelemedir. Bu şifreleme bir veri tüm kullanıcılara aynı şifreleme 
-		algoritması kullanılarak gönderilmektedir. 
-		- Decryption(Deşifreleme)
+		algoritması kullanılarak gönderilmektedir. Bu şüphesiz ki güvenlik açısından son derece tehlikeli bir yöntemdir. Bu sebeple mümkün mertebe veri şifreleme algoritmalarının değişiklik göstermesi 
+		tercih edilmelidir. Basit şifrelemeye göre daha üstün olan algoritma olan Key Based Encryption(Anahtar tabanlı şifreleme) daha iyi bir yöntemdir. Bu tip şifrelemede rastgele üretilen anahtarlar 
+                kullanılarak yapılan şifrelemeye verilen isimdir. Bu anahtarlar algoritmaların tipine bağlı olarak public veya private key olabilir. 
 		- Asimetrik - Simetrik Algoritmaların Avantajlar ve Dezavantajları olarak incelenmesi
+		Simetrik algoritmalarda hem şifreleme hem de deşifreleme için aynı anahtar kullanılır. Asimetrik algoritmalarda ise şifreleme için ayrı key, deşifreleme için ayrı key kullanılmaktadır. Aşağıda 		simetrik ve asimetrik algoritmalar arası farkları açıklayan bir örnek bulunmaktadır. 
+		Here is the alphabeth : a b c d e f g h i j k l m n o p q r s t u v w x y z
+		Simetrik algoritma için "hello" yazısı için şifreleme ve deşifreleme yapılırsa anahtar 3 olarak alındığı takdirde hem şifreleme hem de deşifreleme bir anahtar kullanılarak yapılacaktır.
+		hello -> khoor (Anahtar : 3)
+		hello <- khoor (Anahtar : 3)
+		Burada anahtar 3 olduğundan dolayı sırasıyle tüm karakterler 3 adım ileride karakterlere dönüşerek şifreleme işlemini gerçekleştirirler. 
 		- OpenSSL Kütüphanesi
 		OpenSSL Kütüphanesi TLS ve SSL gibi haberleşme protokollerinin yanı sıra Asimetrik ve simetrik şifreleme algoritmalarını içeren başta haberleşme alanı olmak üzere pek alanda son derece sık 
 		kullanılan bir 3.parti kütüphanedir.   
