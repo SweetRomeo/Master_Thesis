@@ -103,7 +103,12 @@ Bana desteklerini esirgemeyen danışman hocam Dr. Öğr. Gör. Uğur Kesen ve �
 		Simetrik algoritma için "hello" yazısı için şifreleme ve deşifreleme yapılırsa anahtar 3 olarak alındığı takdirde hem şifreleme hem de deşifreleme bir anahtar kullanılarak yapılacaktır.
 		hello -> khoor (Anahtar : 3)
 		hello <- khoor (Anahtar : 3)
-		Burada anahtar 3 olduğundan dolayı sırasıyle tüm karakterler 3 adım ileride karakterlere dönüşerek şifreleme işlemini gerçekleştirirler. 
+		Burada anahtar 3 olduğundan dolayı sırasıyle tüm karakterler 3 adım ileride karakterlere dönüşerek şifreleme işlemini gerçekleştirirler. Örneğin burada sırasıyla h harfi 3 alfabede ileri giderek 
+                k, e harfi 3 adım ileri giderek h, l harfleri 3 adım giderek o harfi ve son olarak o harfi 3 adım ileri giderek r harfine dönüşmüştür.  Deşifreleme sırasında da durum tam tersidir. Şifrelemenmiş 
+		durumdaki harfler sırasıyla alfabede geri gelerek deşifreleme işlemini gerçekleştirirler. Asimetrik algoritmalarda ise durum biraz daha farklıdır. 
+		hello -> mjqqt (Anahtar : 5)
+		hello <- mjqqt (Anahtar : 21)
+		Burada görüldüğü gibi anahtarlar farklıdır.
 		- OpenSSL Kütüphanesi
 		OpenSSL Kütüphanesi TLS ve SSL gibi haberleşme protokollerinin yanı sıra Asimetrik ve simetrik şifreleme algoritmalarını içeren başta haberleşme alanı olmak üzere pek alanda son derece sık 
 		kullanılan bir 3.parti kütüphanedir.   
