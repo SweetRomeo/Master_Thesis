@@ -94,7 +94,7 @@ Bana desteklerini esirgemeyen danışman hocam Dr. Öğr. Gör. Uğur Kesen ve �
 		- Encryption(Şifreleme)
 		Bir yazının şifrelenmeden önceki hali Plain Text olarak adlandırılırken, bu yazının şifrelendikten sonraki hali Cipher Text olarak isimlendirilir. Plain Text aynı zamanda Şifrelenmiş bir Cipher 
 		Text'in deşifrelenmesiyle elde edilen yazı olarak da isimlendirilebilir. Şifrelemenin en bilinen tiplerinden biri basit şifrelemedir. Bu şifreleme bir veri tüm kullanıcılara aynı şifreleme 
-		algoritması kullanılarak gönderilmektedir.  
+		algoritması kullanılarak gönderilmektedir. 
 		- Decryption(Deşifreleme)
 		- Asimetrik - Simetrik Algoritmaların Avantajlar ve Dezavantajları olarak incelenmesi
 		- OpenSSL Kütüphanesi
@@ -104,7 +104,9 @@ Bana desteklerini esirgemeyen danışman hocam Dr. Öğr. Gör. Uğur Kesen ve �
 		Bunun yüksek lisans tez kapsamında OpenSSL kütüphanesinde bulunan algoritmalar incelenmiştir. Bu algoritmalardan C++ konu yazılırken de kullanılan 	
 		algoritmalar: AES, DSA, RSA, Chacha20,  Dh, Camellia gibi algoritmalardır.
 		- AES(Advanced Encryption)
-		- Dh()
+		- Dh(Diffie - Hellman) Algorithm
+		- DSA(Digital Signature Algorithm)
+		- RSA(Rivest - Shamir - Adleman) Algorithm
 5-) Algoritmaların Test Edilmesi
 	Algoritmaların test edilmesi noktasında ise github linkinde bulunan C++ programı kullanılacaktır. Bu bölümde github linkinde yer alan kodun açıklaması, algoritmaları nasıl test ettiği ve algoritmaların 
 	çözüm hızının nasıl hesaplandığı açıklacaktır. 
