@@ -120,7 +120,11 @@ Bana desteklerini esirgemeyen danışman hocam Dr. Öğr. Gör. Uğur Kesen ve �
 		Asimetrik Algoritmaların Avantajları ve Dezavantajları
 		Asimetrik algoritmalar yavaş çalışmasına karşın simetrik algoritmalara kıyasla daha güçlü olduklarından daha güvenli bir şifreleme yapılmasına imkan sağlarlar. Güçlü olmasının sebebi de temelde 
                 daha karmaşık ve uzun anahtarlar kullanmasından kaynaklanmaktadır bu da şüphesiz CPU kullanımını arttırmaktadır. Simetrik algoritmalarda ise deşifrelem için bir private key kullanılacağı için bu 
-		anahtarların paylaşılması gibi zorunluluk söz konusu değildir. Bu da bu algoritmaların daha güvenlikli bir şekilde çalışmasına imkan sağlamaktadır. 
+		anahtarların paylaşılması gibi zorunluluk söz konusu değildir. Bu da bu algoritmaların daha güvenlikli bir şekilde çalışmasına imkan sağlamaktadır. Duruma bağlı seçilebilirlik açısından daha küçük 
+		verilerin taşınmasında özellikle verim kritik yerlerde tercih edilebilir. Verimin çok da önemli olmadığı alanlarda biraz daha büyük verilerin de taşınmasında kullanılabilir. Güvenliğin verimden 
+                çok daha önemli olduğu ayrıca bellek açısından bir problem yaşamıycağımız alanlar için büyük verilerin taşınmasında da kullanılabilir.
+		- Asimetrik ve Simetrik algoritma tipleri
+		
 		- OpenSSL Kütüphanesi
 		OpenSSL Kütüphanesi TLS ve SSL gibi haberleşme protokollerinin yanı sıra Asimetrik ve simetrik şifreleme algoritmalarını içeren başta haberleşme alanı olmak üzere pek alanda son derece sık 
 		kullanılan bir 3.parti kütüphanedir.   
