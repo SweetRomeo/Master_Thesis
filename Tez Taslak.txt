@@ -101,14 +101,26 @@ Bana desteklerini esirgemeyen danışman hocam Dr. Öğr. Gör. Uğur Kesen ve �
 		Simetrik algoritmalarda hem şifreleme hem de deşifreleme için aynı anahtar kullanılır. Asimetrik algoritmalarda ise şifreleme için ayrı key, deşifreleme için ayrı key kullanılmaktadır. Aşağıda 		simetrik ve asimetrik algoritmalar arası farkları açıklayan bir örnek bulunmaktadır. 
 		Here is the alphabeth : a b c d e f g h i j k l m n o p q r s t u v w x y z
 		Simetrik algoritma için "hello" yazısı için şifreleme ve deşifreleme yapılırsa anahtar 3 olarak alındığı takdirde hem şifreleme hem de deşifreleme bir anahtar kullanılarak yapılacaktır.
-		hello -> khoor (Anahtar : 3)
-		hello <- khoor (Anahtar : 3)
+		hello -> khoor (Şifreleme Anahtarı : 3)
+		hello <- khoor (Deşifreleme Anahtarı : 3)
 		Burada anahtar 3 olduğundan dolayı sırasıyle tüm karakterler 3 adım ileride karakterlere dönüşerek şifreleme işlemini gerçekleştirirler. Örneğin burada sırasıyla h harfi 3 alfabede ileri giderek 
                 k, e harfi 3 adım ileri giderek h, l harfleri 3 adım giderek o harfi ve son olarak o harfi 3 adım ileri giderek r harfine dönüşmüştür.  Deşifreleme sırasında da durum tam tersidir. Şifrelemenmiş 
 		durumdaki harfler sırasıyla alfabede geri gelerek deşifreleme işlemini gerçekleştirirler. Asimetrik algoritmalarda ise durum biraz daha farklıdır. 
-		hello -> mjqqt (Anahtar : 5)
-		hello <- mjqqt (Anahtar : 21)
-		Burada görüldüğü gibi anahtarlar farklıdır.
+		hello -> mjqqt (Şifreleme Anahtarı : 5)
+		hello <- mjqqt (Deşifreleme Anahtarı : 21)
+		Burada görüldüğü gibi anahtarlar farklıdır. Asimetrik algoritmalarda deşifreleme yapılırken simetrik algoritmalarda olduğu gibi geriye doğru gidilmez, onun yerine ileri doğru gidilerek aynı 
+                noktaya gelinir. Burada alfabede z'den sonra a geleceği için başa dönülüp ters taraftan hedef harfe ulaşılır. Örneğin h karakteri m karakterine dönüştürülürken alfabede 5 adım ileri gidilirken, m 
+                harfinin tekrar h harfini dönmesi için 21 karakter ileriye gitmesi gerekmektedir. Aynı durum diğer karakterler için de geçerlidir. Burada 5 ve 21 anahtarlarının matematiksel olarak bağlantılı 
+                olduğu unutulmalıdır yani bu değerler değiştirildiği zaman algoritma doğru çalışmaz. Burada Deşifreleme anahtarıyla şifreleme anahtarının yer değiştirmesiyle algoritmanın çalışmasında herhangi bir 
+                değişiklik olmaz. Örneğin şifrelem anahtarı 21 ve deşifreleme anahtarı 5 olsaydı algoritma gene istenildiği gibi çalışırdı. Bu tip algoritmalarda şifreleme için bir public key belirlenir bu herkes 
+		tarafından bilindiğinden dolayı buna public key adı verilir ancak bunun yanında deşifreleme için de private key verilir ve bu private key kişiye özeldir.
+		Simetrik Algoritmaların Avantajları ve Dezavantajları
+		simetrik algoritmalar asimetrik algoritmalara kıyasla daha hızlı çalışırlar. Simetrik algoritmalarda belirlenen anahtar paylaşılmalıdır bu da güvenlik açısından tehlike oluşturmaktadır. 
+                Seçilebilirlik açısından bu tip algoritmalar büyük verilerin taşınmasında daha kullanımı ideal algoritmalardır. Diğer taraftan küçük veriler taşınırken kullanımı çok da mantıklı olmaz. 
+		Asimetrik Algoritmaların Avantajları ve Dezavantajları
+		Asimetrik algoritmalar yavaş çalışmasına karşın simetrik algoritmalara kıyasla daha güçlü olduklarından daha güvenli bir şifreleme yapılmasına imkan sağlarlar. Güçlü olmasının sebebi de temelde 
+                daha karmaşık ve uzun anahtarlar kullanmasından kaynaklanmaktadır bu da şüphesiz CPU kullanımını arttırmaktadır. Simetrik algoritmalarda ise deşifrelem için bir private key kullanılacağı için bu 
+		anahtarların paylaşılması gibi zorunluluk söz konusu değildir. Bu da bu algoritmaların daha güvenlikli bir şekilde çalışmasına imkan sağlamaktadır. 
 		- OpenSSL Kütüphanesi
 		OpenSSL Kütüphanesi TLS ve SSL gibi haberleşme protokollerinin yanı sıra Asimetrik ve simetrik şifreleme algoritmalarını içeren başta haberleşme alanı olmak üzere pek alanda son derece sık 
 		kullanılan bir 3.parti kütüphanedir.   
