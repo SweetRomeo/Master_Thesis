@@ -85,10 +85,7 @@ Bana desteklerini esirgemeyen danışman hocam Dr. Öğr. Gör. Uğur Kesen ve �
 		- Simetrik ve Asimetrik Veri şifreleme Algoritmaları
 		Temelde şifreleme deşifrelemede aynı anahtarın kullanıldığı algoritmalara simetrik algoritma ve hep şifreleme hem de deşifreleme işlemi için farklı şifreleme anahtarının kullanıldığı algoritmalara 
 	        asimetrik algoritma adı verilir. 
-		- Private/Public Key
-		Asimetrik algoritmalarda Prıvate key kullanılırken simetrik algoritmalar public key kullanmaktadır. Private key kullanıcılar tarafından bilinmeyen anahtarlardır. private key deşifrelemede 
-		kullanılır. Şifreleme için ise daima bir public key kullanımı söz konusudur. Public keyler Simetrik algoritmalarda hep şifreleme hem de de deşifrelemede kullanılırken Asimetrik algoritmalarda
-		sadece şifrelemede kullanılır. 
+		 
 		- Hashing
 		- Data Integrity
 		- Encryption(Şifreleme) ve Decryption(Deşifreleme)
@@ -137,7 +134,13 @@ Bana desteklerini esirgemeyen danışman hocam Dr. Öğr. Gör. Uğur Kesen ve �
 			- 3DES  168 bit anahtar
 			- AES   128, 192 veya 256 bit anahtar
 			- ChaCha20   128 veya 256 bit anahtar 
-		
+		- Private/Public Key
+		Asimetrik algoritmalarda hem Prıvate key hem de public key kullanılırken simetrik algoritmalarda sadece public key kullanıldığını daha önce söylemiştik. Private key sadece kullanıcılar tarafından
+                bilinen anahtarlardır. Örneğin  Bu da demek oluyor ki dünyada o kişiden başkası o public keye ait olan private keye sahip olmadığı için o veriyi deşifre edemez. Kısaca private key kişiye özgüdür. 
+                Bir veri kişinin public keyi kullanılarak şifrelenmiş ise ancak onun private keyi kullanılarak deşifrelenebilir. Tersi durumda eğer bir veri private key ile şifrelendiyse ancak o kişinin public 
+                keyi kullanılarak deşifrelenebilir.  
+                Şifreleme için ise daima bir public key kullanımı söz konusudur. Public keyler Simetrik algoritmalarda hep şifreleme hem de de deşifrelemede kullanılırken Asimetrik algoritmalarda
+		sadece şifrelemede kullanılır. 
 		- OpenSSL Kütüphanesi
 		OpenSSL Kütüphanesi TLS ve SSL gibi haberleşme protokollerinin yanı sıra Asimetrik ve simetrik şifreleme algoritmalarını içeren başta haberleşme alanı olmak üzere pek alanda son derece sık 
 		kullanılan bir 3.parti kütüphanedir.   
