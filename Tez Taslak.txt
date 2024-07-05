@@ -138,7 +138,13 @@ Bana desteklerini esirgemeyen danışman hocam Dr. Öğr. Gör. Uğur Kesen ve �
 		Asimetrik algoritmalarda hem Prıvate key hem de public key kullanılırken simetrik algoritmalarda sadece public key kullanıldığını daha önce söylemiştik. Private key sadece kullanıcılar tarafından
                 bilinen anahtarlardır. Örneğin  Bu da demek oluyor ki dünyada o kişiden başkası o public keye ait olan private keye sahip olmadığı için o veriyi deşifre edemez. Kısaca private key kişiye özgüdür. 
                 Bir veri kişinin public keyi kullanılarak şifrelenmiş ise ancak onun private keyi kullanılarak deşifrelenebilir. Tersi durumda eğer bir veri private key ile şifrelendiyse ancak o kişinin public 
-                keyi kullanılarak deşifrelenebilir.  
+                keyi kullanılarak deşifrelenebilir. Bunun en önemli artısı mesajın üçüncü kişilerin eline geçmemiş olmasıdır. Bu şifreleme yöntemine Asimetrik şifreleme adı verilir. Private key kullanımı her ne k 
+                kadar güvenlik açısında iyi olsa da verim açısından o kadar kötüdür. Burada diğer bir alternatif simetrik şifreleme yöntemini kullanmaktır. Bu durumda private key kullanımı söz konusu 
+                olmayacaktır. Her şifreleme hem de deşifrelemede public key kullanılması da verim olarak iyi bir durum olsa da güvenlik açısından son derece tehlikeli ve kırılması private key kullanan 
+		algoritmalara göre çok daha kolaydır. 
+		- Hibrit Şifreleme
+		Bu şifreleme tipi aslında asimetrik ve simetrik şifrelemenin bir karmasıdır. SSL ve TLS haberleşme protokolleri de aslında buna benzer bir yol izlemektedir. Eğer bu tip bir şifreleme 
+                kullanılıyorsa bu durumda hem hızlı çalışan hem de güvenilir bir sonuç elde edileceğini söyleyebiliriz.
                 Şifreleme için ise daima bir public key kullanımı söz konusudur. Public keyler Simetrik algoritmalarda hep şifreleme hem de de deşifrelemede kullanılırken Asimetrik algoritmalarda
 		sadece şifrelemede kullanılır. 
 		- OpenSSL Kütüphanesi
@@ -147,7 +153,7 @@ Bana desteklerini esirgemeyen danışman hocam Dr. Öğr. Gör. Uğur Kesen ve �
 		- OpenSSL Kütüphanesinde bulunan ve bu tez çalışmasında kullanılacak olan algoritmalar
 		Bunun yüksek lisans tez kapsamında OpenSSL kütüphanesinde bulunan algoritmalar incelenmiştir. Bu algoritmalardan C++ konu yazılırken de kullanılan 	
 		algoritmalar: AES, DSA, RSA, Chacha20,  Dh, Camellia gibi algoritmalardır.
-		- AES(Advanced Encryption)
+		- AES(Advanced Encryption Standard) Algorithm
 		- Dh(Diffie - Hellman) Algorithm
 		- DSA(Digital Signature Algorithm)
 		- RSA(Rivest - Shamir - Adleman) Algorithm
