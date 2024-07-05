@@ -86,7 +86,10 @@ Bana desteklerini esirgemeyen danışman hocam Dr. Öğr. Gör. Uğur Kesen ve �
 		Temelde şifreleme deşifrelemede aynı anahtarın kullanıldığı algoritmalara simetrik algoritma ve hep şifreleme hem de deşifreleme işlemi için farklı şifreleme anahtarının kullanıldığı algoritmalara 
 	        asimetrik algoritma adı verilir. 
 		 
-		- Hashing
+		- Hashing Nedir?
+			- Fingerprint
+			- MAC Msg Auth Code 
+			- Authentication
 		- Data Integrity
 		- Encryption(Şifreleme) ve Decryption(Deşifreleme)
 		Bir yazının şifrelenmeden önceki hali Plain Text olarak adlandırılırken, bu yazının şifrelendikten sonraki hali Cipher Text olarak isimlendirilir. Plain Text aynı zamanda Şifrelenmiş bir Cipher 
@@ -146,7 +149,17 @@ Bana desteklerini esirgemeyen danışman hocam Dr. Öğr. Gör. Uğur Kesen ve �
 		Bu şifreleme tipi aslında asimetrik ve simetrik şifrelemenin bir karmasıdır. SSL ve TLS haberleşme protokolleri de aslında buna benzer bir yol izlemektedir. Eğer bu tip bir şifreleme 
                 kullanılıyorsa bu durumda hem hızlı çalışan hem de güvenilir bir sonuç elde edileceğini söyleyebiliriz.
                 Şifreleme için ise daima bir public key kullanımı söz konusudur. Public keyler Simetrik algoritmalarda hep şifreleme hem de de deşifrelemede kullanılırken Asimetrik algoritmalarda
-		sadece şifrelemede kullanılır. 
+		sadece şifrelemede kullanılır.
+		- SSL/TLS Protokolleri
+		Bulk Data'nın simetrik şifrelemenmesi Confidentiality özelliğini mümkün kılmaktadır.
+			- PKI(Public Key Infrastructure)
+			Bu bir üçgenle ifade edilip 3 ana parçadan oluşur. Bunlar:
+			-> Client
+			Güvenli bir bağlantı kurup kimliği doğrular. Client genellikle işletim sistemi olur.
+			-> Server
+			Kimliği doğrulaması gerekmektedir. Server genellikle yazılım, aplikasyon veya program olabilir.
+			-> Certificate Authority 
+			Sertifika üretir. Kimliği doğrular. Code Signing CAs
 		- OpenSSL Kütüphanesi
 		OpenSSL Kütüphanesi TLS ve SSL gibi haberleşme protokollerinin yanı sıra Asimetrik ve simetrik şifreleme algoritmalarını içeren başta haberleşme alanı olmak üzere pek alanda son derece sık 
 		kullanılan bir 3.parti kütüphanedir.   
@@ -156,7 +169,15 @@ Bana desteklerini esirgemeyen danışman hocam Dr. Öğr. Gör. Uğur Kesen ve �
 		- AES(Advanced Encryption Standard) Algorithm
 		- Dh(Diffie - Hellman) Algorithm
 		- DSA(Digital Signature Algorithm)
+			
 		- RSA(Rivest - Shamir - Adleman) Algorithm
+		RSA Algoritmasının bazı özellikleri aşağıdaki gibidir:
+			-> Bu algoritmanın adı aslında yaratıcısı olan Ron Rivest, Adi Shamir ve Leonard Adleman kişilerin soyadlarını almıştır.
+			-> En yaygın şifreleme algoritmalarından biridir.
+			-> Bu algoritmada iki farklı anahtar oluşturulur. Bu anahtarlardan biri şifreleme için kullanılırken diğeri deşifreleme için kullanılır.
+		Her algoritmada olduğu gibi RSA algoritmasında da bir anahtar üretimi söz konusudur. Anahtar üretilirken belli başlı adımlar bulunmaktadır.
+			-> İki adet asal sayı seçilir.
+		- Camellia
 5-) Algoritmaların Test Edilmesi
 	Algoritmaların test edilmesi noktasında ise github linkinde bulunan C++ programı kullanılacaktır. Bu bölümde github linkinde yer alan kodun açıklaması, algoritmaları nasıl test ettiği ve algoritmaların 
 	çözüm hızının nasıl hesaplandığı açıklacaktır. 
