@@ -160,13 +160,15 @@ Bana desteklerini esirgemeyen danışman hocam Dr. Öğr. Gör. Uğur Kesen ve �
 			Kimliği doğrulaması gerekmektedir. Server genellikle yazılım, aplikasyon veya program olabilir.
 			-> Certificate Authority 
 			Sertifika üretir. Kimliği doğrular. Code Signing CAs
+			
 		- OpenSSL Kütüphanesi
 		OpenSSL Kütüphanesi TLS ve SSL gibi haberleşme protokollerinin yanı sıra Asimetrik ve simetrik şifreleme algoritmalarını içeren başta haberleşme alanı olmak üzere pek alanda son derece sık 
 		kullanılan bir 3.parti kütüphanedir.   
 		- OpenSSL Kütüphanesinde bulunan ve bu tez çalışmasında kullanılacak olan algoritmalar
 		Bunun yüksek lisans tez kapsamında OpenSSL kütüphanesinde bulunan algoritmalar incelenmiştir. Bu algoritmalardan C++ konu yazılırken de kullanılan 	
-		algoritmalar: AES, DSA, RSA, Chacha20,  Dh, Camellia gibi algoritmalardır.
+		algoritmalar: AES, DSA, RSA, Chacha20, Dh, Camellia gibi algoritmalardır.
 		- AES(Advanced Encryption Standard) Algorithm
+		AES algoritması, 2001 yılında ABD Ulusal Standart ve Teknoloji Enstitüsü(NIST) tarafından bulunan veri şifrelemede sıkça kullanılan simetrik bir şifreleme algoritmasıdır.
 		- Dh(Diffie - Hellman) Algorithm
 		- DSA(Digital Signature Algorithm)
 			
