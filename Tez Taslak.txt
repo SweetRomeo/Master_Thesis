@@ -29,7 +29,7 @@ en az güvenliği kadar verimliliği ve hızı da son derece önemli parametrele
 Bu tez çalışmasında söz konusu analizler yapılırken C++ programlama dilinin özellikleri yoğun bir şekilde kullanılarak sonuçlar olabildiğince kesine yakın bir şekilde elde edilecektir. 
 Burada C++ dilinin neden tercih edileceğinden bu tez kapsamında detaylı bir şekilde bahsedilecektir. Özetle bu tez kapsamında OpenSSL üçüncü parti kütüphanesinin C++ diline entegrasyonu 
 ile birlikte çeşitli parametreler değiştirilerek(Şifrelenicek yazının uzunluğu, şifrelenecek dosya büyüklüğü vb.) hangi algoritma veya algoritmaların entegrasyon açısından 5G ve Wireless 
-teknolojilerine daha uygun olduğunun tespit edilip elde edilen sonuçlardan grafiğe dökülmüştür. Grafiğe dökülen sonuçlar son durumda değerlendirilip bir sonuca ulaşılmıştır.
+teknolojilerine daha uygun olduğunun tespit edilip elde edilen sonuçlardan grafiğe dökülmüştür. Grafiğe dökülen sonuçlar son durumda değerlendirilip bir sonuca ulaşılmıştır. Sonuca ulaşılırken C++ programlama dilinin modern araçları kullanılarak algoritmaların çalışma hızı hesaplanmıştır. 
 
 İçindekiler:
 1-) Özet/ Abstract
