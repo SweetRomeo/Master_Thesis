@@ -174,8 +174,15 @@ Bana desteklerini esirgemeyen danışman hocam Dr. Öğr. Gör. Uğur Kesen ve �
 			-> Bu algoritmada asla asıl değer gönderilmez. Bunun yerine kullanıcıların kendi belirledikleri değerler gönderilir.
 			-> Bu algoritmada iki kullanıcı arası verilerin taşınması sırasıyla aşağıdaki gibi yapılacaktır.
 				-> İki kullanıcı da kendine özgü rastgele üretilmiş Private Key kullanır.. 
-				-> Kullanıcıların ortak kullanıcağı iki sayı belirlenir. Bunlardan biri asal sayı diğeri ise buna ait olan üretici sayıdır. Bu sayıların kullanıcılarda ortak olması olması önemli bir detaydır. 
-			        -> Bu değerler belirlendikten sonra  
+				-> Kullanıcıların ortak kullanıcağı iki sayı belirlenir. Bunlardan biri asal sayı(P) diğeri ise buna ait olan üretici sayıdır(G). Bu sayıların kullanıcılarda ortak olması olması önemli 				
+                                bir detaydır. 
+			        -> Bu değerler belirlendikten sonra üretici değerin(P) birbirine veri göndericek olan kullanıcılara göre farklılık gösteren Private Key inci kuvveti alınır. Buradan elde edilen 
+				sonucun da daha önceden belirlenmiş olan asal sayı ile modu alınır. Örneğin X kişisi için Private Key değeri 5, Y kişisi için ise Private key değeri 4 olarak alınırsa aşağıdaki bir 
+                                işlem yapılabilir:
+				X Kişisi : (6 ^ 5) MOD 13 = 2 -> Public Key = 2
+				Y Kişisi : (6 ^ 4) MOD 13 = 9 -> Public Key = 9
+				Yukarıda elde edilen sonuçlar public key değerleridir, yani üçüncü kişlerin göreceği değerlerdir.
+
 		- DSA(Digital Signature Algorithm)
 			
 		- RSA(Rivest - Shamir - Adleman) Algorithm
