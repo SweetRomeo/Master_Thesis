@@ -174,15 +174,22 @@ Bana desteklerini esirgemeyen danışman hocam Dr. Öğr. Gör. Uğur Kesen ve �
 			-> Bu algoritmada asla asıl değer gönderilmez. Bunun yerine kullanıcıların kendi belirledikleri değerler gönderilir.
 			-> Bu algoritmada iki kullanıcı arası verilerin taşınması sırasıyla aşağıdaki gibi yapılacaktır.
 				-> İki kullanıcı da kendine özgü rastgele üretilmiş Private Key kullanır.. 
-				-> Kullanıcıların ortak kullanıcağı iki sayı belirlenir. Bunlardan biri asal sayı(P) diğeri ise buna ait olan üretici sayıdır(G). Bu sayıların kullanıcılarda ortak olması olması önemli 				
-                                bir detaydır. 
+				-> Kullanıcıların ortak kullanıcağı iki sayı belirlenir. Bunlardan biri asal sayı(P) diğeri ise buna ait olan üretici sayıdır(G). Bu sayıların kullanıcılarda ortak olması olması 
+                                önemli bir detaydır. 
 			        -> Bu değerler belirlendikten sonra üretici değerin(P) birbirine veri göndericek olan kullanıcılara göre farklılık gösteren Private Key inci kuvveti alınır. Buradan elde edilen 
 				sonucun da daha önceden belirlenmiş olan asal sayı ile modu alınır. Örneğin X kişisi için Private Key değeri 5, Y kişisi için ise Private key değeri 4 olarak alınırsa aşağıdaki bir 
                                 işlem yapılabilir:
-				X Kişisi : (6 ^ 5) MOD 13 = 2 -> Public Key = 2
-				Y Kişisi : (6 ^ 4) MOD 13 = 9 -> Public Key = 9
+				X Kişisi : (6 ^ Private Key(X) = 5) MOD 13 = 2 -> Public Key(X) = 2
+				Y Kişisi : (6 ^ Private Key(Y) = 4) MOD 13 = 9 -> Public Key(Y) = 9
 				Yukarıda elde edilen sonuçlar public key değerleridir, yani üçüncü kişlerin göreceği değerlerdir.
-
+				Elde edilen public key değerleri çaprazlanır. Yani çözümlenme sırasında Y kişisine ait olan Public key = 9 değeri
+				X kişinin private key inci kuvveti alınır ve buluna sayısının üretilmiş olan asal sayı değeri(P = 13) ile modu alınır. Aynı durum Y kişisi için de yapılır. Söz konusu işlemlerin 
+                                uygulamalı gösterimi aşağıdaki gibidir:
+                                X kişisi : (Public Key(Y) = 9 ^ Private Key(X) = 5) MOD 13 -> Shared Key(X,Y) = 3
+				Y kişisi : (Public Key(X) = 2 ^ Private Key(Y) = 4) MOD 13 -> Shared Key(X,Y) = 3
+				şüphesiz ki Shared Key değerleri adından da anlaşılabileceği gibi ortam bir anahtardır. Burada amaç bu kişilerin birbirlerine gönderdikleri mesajları sadece kendilerinin 
+				çözebilmesini sağlamaktadır. Bu sayede bu mesajların 3.kişilerin eline geçmesi söz konusu olamaz.
+				
 		- DSA(Digital Signature Algorithm)
 			
 		- RSA(Rivest - Shamir - Adleman) Algorithm
