@@ -178,7 +178,28 @@ Bana desteklerini esirgemeyen danışman hocam Dr. Öğr. Gör. Uğur Kesen ve �
 			-> En yaygın şifreleme algoritmalarından biridir.
 			-> Bu algoritmada iki farklı anahtar oluşturulur. Bu anahtarlardan biri şifreleme için kullanılırken diğeri deşifreleme için kullanılır.
 		Her algoritmada olduğu gibi RSA algoritmasında da bir anahtar üretimi söz konusudur. Anahtar üretilirken belli başlı adımlar bulunmaktadır.
-			-> İki adet asal sayı seçilir.
+			-> İki adet asal sayı seçilir. Seçilen asal sayıların (P, Q) olsun.
+			-> Bir ürün hesaplanır. (P * Q)
+			-> Bir Totient hesaplanır. (T) = (P - 1) * (Q - 1)
+			-> Bir Public Key Seçilir  (E)
+				-> Seçilen Public Key Asal olmak zorunda  
+				-> Totient değerinden küçük olmaz zorunda (T > E)
+				-> Totient değerinin çarpanı olmamalı
+			-> Bir Private Key Seçilir (D)
+				-> D ve E değerinin T değerine bölümü 1 olmalı
+				-> (D * E) MOD T = 1
+		Bu Koşullara göre bir örnek oluşturulursa:
+			-> P ve Q asaal sayıları sırasıyla 7 ve 19 şeklinde alınsın 
+			-> Ürün değeri(P * Q) değeri 133 olarak hesaplanır.
+			-> Totient değeri(T) 108 olarak hesaplanır.
+			-> Public Key değeri(E), koşulları sağlaması açısından 29 olarak alınır.
+			-> Private Key değeri(D), koşulları sağlaması açısından 41 olarak alınır.
+		Bu örnekte elde etmiş olduğumuz değerleri eğer şifrelemede kullanırsak:
+			-> Şifreleme 
+			   Mesaj ^ E MOD N = Cipher Text(Şifrelenmiş Yazı)
+			-> Deşifreleme
+			   Şifrelenmiş Mesaj ^ D MOD N = Mesaj
+			-> Örneğimizde 29 olarak belirlenen Public key(E) değeriyle şifreleme ve 41 olarak belirlenen Private Key değeri kullanılarak deşifreleme gerçekleştirilecektir. 
 		- Camellia
 5-) Algoritmaların Test Edilmesi
 	Algoritmaların test edilmesi noktasında ise github linkinde bulunan C++ programı kullanılacaktır. Bu bölümde github linkinde yer alan kodun açıklaması, algoritmaları nasıl test ettiği ve algoritmaların 
