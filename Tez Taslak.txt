@@ -188,7 +188,19 @@ Bana desteklerini esirgemeyen danışman hocam Dr. Öğr. Gör. Uğur Kesen ve �
                                 X kişisi : (Public Key(Y) = 9 ^ Private Key(X) = 5) MOD 13 -> Shared Key(X,Y) = 3
 				Y kişisi : (Public Key(X) = 2 ^ Private Key(Y) = 4) MOD 13 -> Shared Key(X,Y) = 3
 				şüphesiz ki Shared Key değerleri adından da anlaşılabileceği gibi ortam bir anahtardır. Burada amaç bu kişilerin birbirlerine gönderdikleri mesajları sadece kendilerinin 
-				çözebilmesini sağlamaktadır. Bu sayede bu mesajların 3.kişilerin eline geçmesi söz konusu olamaz.
+				çözebilmesini sağlamaktadır. Bu sayede bu mesajların 3.kişilerin eline geçmesi söz konusu olamaz çünkü dışarıdan tek biline asal sayı değeri(P), üretici değer(G) ve Public Key 
+                                değerleri bilinmektedir. Bu değerlerin de bilinmesi şifreli verilerin çözümlenmesini mümkün kılmaz. 
+				-> DH algoritması ne kadar güvenli?
+					- DH'nin güvenliği Ayrık Logaritma problemine bağlıdır
+                                	• Üsteleme:
+                                	G ve X göz önüne alındığında, N değerini bulmak kolaydır.  G ^ X = N 
+                                	• Logaritma:
+					G ve N göz önüne alındığında, X'i bulmak zordur
+					- Ayrık Açığa Çıkarma:				           G ^ X MOD P = N 
+					G, X, P göz önüne alındığında, N'yi bulmak kolaydır.  
+					- Ayrık Logaritma:
+						• G, P, N göz önüne alındığında, X'i bulmak mümkün değil.
+						• Tek yöntem, mümkün olan her kombinasyonu denemektir. (yani kaba kuvvet)
 				
 		- DSA(Digital Signature Algorithm)
 			
