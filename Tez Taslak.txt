@@ -170,6 +170,12 @@ Bana desteklerini esirgemeyen danışman hocam Dr. Öğr. Gör. Uğur Kesen ve �
 		- AES(Advanced Encryption Standard) Algorithm
 		AES algoritması, 2001 yılında ABD Ulusal Standart ve Teknoloji Enstitüsü(NIST) tarafından bulunan veri şifrelemede sıkça kullanılan simetrik bir şifreleme algoritmasıdır.
 		- Dh(Diffie - Hellman) Algorithm
+			-> İki kullanıcı haberleşirken kendi belirlemiş oldukları public değerleri kullanarak verileri taşırlar. Şüphesiz bu veriler taşınırken başkalarının eline geçmesin amaçlı bir durumdur.
+			-> Bu algoritmada asla asıl değer gönderilmez. Bunun yerine kullanıcıların kendi belirledikleri değerler gönderilir.
+			-> Bu algoritmada iki kullanıcı arası verilerin taşınması sırasıyla aşağıdaki gibi yapılacaktır.
+				-> İki kullanıcı da kendine özgü rastgele üretilmiş Private Key kullanır.. 
+				-> Kullanıcıların ortak kullanıcağı iki sayı belirlenir. Bunlardan biri asal sayı diğeri ise buna ait olan üretici sayıdır. Bu sayıların kullanıcılarda ortak olması olması önemli bir detaydır. 
+			        -> Bu değerler belirlendikten sonra  
 		- DSA(Digital Signature Algorithm)
 			
 		- RSA(Rivest - Shamir - Adleman) Algorithm
@@ -216,7 +222,23 @@ Bana desteklerini esirgemeyen danışman hocam Dr. Öğr. Gör. Uğur Kesen ve �
 			olduğundan dolayı asal çarpanlarını bulmak hiç de kolay değildi. Yarışma 2007 yılında bitti ve sadece 12 adet sayının asal çarpanları yarışmacılar tarafından tespit edilebildi.  
 			RSA algoritmasının güvenliği C++ kodu üzerinde tekrardan analiz edilecektir. 2020 yılında 11 tanesinin daha asal çarpanları bulundu ancak bunlar herhangi bir ödül almadı. 1991'den 2020 
                         senesine kadar iki asal sayının çarpımı şeklinde yazılabilen bulunabilmiş en büyük sayı 829 bitlik bir sayıdır. Bu da Şubat 2020 senesinde bulunmuştur. 29 yıl içerisinde 1024 bitlik sayı 
-                        hiçbir zaman çarpanlarına ayırılamadı. Buradan yola çıkarak 2002 yılına kadar RSA algoritmaları için tavsiye edilen ürün değeri 1024 bit olarak belirlenmişti ancak 2015 yılında itibaren bu sayı 2048 bite kadar çıkarıldı. 2048 bitlik ürün değeri içeren bir  
+                        hiçbir zaman çarpanlarına ayırılamadı. Buradan yola çıkarak 2002 yılına kadar RSA algoritmaları için tavsiye edilen ürün değeri 1024 bit olarak belirlenmişti ancak 2015 yılında itibaren bu 
+                        sayı 2048 bite kadar çıkarıldı. 2048 bitlik ürün değeri içeren bir ürün değerine sahip bir şifrelem yapılıyorsa bu verilerden yola çıkarak algoritmanın son derece güvenli olduğunu 
+                        söyleyebiliriz. RSA algoritması güvenliliği ve pek çok asimetrik algoritmaya kıyasla hızlı çalışması sebebiyle 5G ve Wireless teknolojilerinde verilerin taşınmasında çokça tercih edilen 
+                        bir veri şifreleme algoritmasıdır. 
+			-> RSA algoritmasının avantajları
+				-> Private Key kullanıldığından dolayı üçüncü kişilerin bu anahtarlara erişmesi mümkün olmadığından güvenilirdir.
+				-> DSA algoritmasına göre daha hızlı çalışmaktadır.
+				-> Data cannot be modified in transit(Veri taşınırken değiştirilemez.)
+				-> Proof of omners authenticity(Kullanıcı doğrulama özelliğine sahiptir.)
+			-> RSA algoritmasıyla ilgili daha önce yapılmış çalışmalar(Yazılmış makaleler veya Tezler)
+				-> Durai Raj Vincent tarafından yazılmış olan RSA ENCRYPTION ALGORITHM - A SURVEY ON ITS VARIOUS FORMS AND ITS SECURITY LEVEL isimli makalede RSA algoritmasının güvenlik seviyesi 
+				açısından incelenmiştir.
+				-> M. Preetha1 ve M. Nithya tarafından yazılmış olan A STUDY AND PERFORMANCE ANALYSIS OF RSA ALGORITHM makalesi
+				-> Xin Zhou ve Xiaofei Tang tarafından yazılmış olan Research and Implementation of RSA Algorithm for Encryption and Decryption isimli makale
+				2011 yılında yazılmış olan bu makale RSA algoritmasında şifrelenin nasıl yapıldığını güzel bir şekilde açıklamaktadır. Ben de yüksek lisans tezim için bu kaynaktan faydalandım.
+				-> 
+			
 		- Camellia
 5-) Algoritmaların Test Edilmesi
 	Algoritmaların test edilmesi noktasında ise github linkinde bulunan C++ programı kullanılacaktır. Bu bölümde github linkinde yer alan kodun açıklaması, algoritmaları nasıl test ettiği ve algoritmaların 
