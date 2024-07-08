@@ -195,11 +195,28 @@ Bana desteklerini esirgemeyen danışman hocam Dr. Öğr. Gör. Uğur Kesen ve �
 			-> Public Key değeri(E), koşulları sağlaması açısından 29 olarak alınır.
 			-> Private Key değeri(D), koşulları sağlaması açısından 41 olarak alınır.
 		Bu örnekte elde etmiş olduğumuz değerleri eğer şifrelemede kullanırsak:
-			-> Şifreleme 
+			-> RSA Algoritmasında Şifreleme 
 			   Mesaj ^ E MOD N = Cipher Text(Şifrelenmiş Yazı)
-			-> Deşifreleme
-			   Şifrelenmiş Mesaj ^ D MOD N = Mesaj
-			-> Örneğimizde 29 olarak belirlenen Public key(E) değeriyle şifreleme ve 41 olarak belirlenen Private Key değeri kullanılarak deşifreleme gerçekleştirilecektir. 
+			-> RSA Algoritmasında Deşifreleme
+			   Şifrelenmiş Mesaj ^ D MOD N = Plain Text(Deşifrelenmiş Mesaj)
+			-> Örneğimizde 29 olarak belirlenen Public key(E) değeriyle şifreleme ve 41 olarak belirlenen Private Key değeri kullanılarak deşifreleme gerçekleştirilecektir. Mesajın da 60 olduğu 
+			düşünüldüğünde aşağıdaki gibi işlemler yapılabilir:
+			(60 ^ 29) MOD 133 = 86 (Şifrelenmiş Mesaj / Cipher Text)
+			(86 ^ 41) MOD 133 = 60 (Deşifrelenmiş Mesaj / Plain Text)
+			Burada şüphesiz şifreleme için Private Key ve Deşifreleme için Public Key kullanımı söz konusu olabilirdi. Örneğin:
+			Plain Text ^ D MOD N = Cipher Text
+			Cipher Text ^ E MOD N = Plain Text 
+			şeklinde söylenebilir. Buna göre bir şifreleme ve deşifreleme yapılması durumunda:
+			(60 ^ 41) MOD 133 = 72 (Şifrelenmiş Mesaj / Cipher Text)
+			(72 ^ 29) MOD 133 = 60 (Deşifrelenmiş Mesaj / Plain Text)
+			Bu durum da gösteriyor ki asimetrik algoritmalarda 2 türlü şifrelem ve deşifreleme yapılması mümkündür. Sırasıyla önce Public Key sonrasında Private Key kullanılarak veya önce Private Key 
+                        sonrasında Public Key kullanılarak yapılan Şifreleme-Deşifreleme olabilir. 
+			-> RSA Algoritması ne kadar güvenli?
+			Algoritmanın yaratıcılara 1991 yılında bir yarışma düzenleyerek 54 adet sayının asal çarpanlarını bulan kişilere para ödülü vericeklerini söylediler. Bu sayılar son derece büyük sayılar 
+			olduğundan dolayı asal çarpanlarını bulmak hiç de kolay değildi. Yarışma 2007 yılında bitti ve sadece 12 adet sayının asal çarpanları yarışmacılar tarafından tespit edilebildi.  
+			RSA algoritmasının güvenliği C++ kodu üzerinde tekrardan analiz edilecektir. 2020 yılında 11 tanesinin daha asal çarpanları bulundu ancak bunlar herhangi bir ödül almadı. 1991'den 2020 
+                        senesine kadar iki asal sayının çarpımı şeklinde yazılabilen bulunabilmiş en büyük sayı 829 bitlik bir sayıdır. Bu da Şubat 2020 senesinde bulunmuştur. 29 yıl içerisinde 1024 bitlik sayı 
+                        hiçbir zaman çarpanlarına ayırılamadı. Buradan yola çıkarak 2002 yılına kadar RSA algoritmaları için tavsiye edilen ürün değeri 1024 bit olarak belirlenmişti ancak 2015 yılında itibaren bu sayı 2048 bite kadar çıkarıldı. 2048 bitlik ürün değeri içeren bir  
 		- Camellia
 5-) Algoritmaların Test Edilmesi
 	Algoritmaların test edilmesi noktasında ise github linkinde bulunan C++ programı kullanılacaktır. Bu bölümde github linkinde yer alan kodun açıklaması, algoritmaları nasıl test ettiği ve algoritmaların 
