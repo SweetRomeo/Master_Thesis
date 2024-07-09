@@ -128,13 +128,13 @@ Bana desteklerini esirgemeyen danışman hocam Dr. Öğr. Gör. Uğur Kesen ve �
 		verilerin taşınmasında özellikle verim kritik yerlerde tercih edilebilir. Verimin çok da önemli olmadığı alanlarda biraz daha büyük verilerin de taşınmasında kullanılabilir. Güvenliğin verimden 
                 çok daha önemli olduğu ayrıca bellek açısından bir problem yaşamıycağımız alanlar için büyük verilerin taşınmasında da kullanılabilir. Kısaca asimetrik algoritmalar simetriğe göre daha 
                  güvenilirdir ancak simetrik algoritmalara göre verimsizlerdir.
-                - Simetrik algoritma tipleri
+                - Asimetrik algoritma tipleri
 			- DSA
 			- RSA - Tavsiye edilen anahtar uzunluğu: 2048 bit
 			- Dh(Diffie-Helman)
 			- ECDSA
 			- ECDH
-		- Asimetrik algoritma tipleri
+		- Simetrik algoritma tipleri
 			- DES    56 bit anahtar
 			- RC4   128 bit anahtar
 			- 3DES  168 bit anahtar
