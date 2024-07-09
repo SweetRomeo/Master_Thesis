@@ -1,5 +1,8 @@
 Tez Konusu: 5G ve Wireless Teknolojilerinde kullanılan Şifreleme Algoritmaların Analizi
 
+İçindekiler:
+1-) Özet/ Abstract
+
 Tarih boyunca insanlar birbirlere gizli verileri gönderirken özellikle 3.kişilerin ellerine geçmemesini hedeflenmiştir.
 Söz konusu veriler gizlenirken geçmişten günümüze pek çok farklı yöntem kullanılmıştır. Buna verilebilecek en önemli örneklerden biri Almanların 2.Dünya savaşında haberleşmede kullanmış olduğu Enigma makinesidir. 
 Enigma her ne kadar şimdiki teknolojiye göre son derece kırılması kolay bir şifreleme sistemine sahipse de o dönem bilgisayarın henüz bulunmayışından dolayı çözmesi son derece zor bir algoritmaya
@@ -34,8 +37,6 @@ Burada C++ dilinin neden tercih edileceğinden bu tez kapsamında detaylı bir �
 ile birlikte çeşitli parametreler değiştirilerek(Şifrelenicek yazının uzunluğu, şifrelenecek dosya büyüklüğü vb.) hangi algoritma veya algoritmaların entegrasyon açısından 5G ve Wireless 
 teknolojilerine daha uygun olduğunun tespit edilip elde edilen sonuçlardan grafiğe dökülmüştür. Grafiğe dökülen sonuçlar son durumda değerlendirilip bir sonuca ulaşılmıştır. Sonuca ulaşılırken C++ programlama dilinin modern araçları kullanılarak algoritmaların çalışma hızı hesaplanmıştır. 
 
-İçindekiler:
-1-) Özet/ Abstract
 2-) Teşekkür
 Bana desteklerini esirgemeyen danışman hocam Dr. Öğr. Gör. Uğur Kesen ve çalışmakta olduğum Huawei Telekominikasyona tesekkür ederim.
 3-) Giriş
@@ -169,10 +170,14 @@ Bana desteklerini esirgemeyen danışman hocam Dr. Öğr. Gör. Uğur Kesen ve �
 		kullanılan bir 3.parti kütüphanedir.   
 		- OpenSSL Kütüphanesinde bulunan ve bu tez çalışmasında kullanılacak olan algoritmalar
 		Bunun yüksek lisans tez kapsamında OpenSSL kütüphanesinde bulunan algoritmalar incelenmiştir. Bu algoritmalardan C++ konu yazılırken de kullanılan 	
-		algoritmalar: AES, DSA, RSA, Chacha20, Dh, Camellia gibi algoritmalardır.
+		algoritmalar: AES, DSA, RSA, Chacha20, Dh, Camellia gibi algoritmalardır. Bu algoritmaların kullanıldığı C++ programı yazılmadan önce bu algoritmaları detaylı bir şekilde tanıyalım:
+		- DES()
 		- AES(Advanced Encryption Standard) Algorithm
 		AES algoritması, 2001 yılında ABD Ulusal Standart ve Teknoloji Enstitüsü(NIST) tarafından bulunan veri şifrelemede sıkça kullanılan simetrik bir şifreleme algoritmasıdır. Sadece public key 
-		kullanmasına karşın güvenilir simetrik algoritmalardan biridir. DES gibi
+		kullanmasına karşın güvenilir simetrik algoritmalardan biridir. Özellikle de DES algoritmasının kırılmasıyla birlikte bu algoritmanın bulunmasının yolu açılmıştır. Bu algoritma DES algoritmasına 
+		göre daha güvenilir olduğundan tercih edilmektedir. Günümüzde DES algoritması çok kullanılmaktadır bunun en önemli nedeni ise AES algoritmasına kıyasla yaklaşık olarak 6 kat daha hızlı 
+		çalışmaktadır. Buna göre veri güvenliğinin çok da önemli olmadığı hızın yani performansın önemli olduğu yerlerde DES algoritması tercih edilirken, performanstan çok veri güvenliğinin önemli olduğu 
+                alanlarda ise AES algoritması daha yaygın bir şekilde kullanılmaktadır.  
 		- Dh(Diffie - Hellman) Algorithm
 			-> İki kullanıcı haberleşirken kendi belirlemiş oldukları public değerleri kullanarak verileri taşırlar. Şüphesiz bu veriler taşınırken başkalarının eline geçmesin amaçlı bir durumdur.
 			-> Bu algoritmada asla asıl değer gönderilmez. Bunun yerine kullanıcıların kendi belirledikleri değerler gönderilir.
@@ -281,7 +286,11 @@ Bana desteklerini esirgemeyen danışman hocam Dr. Öğr. Gör. Uğur Kesen ve �
 		- Camellia
 5-) Algoritmaların Test Edilmesi
 	Algoritmaların test edilmesi noktasında ise github linkinde bulunan C++ programı kullanılacaktır. Bu bölümde github linkinde yer alan kodun açıklaması, algoritmaları nasıl test ettiği ve algoritmaların 
-	çözüm hızının nasıl hesaplandığı açıklacaktır. 
+	çözüm hızının nasıl hesaplandığı açıklacaktır.
+	- Test amaçlı yazılan C++ kodunda hangi algoritmalar yer alıyor hangileri yer almıyor? Neden?
+	Hep güvenilirlik olarak hem de efektif anlamda son derece önemli bir yere sahip olan AES algoritması şüphesiz ki bu test kodunda yer almaktadır. AES algoritmasının yanı sıra AES gibi simetrik ve aynı 
+       zamanda efektif bir algoritma olan DES algoritması da test kodunda yer almaktadır ancak 5G ve Wireless teknolojilerinde veri güvenliği biraz daha ön planda olduğundan dolayı bu alanda AES algoritmasının 
+       daha yaygın kullanıldığını da söylemek gerek. 
 6-) Test Caselere bağlı olarak sonuçların değerlendirilmesi
 	Bu bölümde şifrelenecek olan verilerdeki parametreler ile oynanarak elde edilecek olan sonuçlar analiz edilecektir.
 Burada bahsedilen test caselerin başında şifrelenecek verilerin tipleri gelmektedir. Şifrelenmesi düşünülen veri bir yazı bir dosya veya bir binary veri olabilir.
