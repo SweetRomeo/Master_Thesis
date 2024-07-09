@@ -1,6 +1,13 @@
 Tez Konusu: 5G ve Wireless Teknolojilerinde kullanılan Şifreleme Algoritmaların Analizi
 
 İçindekiler:
+1-) Makaledeki Kısaltmalar
+AES -> Advanced Encryption Standards
+RSA -> Rivest-Shamir-Adleman
+DES -> Data Encryption Standards
+RC4 -> Rivest Encryption 4 
+DSA -> Digital Signature Algorithm
+
 1-) Özet/ Abstract
 
 Tarih boyunca insanlar birbirlere gizli verileri gönderirken özellikle 3.kişilerin ellerine geçmemesini hedeflenmiştir.
@@ -295,7 +302,8 @@ Bana desteklerini esirgemeyen danışman hocam Dr. Öğr. Gör. Uğur Kesen ve �
 	Bu bölümde şifrelenecek olan verilerdeki parametreler ile oynanarak elde edilecek olan sonuçlar analiz edilecektir.
 Burada bahsedilen test caselerin başında şifrelenecek verilerin tipleri gelmektedir. Şifrelenmesi düşünülen veri bir yazı bir dosya veya bir binary veri olabilir.
 7-) Sonuç
-Oluşturulan farklı test caselerle(Verilerin uzunluk değişimleri, şifrelenecek olan verilerin tipleri vb.) birlikte durumlar incelenerek bir sonuca ulaşılacaktır. Elde edilen sonuçlardan bir grafik oluşturulup seçilebilirlik açısından 5G ve Wireless tarafına ne kadar uyumlu olan algoritma veya algoritmalar seçilecektir.
+Oluşturulan farklı test caselerle(Verilerin uzunluk değişimleri, şifrelenecek olan verilerin tipleri vb.) birlikte durumlar incelenerek bir sonuca ulaşılacaktır. Elde edilen sonuçlardan bir grafik oluşturulup 
+seçilebilirlik açısından 5G ve Wireless tarafına ne kadar uyumlu olan algoritma veya algoritmalar seçilecektir.
 8-) Kaynakça(Referanslar)  
 Bu bölümde atıf yapılacak olan yüksek lisans veya doktora tezleri yer alıcaktır. Ayrıca konu hakkında yazılmış olan makaler de gene bu alanda yer alacaktır.
 
