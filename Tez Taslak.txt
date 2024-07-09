@@ -200,10 +200,7 @@ Bana desteklerini esirgemeyen danışman hocam Dr. Öğr. Gör. Uğur Kesen ve �
 					G, X, P göz önüne alındığında, N'yi bulmak kolaydır.  
 					- Ayrık Logaritma:
 						• G, P, N göz önüne alındığında, X'i bulmak mümkün değil.
-						• Tek yöntem, mümkün olan her kombinasyonu denemektir. (yani kaba kuvvet)
-				
-		- DSA(Digital Signature Algorithm)
-			
+						• Tek yöntem, mümkün olan her kombinasyonu denemektir. (yani kaba kuvvet)	
 		- RSA(Rivest - Shamir - Adleman) Algorithm
 		RSA Algoritmasının bazı özellikleri aşağıdaki gibidir:
 			-> Bu algoritmanın adı aslında yaratıcısı olan Ron Rivest, Adi Shamir ve Leonard Adleman kişilerin soyadlarını almıştır.
@@ -263,8 +260,18 @@ Bana desteklerini esirgemeyen danışman hocam Dr. Öğr. Gör. Uğur Kesen ve �
 				-> M. Preetha1 ve M. Nithya tarafından yazılmış olan A STUDY AND PERFORMANCE ANALYSIS OF RSA ALGORITHM makalesi
 				-> Xin Zhou ve Xiaofei Tang tarafından yazılmış olan Research and Implementation of RSA Algorithm for Encryption and Decryption isimli makale
 				2011 yılında yazılmış olan bu makale RSA algoritmasında şifrelenin nasıl yapıldığını güzel bir şekilde açıklamaktadır. Ben de yüksek lisans tezim için bu kaynaktan faydalandım.
-				-> 
-			
+				-> Rajshahi Üniversitesinde Md. Ashraful Islam ve Touhidul Islam tarafından yazılan Secure Wireless Text Message Transmission with the Implementation of RSA Cryptographic Algorithm
+				isimli makalede RSA algoritması kullanılarak yapılan yazı şifrelemelerden bahsedilmiştir.
+				-> Bahal Bhiwani tarafından yazılan A Performance Analysis of DES and RSA Cryptography makalesi performans analizi açısından RSA ve DES algoritmalarını incelemektedir. 
+	        - DSA(Digital Signature Algorithm)
+			-> Bu bir asimetrik algoritmadır. Ancak RSA algoritmasının aksine bu algoritma anahtar değişikliği ve şifreleme yapamaz sadece imza oluşturup doğrulayabilir.
+			-> DSA iki temel özelliğe sahiptir, bunlar:
+				-> İmza oluşturma(Signature Generation): Bu özellikte girdi olarak mesajın yanı sıra bir private key, bir rastgele sayı ve DSA parametreleri alınır. Çıktı olarak elde edilecekler 
+                                ise imza  şeklinde olacaktır. 	
+				-> İmza Doğrulama(Signature Verification): Bu özellikte girdi olarak mesajla birlikte bir public key bir imza ve DSA parametreleri alınır. Çıktı olarak da 0 ve 1 diğer bir diyişle 
+                               True veya False değerleri elde edilir. 
+			-> Kısa bir özet geçmek gerekirse RSA algoritması şifreleme, imzalar ve anahtar değiştirme özelliklerinin tamamını barındırırken, DH algoritması yalnızca anahtar değişikliğini, DSA 
+                        algoritması ise sadece imzaları barındırır.
 		- Camellia
 5-) Algoritmaların Test Edilmesi
 	Algoritmaların test edilmesi noktasında ise github linkinde bulunan C++ programı kullanılacaktır. Bu bölümde github linkinde yer alan kodun açıklaması, algoritmaları nasıl test ettiği ve algoritmaların 
