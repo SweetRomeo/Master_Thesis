@@ -14,18 +14,21 @@ username veya password gibi güvenli taşınması gereken bir yazı veya en basi
 Bu tez çalışmasında verilerin şifrelenmesinde kullanılan söz konusu algoritmaların farklı durumlar için temelde performans olmak üzere birkaç açıdan incelenip sonuçların değerlendirilmesi hedeflenmektedir. 
 Bu değerlendirme işlemi yapılırken sadece veri şifreleme algoritmalarında değil ve aynı zamanda da güvenli socket programlamada kullanılan TLS/SSL gibi protokollerin de bulunduğu, son derece popüler 
 bir üçüncü parti kütüphane olan, OpenSSL kütüphanesi kullanılmıştır. 
-OpenSSL kütüphanesinde bulunan ve bu tez çalışması kapsamında incelenecek olan bazı algoritmalar: DSA, RSA, AES, Seed, Cast5, Dh, Camellia, Chacha20 şeklinde sıralanabilir. 
-Bu algoritmaları incelerken öncelikli kategori olarak incelenmesi son derece önemlidir. 
+OpenSSL kütüphanesinde bulunan ve bu tez çalışması kapsamında incelenecek olan bazı algoritmalar: DSA, RSA, AES, Seed, Cast5, Dh, Camellia, Chacha20 şeklinde sıralanabilir.
+Bu yüksek lisana tezi kapsamında sıralanan algoritmaların çalışma prensipleri detaylı bir şekilde açıklanacaktır. Bu sayede konu hakkında hiçbir bilgisi olmayan biri bile bu yüksek lisans tezini okuyarak konuyu 
+anlayabilecektir. Bu algoritmaları incelerken öncelikli kategori olarak incelenmesi son derece önemlidir. 
 Kategori kapsamında ele alınacak kısımlar ise kullanılacak olan algoritmaların hangilerinin simetrik hangilerinin asimetrik olmasına bağlı olarak kullandıkları private mı public mi olmasının incelenmesi ve elde 
-edilen sonuçların  değerlendirilmesi yapılmıştır. 
+edilen sonuçların değerlendirilmesi yapılmıştır. 
 Private Key kullanan algoritmalar çoğunlukla public key kullanan algoritmalara göre daha güvenli olsa da durum her zaman böyle değildir. Bu tez çalışması kapsamında 5G teknolojilerinde yazı, bitsel veri veya 
 dosya taşınmasında hangi şifreleme 
 algoritmalarının daha verimli, uyumlu ve güvenilir olduğu incelenerek değerlendirilecektir. Burada değerlendirilecek parametrelerden en önemlisi incelenecek algoritmaların güvenlik açısından yeterliliğidir. 
 Bunun nedeni bu tarz gizli verilerin üçüncü şahısların eline geçmesi durumunda hem KVKK'nın ihlal durumu söz konusu olabilir aynı zamanda da bu verilerin kötüye kullanımı durumunda hem 
-kişilere hem de kurumlara ciddi sonuçlar da meydana gelebilir. İkinci önemli parametre ise şüphesiz ki verimliliktir çünkü, algoritmaların sadece kırılması zor olması özellikle söz konusu 5G ve Wireless 
-teknolojileri olduğunda tek başına yeterli değildir. 
+kişilere hem de kurumlara ciddi sonuçlar da meydana gelebilir. Bu kapsamda algoritmaların bize sunduğu hizmetler son derece önemli bir yere sahiptir. Bazı algoritmalar çok daha karmaşık anahtarlar kullanırken 
+bazı algoritmalar anlaşılması çok daha kolay anahtar değerleri kullanmaktadır. Bu durum da gene algoritmaların seçilebilirliğini doğrudan etkilemektedir. İkinci önemli parametre ise şüphesiz ki verimliliktir 
+çünkü, algoritmaların sadece kırılması zor olması özellikle söz konusu 5G ve Wireless teknolojileri olduğunda tek başına yeterli değildir. 
 Kırılmasının zor olmasının yanında Baz istasyonlarında olmazsa olmaz bir eleman olan BBU bölümünün bellek alanı şüphesiz ki sınırlı ve efektif kullanımı gerektiğinden dolayı, algoritmaların 
-en az güvenliği kadar verimliliği ve hızı da son derece önemli parametrelerdir. 
+en az güvenliği kadar verimliliği ve hızı da son derece önemli parametrelerdir. Kısaca özetlemek gerekirse hem 3.kişiler tarafından kolay bulunamayacak hem sınırlı bellek alanımız için sorun çıkarmayacak hem de 
+kullanıcıya sunduğu hizmet açısından yeterli olacak algoritmalar diğerlerinden daha üstün olarak bu yüksek lisans tezi kapsamında değerlendirilmiştir.
 Bu tez çalışmasında söz konusu analizler yapılırken C++ programlama dilinin özellikleri yoğun bir şekilde kullanılarak sonuçlar olabildiğince kesine yakın bir şekilde elde edilecektir. 
 Burada C++ dilinin neden tercih edileceğinden bu tez kapsamında detaylı bir şekilde bahsedilecektir. Özetle bu tez kapsamında OpenSSL üçüncü parti kütüphanesinin C++ diline entegrasyonu 
 ile birlikte çeşitli parametreler değiştirilerek(Şifrelenicek yazının uzunluğu, şifrelenecek dosya büyüklüğü vb.) hangi algoritma veya algoritmaların entegrasyon açısından 5G ve Wireless 
