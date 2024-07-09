@@ -209,6 +209,8 @@ Bana desteklerini esirgemeyen danışman hocam Dr. Öğr. Gör. Uğur Kesen ve �
 		RSA Algoritmasının bazı özellikleri aşağıdaki gibidir:
 			-> Bu algoritmanın adı aslında yaratıcısı olan Ron Rivest, Adi Shamir ve Leonard Adleman kişilerin soyadlarını almıştır.
 			-> En yaygın şifreleme algoritmalarından biridir.
+			-> Asimetrik bir şifreleme algoritmasıdır.
+			-> Asal çarpanlara dayalı bir şifreleme prensibine sahiptir.
 			-> Bu algoritmada iki farklı anahtar oluşturulur. Bu anahtarlardan biri şifreleme için kullanılırken diğeri deşifreleme için kullanılır.
 		Her algoritmada olduğu gibi RSA algoritmasında da bir anahtar üretimi söz konusudur. Anahtar üretilirken belli başlı adımlar bulunmaktadır.
 			-> İki adet asal sayı seçilir. Seçilen asal sayıların (P, Q) olsun.
