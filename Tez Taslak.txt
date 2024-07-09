@@ -171,7 +171,8 @@ Bana desteklerini esirgemeyen danışman hocam Dr. Öğr. Gör. Uğur Kesen ve �
 		Bunun yüksek lisans tez kapsamında OpenSSL kütüphanesinde bulunan algoritmalar incelenmiştir. Bu algoritmalardan C++ konu yazılırken de kullanılan 	
 		algoritmalar: AES, DSA, RSA, Chacha20, Dh, Camellia gibi algoritmalardır.
 		- AES(Advanced Encryption Standard) Algorithm
-		AES algoritması, 2001 yılında ABD Ulusal Standart ve Teknoloji Enstitüsü(NIST) tarafından bulunan veri şifrelemede sıkça kullanılan simetrik bir şifreleme algoritmasıdır.
+		AES algoritması, 2001 yılında ABD Ulusal Standart ve Teknoloji Enstitüsü(NIST) tarafından bulunan veri şifrelemede sıkça kullanılan simetrik bir şifreleme algoritmasıdır. Sadece public key 
+		kullanmasına karşın güvenilir simetrik algoritmalardan biridir. 
 		- Dh(Diffie - Hellman) Algorithm
 			-> İki kullanıcı haberleşirken kendi belirlemiş oldukları public değerleri kullanarak verileri taşırlar. Şüphesiz bu veriler taşınırken başkalarının eline geçmesin amaçlı bir durumdur.
 			-> Bu algoritmada asla asıl değer gönderilmez. Bunun yerine kullanıcıların kendi belirledikleri değerler gönderilir.
