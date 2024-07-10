@@ -190,6 +190,15 @@ Bana desteklerini esirgemeyen danışman hocam Dr. Öğr. Gör. Uğur Kesen ve �
                 alanlarda ise AES algoritması daha yaygın bir şekilde kullanılmaktadır. Bu algoritmada private key uzunlukları değişiklik gösterebilir. Örneğin 128 bit, 192 bit veya 256 bitlik private keyler ile 
                 bu algoritma kullanılabilir. Şüphesiz anahtar uzunluğu arttıkça algoritmanın çözülmesi de zorlaşmakla birlikte üretim aşaması dolasıyla verimi de düşmektedir.
 		- Seed 
+			-> Seed algoritması 1998 yılından KISA(Korean Internet & Security Agency) ve bir grup uzman tarafından geliştirilen 128 bitlik simetrik bir algoritmadır. 
+			-> Bu algoritma Güney Kore'de pek çok güvenlik sisteminde kullanılmıştır.
+			-> Bu algoritmanın kısaca teknik özelliklerini sıralamak gerekirse:
+				-> 16 Round Feistel yapısına sahiptir.
+				-> 128 bit giriş/ çıkış veri bloğu boyutundadır.
+				-> 128 bitlik anahtar uzunluğuna sahiptir.
+				-> Bilinen saldırılara karşı güçlüdür.
+				-> İki adet 8 x 8 S-box kullanır.
+				-> XOR ve modüler eklemede karmaşıktır.
 		- Dh(Diffie - Hellman) Algorithm
 			-> İki kullanıcı haberleşirken kendi belirlemiş oldukları public değerleri kullanarak verileri taşırlar. Şüphesiz bu veriler taşınırken başkalarının eline geçmesin amaçlı bir durumdur.
 			-> Bu algoritmada asla asıl değer gönderilmez. Bunun yerine kullanıcıların kendi belirledikleri değerler gönderilir.
