@@ -189,6 +189,9 @@ Bana desteklerini esirgemeyen danışman hocam Dr. Öğr. Gör. Uğur Kesen ve �
 		çalışmaktadır. Buna göre veri güvenliğinin çok da önemli olmadığı hızın yani performansın önemli olduğu yerlerde DES algoritması tercih edilirken, performanstan çok veri güvenliğinin önemli olduğu 
                 alanlarda ise AES algoritması daha yaygın bir şekilde kullanılmaktadır. Bu algoritmada private key uzunlukları değişiklik gösterebilir. Örneğin 128 bit, 192 bit veya 256 bitlik private keyler ile 
                 bu algoritma kullanılabilir. Şüphesiz anahtar uzunluğu arttıkça algoritmanın çözülmesi de zorlaşmakla birlikte üretim aşaması dolasıyla verimi de düşmektedir.
+		AES algoritmasında yazı şifrelenirken sırasıyla aşağıdaki adımlar aşağıdaki gibidir:
+			-> Şifrelenecek olan veri bir matris haline getirilir. Örneğin 128 bitlik bir anahtar kullanılmak isteniyorsa bu durumda 4x4'lük bir matris kullanılır. Burada matrisin her bir elemanı 8 
+                        bit olarak kabul edildiği takdirde 16x8 = 128 bit sonucu elde edilir. 4x4'lük bir matris için her sütun bir kelimeyi ifade ederken her bir kelime de 32 bit demektir.   
 		- Seed 
 			-> Seed algoritması 1998 yılından KISA(Korean Internet & Security Agency) ve bir grup uzman tarafından geliştirilen 128 bitlik simetrik bir algoritmadır. 
 			-> Bu algoritma Güney Kore'de pek çok güvenlik sisteminde kullanılmıştır.
