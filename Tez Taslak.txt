@@ -7,6 +7,7 @@ RSA -> Rivest-Shamir-Adleman
 DES -> Data Encryption Standards
 RC4 -> Rivest Encryption 4 
 DSA -> Digital Signature Algorithm
+DH -> Diffie-Helman
 
 1-) Özet/ Abstract
 
@@ -148,6 +149,7 @@ Bana desteklerini esirgemeyen danışman hocam Dr. Öğr. Gör. Uğur Kesen ve �
 			- 3DES  168 bit anahtar
 			- AES   128, 192 veya 256 bit anahtar
 			- ChaCha20   128 veya 256 bit anahtar 
+                        - Seed 
 		- Private/Public Key
 		Asimetrik algoritmalarda hem Prıvate key hem de public key kullanılırken simetrik algoritmalarda sadece public key kullanıldığını daha önce söylemiştik. Private key sadece kullanıcılar tarafından
                 bilinen anahtarlardır. Örneğin  Bu da demek oluyor ki dünyada o kişiden başkası o public keye ait olan private keye sahip olmadığı için o veriyi deşifre edemez. Kısaca private key kişiye özgüdür. 
@@ -178,13 +180,16 @@ Bana desteklerini esirgemeyen danışman hocam Dr. Öğr. Gör. Uğur Kesen ve �
 		- OpenSSL Kütüphanesinde bulunan ve bu tez çalışmasında kullanılacak olan algoritmalar
 		Bunun yüksek lisans tez kapsamında OpenSSL kütüphanesinde bulunan algoritmalar incelenmiştir. Bu algoritmalardan C++ konu yazılırken de kullanılan 	
 		algoritmalar: AES, DSA, RSA, Chacha20, Dh, Camellia gibi algoritmalardır. Bu algoritmaların kullanıldığı C++ programı yazılmadan önce bu algoritmaları detaylı bir şekilde tanıyalım:
-		- DES()
+		- DES(Data Encryption Standards)
+                
 		- AES(Advanced Encryption Standard) Algorithm
 		AES algoritması, 2001 yılında ABD Ulusal Standart ve Teknoloji Enstitüsü(NIST) tarafından bulunan veri şifrelemede sıkça kullanılan simetrik bir şifreleme algoritmasıdır. Sadece public key 
 		kullanmasına karşın güvenilir simetrik algoritmalardan biridir. Özellikle de DES algoritmasının kırılmasıyla birlikte bu algoritmanın bulunmasının yolu açılmıştır. Bu algoritma DES algoritmasına 
 		göre daha güvenilir olduğundan tercih edilmektedir. Günümüzde DES algoritması çok kullanılmaktadır bunun en önemli nedeni ise AES algoritmasına kıyasla yaklaşık olarak 6 kat daha hızlı 
 		çalışmaktadır. Buna göre veri güvenliğinin çok da önemli olmadığı hızın yani performansın önemli olduğu yerlerde DES algoritması tercih edilirken, performanstan çok veri güvenliğinin önemli olduğu 
-                alanlarda ise AES algoritması daha yaygın bir şekilde kullanılmaktadır.  
+                alanlarda ise AES algoritması daha yaygın bir şekilde kullanılmaktadır. Bu algoritmada private key uzunlukları değişiklik gösterebilir. Örneğin 128 bit, 192 bit veya 256 bitlik private keyler ile 
+                bu algoritma kullanılabilir. Şüphesiz anahtar uzunluğu arttıkça algoritmanın çözülmesi de zorlaşmakla birlikte üretim aşaması dolasıyla verimi de düşmektedir.
+		- Seed 
 		- Dh(Diffie - Hellman) Algorithm
 			-> İki kullanıcı haberleşirken kendi belirlemiş oldukları public değerleri kullanarak verileri taşırlar. Şüphesiz bu veriler taşınırken başkalarının eline geçmesin amaçlı bir durumdur.
 			-> Bu algoritmada asla asıl değer gönderilmez. Bunun yerine kullanıcıların kendi belirledikleri değerler gönderilir.
