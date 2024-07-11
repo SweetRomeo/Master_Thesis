@@ -180,7 +180,8 @@ Bana desteklerini esirgemeyen danışman hocam Dr. Öğr. Gör. Uğur Kesen ve �
 			
 		- OpenSSL Kütüphanesi
 		OpenSSL Kütüphanesi TLS ve SSL gibi haberleşme protokollerinin yanı sıra Asimetrik ve simetrik şifreleme algoritmalarını içeren başta haberleşme alanı olmak üzere pek alanda son derece sık 
-		kullanılan bir 3.parti kütüphanedir.   
+		kullanılan bir 3.parti kütüphanedir. SSL ve TLS gibi kullanıcı internette gezinirken bir tünel görevi görmektedir. Örneğin veriler serverdan clienta taşındığı sırada verinin güvenliği tahlikede 
+                olabilir. Bunun sebebi verinin nasıl bir yol izlediğinin net bilinememesi ve taşınma sırasında 3.kişilerin eline geçme tehlikesidir.   
 		- OpenSSL Kütüphanesinde bulunan ve bu tez çalışmasında kullanılacak olan algoritmalar
 		Bunun yüksek lisans tez kapsamında OpenSSL kütüphanesinde bulunan algoritmalar incelenmiştir. Bu algoritmalardan C++ konu yazılırken de kullanılan 	
 		algoritmalar: AES, DSA, RSA, Chacha20, Dh, Camellia gibi algoritmalardır. Bu algoritmaların kullanıldığı C++ programı yazılmadan önce bu algoritmaları detaylı bir şekilde tanıyalım:
@@ -312,6 +313,9 @@ Bana desteklerini esirgemeyen danışman hocam Dr. Öğr. Gör. Uğur Kesen ve �
 			-> Kısa bir özet geçmek gerekirse RSA algoritması şifreleme, imzalar ve anahtar değiştirme özelliklerinin tamamını barındırırken, DH algoritması yalnızca anahtar değişikliğini, DSA 
                         algoritması ise sadece imzaları barındırır.
 		- Camellia
+			-> NTT Grup ve Mitsubishi Elektrik Corporation tarafından 2000 yılında bulunan popüler simetrik algoritmalardan biridir.
+			-> ISo/IEC, NESSIE projesi ve Japon CRYPTREC projeleri tarafından onaylanmıştır.
+			-> 2006 yılından bu yana OpenSSL kütüphanesinde bulunmaktadır.
 5-) Algoritmaların Test Edilmesi
 	Algoritmaların test edilmesi noktasında ise github linkinde bulunan C++ programı kullanılacaktır. Bu bölümde github linkinde yer alan kodun açıklaması, algoritmaları nasıl test ettiği ve algoritmaların 
 	çözüm hızının nasıl hesaplandığı açıklacaktır.
