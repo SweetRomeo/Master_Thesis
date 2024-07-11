@@ -55,9 +55,10 @@ Bana desteklerini esirgemeyen danışman hocam Dr. Öğr. Gör. Uğur Kesen ve �
         teknoloji ise interneti bulunmasıyla birlikte gelişimi hızlanan 3G teknolojisidir. Internet günümüzde son derece önemli bir yere sahip olmasına karşın faydanın yanında güvenlik tehlikesini de beraberinde 
         getirmektedir. Bu sebeplerden dolayı verilerin güvenliğinin güvenliklerinin sağlanması için çeşitli yöntemler kullanılmaya başlandı. Bu yöntemlerden biri de şüphesiz veri şifrelemede kullanılan 
         algoritmalardır. Bu tez çalışması da temelde bu 
-	algoritmaların günümüz teknolojisinde son derece önemli bir yer sahip olan Wireless ve 5G teknolojilerinde kullanılan şifreleme algoritmalarını incelemektedir. Yapılan incelemeler sonucunda da hangi 
+	algoritmaların günümüz teknolojisinde son derece önemli bir yere sahip olan Wireless ve 5G teknolojilerinde kullanılan şifreleme algoritmalarını incelemektedir. Yapılan incelemeler sonucunda da hangi 
         algoritmanın uygunluk açısından Wireless ve 5G  teknolojilerine daha uygun olduğunun bulunmasıdır. Bunu yaparken algoritmanın verimliliği güvenilirliği temelde önemli iki parametre olacaktır. Testler 
-        yapılırken şifrelenecek verinin uzunluğu karmaşıklığı gibi farklı durumları incelenerek bir sonuca ulaşılacaktır. 
+        yapılırken şifrelenecek verinin uzunluğu karmaşıklığı gibi farklı durumları incelenerek bir sonuca ulaşılmıştır. Yapılan değerlendirmeler sonucunda algoritmalara ait farklı veriler farklı grafiklere 
+        dökülerek analiz edilecektir. Bunu yaparken günümüzde son derece popüler bir programlama dili olan C++ dili kullanılacaktır. C++ 'ın yanı sıra OpenSSL ... 
 	- Tezin literatür katkısı ve yenilikleri
 	Her ne kadar veri şifreleme algoritmalarının incelesinin yapıldığı tezler ve makaleler 
 	- Daha önceden bu konuda yapılmış olan çalışmaların incelenmesi
