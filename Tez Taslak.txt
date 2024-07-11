@@ -49,11 +49,15 @@ teknolojilerine daha uygun olduğunun tespit edilip elde edilen sonuçlardan gra
 Bana desteklerini esirgemeyen danışman hocam Dr. Öğr. Gör. Uğur Kesen ve çalışmakta olduğum Huawei Telekominikasyona tesekkür ederim.
 3-) Giriş
 	- Problemin tanımı ve Analizi
-	geçmişten günümüze veri güvenlik pek çok farklı alanda son derece önemlidir. Mobil cihazların hayatımıza girişiyle beraber Cloud teknolojileri gibi verilerin depo edilmesinde kullanılan pek çok farklı 
-	yöntem de hayatımıza girmiş oldu. Bu geliş her ne kadar çoğu açıdan iyi olsa da bu tarz depolama alanlarının hayatımıza girişiyle birlikte veri güvenliği tehlikesi de aynı oranda artmıştır. Bundan dolayı 
-	verilerin güvenliğinin güvenliklerinin sağlanması için çeşitli yöntemler kullanılmaya başlandı. Bu yöntemlerden biri de şüphesiz veri şifrelemede kullanılan algoritmalardır. Bu tez çalışması da temelde bu 
-	algoritmaların günümüz teknolojisinde son derece önemli bir yer sahip olan 5G teknolojisinde kullanılan şifreleme algoritmalarını incelemektedir. Yapılan incelemeler sonucunda da hangi algoritmanın 
-	uygunluk açısından Wireless ve 5G  teknolojilerine daha uygun olduğunun bulunmasıdır. 
+	Geçmişten günümüze veri güvenliği pek çok farklı alanda son derece önemli olmuştur. Mobil cihazların hayatımıza girişiyle beraber Cloud teknolojileri gibi verilerin depo edilmesinde kullanılan pek çok farklı 
+	yöntem de hayatımıza girmiş oldu. Cloud teknolojisinin yanı sıra verilerin mobil cihazlar arasında taşınmasında kullanılan Wireless teknolojisi hayatımıza girmiştir. Bu sözü edilen gelişmeler her ne kadar 
+        pek çok  açıdan iyi olsa da bu tarz depolama alanları ve cihazlar arası veri tanışmasının hayatımıza girişiyle birlikte veri güvenliği tehlikesi de aynı oranda artmıştır. Hayatımıza giren diğer bir önemli 
+        teknoloji ise interneti bulunmasıyla birlikte gelişimi hızlanan 3G teknolojisidir. Internet günümüzde son derece önemli bir yere sahip olmasına karşın faydanın yanında güvenlik tehlikesini de beraberinde 
+        getirmektedir. Bu sebeplerden dolayı verilerin güvenliğinin güvenliklerinin sağlanması için çeşitli yöntemler kullanılmaya başlandı. Bu yöntemlerden biri de şüphesiz veri şifrelemede kullanılan 
+        algoritmalardır. Bu tez çalışması da temelde bu 
+	algoritmaların günümüz teknolojisinde son derece önemli bir yer sahip olan Wireless ve 5G teknolojilerinde kullanılan şifreleme algoritmalarını incelemektedir. Yapılan incelemeler sonucunda da hangi 
+        algoritmanın uygunluk açısından Wireless ve 5G  teknolojilerine daha uygun olduğunun bulunmasıdır. Bunu yaparken algoritmanın verimliliği güvenilirliği temelde önemli iki parametre olacaktır. Testler 
+        yapılırken şifrelenecek verinin uzunluğu karmaşıklığı gibi farklı durumları incelenerek bir sonuca ulaşılacaktır. 
 	- Tezin literatür katkısı ve yenilikleri
 	Her ne kadar veri şifreleme algoritmalarının incelesinin yapıldığı tezler ve makaleler 
 	- Daha önceden bu konuda yapılmış olan çalışmaların incelenmesi
