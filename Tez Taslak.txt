@@ -317,6 +317,9 @@ Bana desteklerini esirgemeyen danışman hocam Dr. Öğr. Gör. Uğur Kesen ve �
 			-> NTT Grup ve Mitsubishi Elektrik Corporation tarafından 2000 yılında bulunan popüler simetrik algoritmalardan biridir.
 			-> ISo/IEC, NESSIE projesi ve Japon CRYPTREC projeleri tarafından onaylanmıştır.
 			-> 2006 yılından bu yana OpenSSL kütüphanesinde bulunmaktadır.
+	- OpenSSL kütüphanesi C++ programlama dilinde nasıl kullanılıyor? 
+		Burada bahsedilen algoritmaların OpenSSL kütüphanesinin C++ programlama dilinde kullanımıyla birlikte elde edilecek olan sonuçların analizi analizini temel alarak yapılacaktır. OpenSSL 
+                kütüphanesinin algoritmayla birlikte aynı zamanda anahtar oluşturma yapısına da sahiptir. Bu anahtar isteğe bağlı olarak public key veya private key olabilir. 
 5-) Algoritmaların Test Edilmesi
 	Algoritmaların test edilmesi noktasında ise github linkinde bulunan C++ programı kullanılacaktır. Bu bölümde github linkinde yer alan kodun açıklaması, algoritmaları nasıl test ettiği ve algoritmaların 
 	çözüm hızının nasıl hesaplandığı açıklacaktır.
@@ -326,7 +329,7 @@ Bana desteklerini esirgemeyen danışman hocam Dr. Öğr. Gör. Uğur Kesen ve �
        daha yaygın kullanıldığını da söylemek gerek. 
 6-) Test Caselere bağlı olarak sonuçların değerlendirilmesi
 	Bu bölümde şifrelenecek olan verilerdeki parametreler ile oynanarak elde edilecek olan sonuçlar analiz edilecektir.
-Burada bahsedilen test caselerin başında şifrelenecek verilerin tipleri gelmektedir. Şifrelenmesi düşünülen veri bir yazı bir dosya veya bir binary veri olabilir.
+	Burada bahsedilen test caselerin başında şifrelenecek verilerin tipleri gelmektedir. Şifrelenmesi düşünülen veri bir yazı bir dosya veya bir binary veri olabilir.
 7-) Sonuç
 Oluşturulan farklı test caselerle(Verilerin uzunluk değişimleri, şifrelenecek olan verilerin tipleri vb.) birlikte durumlar incelenerek bir sonuca ulaşılacaktır. Elde edilen sonuçlardan bir grafik oluşturulup 
 seçilebilirlik açısından 5G ve Wireless tarafına ne kadar uyumlu olan algoritma veya algoritmalar seçilecektir.
