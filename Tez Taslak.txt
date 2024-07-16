@@ -106,7 +106,7 @@ Bana desteklerini esirgemeyen danışman hocam Dr. Öğr. Gör. Uğur Kesen ve �
 		- 5G ve Wireless Nedir?
 		- IoT cihazlarda 5G teknolojisinin önemi
 		- BBU ve RRU Nedir?
-		Baz istasyonlarında 2 temel komponent bulunmaktadır. Bunlar BBU ve RRU'dur. Sinyal almaya yarıyan baz istasyonu bölümüne RRU denir. 
+		Baz istasyonlarında 2 temel komponent bulunmaktadır. Bunlar BBU ve RRU'dur. Sinyal almaya yarıyan baz istasyonu bölümüne RRU denir. Baz istasyonunun BBU bölümü ise yazılımın yüklendiği bölümdür. Bu nerdeyse 
 		- Simetrik ve Asimetrik Veri şifreleme Algoritmaları
 		Temelde şifreleme deşifrelemede aynı anahtarın kullanıldığı algoritmalara simetrik algoritma ve hep şifreleme hem de deşifreleme işlemi için farklı şifreleme anahtarının kullanıldığı algoritmalara 
 	        asimetrik algoritma adı verilir. 
