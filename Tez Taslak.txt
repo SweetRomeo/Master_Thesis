@@ -295,7 +295,7 @@ Bana desteklerini esirgemeyen danışman hocam Dr. Öğr. Gör. Uğur Kesen ve �
 			RSA algoritmasının güvenliği C++ kodu üzerinde tekrardan analiz edilecektir. 2020 yılında 11 tanesinin daha asal çarpanları bulundu ancak bunlar herhangi bir ödül almadı. 1991'den 2020 
                         senesine kadar iki asal sayının çarpımı şeklinde yazılabilen bulunabilmiş en büyük sayı 829 bitlik bir sayıdır. Bu da Şubat 2020 senesinde bulunmuştur. 29 yıl içerisinde 1024 bitlik sayı 
                         hiçbir zaman çarpanlarına ayırılamadı. Buradan yola çıkarak 2002 yılına kadar RSA algoritmaları için tavsiye edilen ürün değeri 1024 bit olarak belirlenmişti ancak 2015 yılında itibaren bu 
-                        sayı 2048 bite kadar çıkarıldı. 2048 bitlik ürün değeri içeren bir ürün değerine sahip bir şifrelem yapılıyorsa bu verilerden yola çıkarak algoritmanın son derece güvenli olduğunu 
+                        sayı 2048 bite kadar çıkarıldı. 2048 bitlik ürün değeri içeren bir ürün değerine sahip bir şifreleme yapılıyorsa bu verilerden yola çıkarak algoritmanın son derece güvenli olduğunu 
                         söyleyebiliriz. RSA algoritması güvenliliği ve pek çok asimetrik algoritmaya kıyasla hızlı çalışması sebebiyle 5G ve Wireless teknolojilerinde verilerin taşınmasında çokça tercih edilen 
                         bir veri şifreleme algoritmasıdır. 
 			-> RSA algoritmasının avantajları
