@@ -1,7 +1,7 @@
 Tez Konusu: 5G ve Wireless Teknolojilerinde kullanılan Şifreleme Algoritmaların Analizi
 
 İçindekiler:
-1-) Makaledeki Kısaltmalar
+1-) Yüksek Lisans Tezindeki Kısaltmalar
 AES -> Advanced Encryption Standards
 RSA -> Rivest-Shamir-Adleman
 DES -> Data Encryption Standards
@@ -60,8 +60,16 @@ Bana desteklerini esirgemeyen danışman hocam Dr. Öğr. Gör. Uğur Kesen ve �
         yapılırken şifrelenecek verinin uzunluğu karmaşıklığı gibi farklı durumları incelenerek bir sonuca ulaşılmıştır. Yapılan değerlendirmeler sonucunda algoritmalara ait farklı veriler farklı grafiklere 
         dökülerek analiz edilecektir. Bunu yaparken günümüzde son derece popüler bir programlama dili olan C++ dili kullanılacaktır. C++ 'ın yanı sıra OpenSSL ... 
 	- Tezin literatür katkısı ve yenilikleri
-	Her ne kadar veri şifreleme algoritmalarının incelesinin yapıldığı tezler ve makaleler 
+	Her ne kadar veri şifreleme algoritmalarının incelemesinin yapıldığı tezler ve makaleler bu zamana kadar yazılmış olsa da daha önce bu algoritmalarının incelemesini doğrudan 5G ve Wireless teknolojileri 
+        üzerinden yapan detaylı bir yüksek lisans tezi ortaya konulamamıştır. Bu noktada hayata geçirmiş olduğum bu yüksek lisans tez çalışmasında araştırmacılara veya bu alanda daha da ilerleyip doktora 
+        düzeyinde bir makale ortaya koymak isteyen doktora öğrencilerine destek olmak için önemli yere sahip olacaktır. Bu alanda çalışma yapıcak kişilerin yanı sıra sektörde haberleşme alanında çalışan firma 
+        çalışanların da bu alanda bilgi sahibi olmasına da olanak sağlayacaktır. Bununla birlikte firmaların da bu sektördeki muhtemel büyümeleri hızlanacaktır. Ülkemiz açısından bakıldığında ise, 5G teknoloji 
+        çok az oranda kullanılmasının bir nedeni de veri güvenliğinin nasıl sağlanılacağının tam olarak bilinmesinden kaynaklanmaktadır. Bu düşünüldüğünde de bu yüksek lisans tez çalışmasıyla birlikte güvenlik 
+        tarafı da Türkiye'deki firmalarca daha net bir şekilde anlaşılması mümkün olabilir. Kısaca bu yüksek lisans tez çalışması hem akademik hem sektörel anlamda son derece önemli bir literatür katkısı ve 
+        yenilik ortaya koyacaktır.
 	- Daha önceden bu konuda yapılmış olan çalışmaların incelenmesi
+		- 
+		- 
 4-) Arkaplan bilgiler
 	- Neden C++ dili kullaniliyor?
 		C++ dili son derece zor ve karmaşık bir dil olmasına rağmen programlama dillerinin reytinglerini karşılaştıran en popüler web sitelerinden biri olan Tiobe index'de ikinic sıraya yükselmiştir. Bu da 
