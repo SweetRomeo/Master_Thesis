@@ -20,7 +20,7 @@ cihazlar 5000 Mbps hıza ulaşmıştır. Bunun en önemli katkılarından biri 5
 Günümüzde 5G teknolojisi başta Çin olmak üzere pek çok baz istasyonunda kullanılmaktadır. 5G teknolojisinin sık kullanımıyla birlikte
 Huawei, Ulak, Ericsson ve benzeri firmalar, baz istasyonları yoluyla haberleşen çeşitli cihazların çeşitli verilerini almayı hedeflemektedir. 
 Söz konusu veriler alınırken bu verilerin üçüncü kişilerin eline geçmemesi başta KVKK(Kişisel Verilerin Korunumu Kanunu) ihlali olmak üzere pek çok açıdan son derece önemlidir. 
-Bu sebeple telekominikasyon firmaları bu verilerin şifrelenmesinde çeşitli algoritmalar kullanmaktadır. Şifrelenmesi hedeflenen bu veriler FTP(File Transfer Protocol) ile taşınacak olan dosyalar, login aşamasında kullanılancak olan 
+Bu sebeple telekominikasyon firmaları bu verilerin şifrelenmesinde çeşitli algoritmalar kullanmaktadır. Şifrelenmesi hedeflenen bu veriler FTP(File Transfer Protocol) ile taşınacak olan dosyalar, login aşamasında kullanılacak olan 
 username veya password gibi güvenli taşınması gereken bir yazı veya en basitinden çeşitli cihazların baz istasyonlarına gönderdiği veya aldığı bir binary veri olabilir. 
 Bu tez çalışmasında verilerin şifrelenmesinde kullanılan söz konusu algoritmaların farklı durumlar için temelde performans olmak üzere birkaç açıdan incelenip sonuçların değerlendirilmesi hedeflenmektedir. 
 Bu değerlendirme işlemi yapılırken sadece veri şifreleme algoritmalarında değil ve aynı zamanda da güvenli socket programlamada kullanılan TLS/SSL gibi protokollerin de bulunduğu, son derece popüler 
@@ -118,12 +118,15 @@ Bana desteklerini esirgemeyen danışman hocam Dr. Öğr. Gör. Uğur Kesen ve �
 	- Konu hakkında ön bilgi
 		- 5G ve Wireless Nedir?
 		Mobil cihazların hayatımıza girmesiyle birlikte G teknolojisi de hayatımıza girmiş oldu. 1G ile başlayan bu serüven 5G ile devam etmektedir. G teknolojisi hayatımıza girmesinden bugüne hep 
-                hayatımızında son derece önemli bir yere sahip olmuştur. İlk mobil cihazın ortaya çıkmasıyla ve arama fonksiyonunun eklenmesiyle birlikte 1G teknoloji hayatımıza girmiş oldu. Sonrasında arama 
-                fonksiyonunun yanına mesaj atma özelliği de eklenince bu da 2G teknolojisini de beraberinde getirdi. 2G fonksiyonlarının üzerine internet üzerinden video izleme fonksiyonunun da eklenmesiyle 
-                beraber 3G teknoloji de doğmuş oldu. 3G ilk bulunduğunda şüphesiz ki bir devrim niteliğindeydi ancak mobil cihazlarda internetin yapabildikleri bunla sınırlı kalmadı. 3G teknolojisinin üzerine 
-                Nesnelerin interneti de eklendi ve sonuç olarak 4G ortaya çıkmış oldu. 5G teknolojisi ise IOT cihazların kontrol edilmesini daha hızlı bir şekilde yapmasıyla diğer teknolojilerden bambaşka bir 
-                seviyeye geldi. Bu konunun geniş kapsamlı bir analizi de 2023 yılında Nguyen Thi Mai Lan tarafından yazılmış olan "Evolution of Wireless Technology: From 1G to 5G" isimli makalede incelenmiştir... 
-		- IoT cihazlarda 5G teknolojisinin önemi
+                hayatımızında son derece önemli bir yere sahip olmuştur. İlk mobil cihazın ortaya çıkmasıyla ve arama fonksiyonunun eklenmesiyle birlikte 1G teknoloji hayatımıza girmiş oldu. G harfinin başındaki 
+                rakam aslında nesli göstermektedir. Örneğin endüstri 1.0 1. Endüstri devrimi anlamına gelmektedir. Buradan yola çıkaran 1G için de 1. nesil kablosuz teknoloji diyebiliriz. 1G teknolojisi 
+                Sonrasında ise arama fonksiyonunun yanına mesaj atma özelliği de eklenince bu da 2G teknolojisini de beraberinde getirdi. 2G fonksiyonlarının üzerine internet üzerinden video izleme fonksiyonunun 
+                da eklenmesiyle beraber 3G teknoloji de doğmuş oldu. 3G ilk bulunduğunda şüphesiz ki bir devrim niteliğindeydi ancak mobil cihazlarda internetin yapabildikleri bunla sınırlı kalmadı. 3G 
+               teknolojisinin üzerine Nesnelerin interneti de eklendi ve sonuç olarak 4G ortaya çıkmış oldu. 5G teknolojisi ise IOT cihazların kontrol edilmesini daha hızlı bir şekilde yapmasıyla diğer 
+               teknolojiler de bambaşka bir seviyeye geldi. Bu konunun geniş kapsamlı bir analizi de 2023 yılında Nguyen Thi Mai Lan tarafından yazılmış olan "Evolution of Wireless Technology: From 1G to 5G" 
+               isimli makalede incelenmiştir.  
+		- IoT cihazlarda 5G teknolojisinde ne önemi vardır?
+		5G teknolojisi
 		- BBU ve RRU Nedir?
 		Baz istasyonlarında 2 temel komponent bulunmaktadır. Bunlar BBU ve RRU'dur. BBU Baseband Unit(Baseband işleme ünitesi), RRU ise Remote Radio(Radyo frekanslı çekmece ünitesi) teriminin 
                 kısaltmasıdır.  Sinyal almaya yarıyan baz istasyonu bölümüne RRU denir. Baz istasyonunun BBU bölümü ise yazılımın yüklendiği bölümdür. 
@@ -363,7 +366,8 @@ Bana desteklerini esirgemeyen danışman hocam Dr. Öğr. Gör. Uğur Kesen ve �
 Oluşturulan farklı test caselerle(Verilerin uzunluk değişimleri, şifrelenecek olan verilerin tipleri vb.) birlikte durumlar incelenerek bir sonuca ulaşılacaktır. Elde edilen sonuçlardan bir grafik oluşturulup 
 seçilebilirlik açısından 5G ve Wireless tarafına ne kadar uyumlu olan algoritma veya algoritmalar seçilecektir.
 8-) Kaynakça(Referanslar)  
-Bu bölümde atıf yapılacak olan yüksek lisans veya doktora tezleri yer alıcaktır. Ayrıca konu hakkında yazılmış olan makaler de gene bu alanda yer alacaktır.
+Bu bölümde atıf yapılacak olan yüksek lisans veya doktora tezlerinin yanı sıra geçmişten günümüze bu konuyla ilgili yazılmış olan kitaplar ve makaleler de yer alıcaktır. Burada yer alıcak kaynaklar hem kaynak 
+ismi hem de kaynağın yazarı olarak yer alıcaktır.
 
 Anahtar Sözcükler: 5G, Wireless, Simetrik/Asimetrik Algoritmalar, Public/Private Key, AES,
 Chacha20, RSA, DSA, Seed, Cast5, Dh, Camellia
