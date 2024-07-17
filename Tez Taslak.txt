@@ -58,11 +58,16 @@ Bana desteklerini esirgemeyen danışman hocam Dr. Öğr. Gör. Uğur Kesen ve �
 	algoritmaların günümüz teknolojisinde son derece önemli bir yere sahip olan Wireless ve 5G teknolojilerinde kullanılan şifreleme algoritmalarını incelemektedir. Yapılan incelemeler sonucunda da hangi 
         algoritmanın uygunluk açısından Wireless ve 5G  teknolojilerine daha uygun olduğunun bulunmasıdır. Bunu yaparken algoritmanın verimliliği güvenilirliği temelde önemli iki parametre olacaktır. Testler 
         yapılırken şifrelenecek verinin uzunluğu karmaşıklığı gibi farklı durumları incelenerek bir sonuca ulaşılmıştır. Yapılan değerlendirmeler sonucunda algoritmalara ait farklı veriler farklı grafiklere 
-        dökülerek analiz edilecektir. Bunu yaparken günümüzde son derece popüler bir programlama dili olan C++ dili kullanılacaktır. C++ 'ın yanı sıra veri güvenliğinde son derece önemli bir yere sahip olan 
+        dökülerek analiz edilecektir. Bu değerlendirmeler yapılırken algoritmaların private/public key kullanması ve algoritmaların verileri şifrelerken nasıl bir yol izleyeceği gibi konulara değinilecektir. Bu 
+        durumlar incelenirken günümüzde son derece popüler bir programlama dili olan C++ programlama dili kullanılacaktır. C++ 'ın yanı sıra veri güvenliğinde son derece önemli bir yere sahip olan 
         OpenSSL 3.parti kütüphanesi de bu tez hayata geçirilirken kullanılmıştır. OpenSSL kütüphanesinin belli başlı elemanları verilerin güvenli taşınmasında kullanılan SSL/TLS protokolleri ve veriler taşınırken 
         kimsenin eline geçmemesini için verilerin şifrelenmesini sağlayan veri şifreleme algoritmalarıdır. Bu elemanlar bu tez kapsamında detaylı bir şekilde açıklanacaktır. OpenSSL hakkında daha detaylı John 
         Viega, Matt Messier ve Pravir Chandra tarafından yazılmış olan "Network Security with OpenSSL" isimli kitapta bulunmaktadır. Bu yüksek tezi kapsamında veri şifreleme algoritmaların verimlilikleri 
-        hesaplanırken OpenSSL kütüphanesinden sıkça yararlanılacaktır. 
+        hesaplanırken OpenSSL kütüphanesinden sıkça yararlanılacaktır. Bu yararlanma sürecinde standart kütüphanenin sunmadığı OpenSSL kütüphanesinin IDE entegrasyonu da son derece önemlidir. Özetlemek gerekirse 
+        burada problem aşağıdaki maddelerle özetlenebilir:
+		- OpenSSL kütüphanesi 3.parti bir kütüphane olduğundan dolayı C++ diline entegre edilmesi gerekmektedir.
+		- Kullanıcılacak olan algoritmaların verimlilik hesabı için kullanılacak C++ araçlarının belirlenmesi 
+		- Şifrelenicek olan verilerin farklı büyüklüklerde nasıl bir verim alınıcağının analiz edilmesi için bir test kodu yapısı oluşturmak gerekmektedir.
 	- Tezin literatür katkısı ve yenilikleri
 	Her ne kadar veri şifreleme algoritmalarının incelemesinin yapıldığı tezler ve makaleler bu zamana kadar yazılmış olsa da daha önce bu algoritmalarının incelemesini doğrudan 5G ve Wireless teknolojileri 
         üzerinden yapan detaylı bir yüksek lisans tezi ortaya konulamamıştır. Bu noktada hayata geçirmiş olduğum bu yüksek lisans tez çalışmasında araştırmacılara veya bu alanda daha da ilerleyip doktora 
@@ -120,7 +125,8 @@ Bana desteklerini esirgemeyen danışman hocam Dr. Öğr. Gör. Uğur Kesen ve �
                 seviyeye geldi. Bu konunun geniş kapsamlı bir analizi de 2023 yılında Nguyen Thi Mai Lan tarafından yazılmış olan "Evolution of Wireless Technology: From 1G to 5G" isimli makalede incelenmiştir... 
 		- IoT cihazlarda 5G teknolojisinin önemi
 		- BBU ve RRU Nedir?
-		Baz istasyonlarında 2 temel komponent bulunmaktadır. Bunlar BBU ve RRU'dur. Sinyal almaya yarıyan baz istasyonu bölümüne RRU denir. Baz istasyonunun BBU bölümü ise yazılımın yüklendiği bölümdür. Bu nerdeyse 
+		Baz istasyonlarında 2 temel komponent bulunmaktadır. Bunlar BBU ve RRU'dur. BBU Baseband Unit(Baseband işleme ünitesi), RRU ise Remote Radio(Radyo frekanslı çekmece ünitesi) teriminin 
+                kısaltmasıdır.  Sinyal almaya yarıyan baz istasyonu bölümüne RRU denir. Baz istasyonunun BBU bölümü ise yazılımın yüklendiği bölümdür. 
 		- Simetrik ve Asimetrik Veri şifreleme Algoritmaları
 		Temelde şifreleme deşifrelemede aynı anahtarın kullanıldığı algoritmalara simetrik algoritma ve hep şifreleme hem de deşifreleme işlemi için farklı şifreleme anahtarının kullanıldığı algoritmalara 
 	        asimetrik algoritma adı verilir. 
