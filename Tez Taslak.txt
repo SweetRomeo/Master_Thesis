@@ -176,7 +176,8 @@ Bana desteklerini esirgemeyen danışman hocam Dr. Öğr. Gör. Uğur Kesen ve �
 			- 3DES  168 bit anahtar
 			- AES   128, 192 veya 256 bit anahtar
 			- ChaCha20   128 veya 256 bit anahtar 
-                        - Seed 
+                        - Seed
+			- Camellia
 		- Private/Public Key
 		Asimetrik algoritmalarda hem Prıvate key hem de public key kullanılırken simetrik algoritmalarda sadece public key kullanıldığını daha önce söylemiştik. Private key sadece kullanıcılar tarafından
                 bilinen anahtarlardır. Örneğin  Bu da demek oluyor ki dünyada o kişiden başkası o public keye ait olan private keye sahip olmadığı için o veriyi deşifre edemez. Kısaca private key kişiye özgüdür. 
