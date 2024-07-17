@@ -87,13 +87,17 @@ Bana desteklerini esirgemeyen danışman hocam Dr. Öğr. Gör. Uğur Kesen ve �
 		sağlama konusunda pek çok programlama dilinden üstündür diyebiliriz. Bu da gene C++ dilinin seçilebilirlik olarak üstün olduğu bir diğer noktadır.
 		- Pek çok sektörde kullanılıyor olması
 		C++ programlama dili savunma sanayi, gömülü yazılım, haberleşme teknolojileri, yapay zeka uygulamaları ve oyun tasarımları gibi pek çok farklı alanda kullanılmaktadır. Özellikle verimin son derece 
-		kritik olduğu sektörlerde C++ 
-		neredeyse vazgeçilmez bir programlama dilidir.
+		kritik olduğu sektörlerde C++ neredeyse vazgeçilmez bir programlama dilidir. 
                 - Optimizasyonunun yüksek olması
-		C++, pek çok dile göre çok daha hızlı çalıştığından dolayı seçilebilirlik açısından verimin kritik olduğu yerlerde çok üstün olduğu şüphesizdir.
+		C++, pek çok dile göre çok daha hızlı çalıştığından dolayı seçilebilirlik açısından verimin kritik olduğu yerlerde çok üstün olduğu şüphesizdir. Örneğin hızlı karar vermenin gerektiği savunma 
+                sanayi gibi sektörlerde son derece kullanımı yaygın bir programlama dilidir.
 		- Sürekli gelişmekte olan bir dil olması
+		Aslında C dilinin sınıflı hali(C with classes) olarak en başka ortaya çıkan bir programlama dilidir. Ancak zamanla Bjarne Stroustrup katkıları ve C++ komitesinin kurulmasıyla birlikte dil artık 
+                bambaşka noktaya gelmiştir. Özellikle C++98 standartlarıyla birlikte dil C dilinden çok daha farklı bir noktaya gelmiş. C++11 standartları ile birlikte daha da gelişerek çok daha modern bir hale 
+                gelmiştir. C++11 standartlarından bu yana C++ dili her 3 yılda bir üstüne biraz daha koyarak gitmektedir. Bu da C++ dilinin hiçbir zaman yerinde durmayacağını göstermektedir. Hele ki son C++ 
+                standardının C++23 ile geldiği düşünüldüğünde bu son derece mantıklıdır.  
 		- Yeni teknolojileri uyum sağlama açısından uygun olması
-	- Yapılmış olan benzer çalışmalar
+	- Yapılmış olan benzer çalışmalar(Related Works)
                 1-) Shancang Lia, Li Da Xub ve Shanshan Zhaoe tarafından yazılmış olan 5G Internet of Things: A survey makalesi 5G teknolojilerinde IoT kullanımı hakkında önemli bilgiler vermektedir.
 		2-) Security for 4G and 5G Cellular Networks: A Survey of Existing Authentication and Privacy
 		3-) Analysis the Structures of Some Symmetric Cipher Algorithms Suitable for the Security of IoT Devices
