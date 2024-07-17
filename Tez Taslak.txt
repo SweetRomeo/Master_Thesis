@@ -49,9 +49,9 @@ teknolojilerine daha uygun olduğunun tespit edilip elde edilen sonuçlardan gra
 Bana desteklerini esirgemeyen danışman hocam Dr. Öğr. Gör. Uğur Kesen ve çalışmakta olduğum Huawei Telekominikasyona tesekkür ederim.
 3-) Giriş
 	- Problemin tanımı ve Analizi
-	Geçmişten günümüze veri güvenliği pek çok farklı alanda son derece önemli olmuştur. Mobil cihazların hayatımıza girişiyle beraber Cloud teknolojileri gibi verilerin depo edilmesinde kullanılan pek çok farklı 
+	Veri güvenliği, Geçmişten günümüze pek çok farklı alanda son derece önemli olmuştur. Mobil cihazların hayatımıza girişiyle beraber Cloud teknolojileri gibi verilerin depo edilmesinde kullanılan pek çok farklı 
 	yöntem de hayatımıza girmiş oldu. Cloud teknolojisinin yanı sıra verilerin mobil cihazlar arasında taşınmasında kullanılan Wireless teknolojisi hayatımıza girmiştir. Bu sözü edilen gelişmeler her ne kadar 
-        pek çok  açıdan iyi olsa da bu tarz depolama alanları ve cihazlar arası veri tanışmasının hayatımıza girişiyle birlikte veri güvenliği tehlikesi de aynı oranda artmıştır. Hayatımıza giren diğer bir önemli 
+        pek çok  açıdan iyi olsa da bu tarz depolama alanları ve cihazlar arası veri taşınmasının hayatımıza girişiyle birlikte veri güvenliği tehlikesi de son derece önemli bir sorun haline gelmiş oldu. Hayatımıza giren diğer bir önemli 
         teknoloji ise interneti bulunmasıyla birlikte gelişimi hızlanan 3G teknolojisidir. Internet günümüzde son derece önemli bir yere sahip olmasına karşın faydanın yanında güvenlik tehlikesini de beraberinde 
         getirmektedir. Bu sebeplerden dolayı verilerin güvenliğinin güvenliklerinin sağlanması için çeşitli yöntemler kullanılmaya başlandı. Bu yöntemlerden biri de şüphesiz veri şifrelemede kullanılan 
         algoritmalardır. Bu tez çalışması da temelde bu 
@@ -123,23 +123,28 @@ Bana desteklerini esirgemeyen danışman hocam Dr. Öğr. Gör. Uğur Kesen ve �
                 Sonrasında ise arama fonksiyonunun yanına mesaj atma özelliği de eklenince bu da 2G teknolojisini de beraberinde getirdi. 2G fonksiyonlarının üzerine internet üzerinden video izleme fonksiyonunun 
                 da eklenmesiyle beraber 3G teknoloji de doğmuş oldu. 3G ilk bulunduğunda şüphesiz ki bir devrim niteliğindeydi ancak mobil cihazlarda internetin yapabildikleri bunla sınırlı kalmadı. 3G 
                teknolojisinin üzerine Nesnelerin interneti de eklendi ve sonuç olarak 4G ortaya çıkmış oldu. 5G teknolojisi ise IOT cihazların kontrol edilmesini daha hızlı bir şekilde yapmasıyla diğer 
-               teknolojiler de bambaşka bir seviyeye geldi. Bu konunun geniş kapsamlı bir analizi de 2023 yılında Nguyen Thi Mai Lan tarafından yazılmış olan "Evolution of Wireless Technology: From 1G to 5G" 
-               isimli makalede incelenmiştir.  
+               teknolojiler de bambaşka bir seviyeye geldi. Ancak 5G teknolojisi sadece 4G'nin gelişmiş versiyonu değil aynı zamanda da çok sayıda yeni servis kapasitesini de beraberinde getirdi. Bu konunun geniş 
+               kapsamlı bir analizi de 2023 yılında Nguyen Thi Mai Lan tarafından yazılmış olan "Evolution of Wireless Technology: From 1G to 5G"  isimli makalede incelenmiştir.  
 		- IoT cihazlarda 5G teknolojisinde ne önemi vardır?
-		5G teknolojisi
+		Geçmişten günümüze giderek daha fazla bağlantılı hale gelen bir dünyada 5G, dijitalleştirilmiş bir ekonominin geleceğini yönlendirecektir. Bu bağlamda birbirine bağlı olan nesnelerin, makinelerin, 
+                cihazların, sensörlerin ve uygulamaların olduğu günümüz dünyası son derece yakın. 5G, tipik 4G hızlarından yaklaşık 600 kat daha hızlı ve güvenilirliği yeni bir standarda yükselten son derece 
+                düşük gecikme süresi olan bir teknolojidir. Kısaca 5G teknolojisi ile birlikte IOT cihazlar eskisine kıyasla çok daha hızlı çalışır hale gelmiştir. 
 		- BBU ve RRU Nedir?
 		Baz istasyonlarında 2 temel komponent bulunmaktadır. Bunlar BBU ve RRU'dur. BBU Baseband Unit(Baseband işleme ünitesi), RRU ise Remote Radio(Radyo frekanslı çekmece ünitesi) teriminin 
                 kısaltmasıdır.  Sinyal almaya yarıyan baz istasyonu bölümüne RRU denir. Baz istasyonunun BBU bölümü ise yazılımın yüklendiği bölümdür. 
 		- Simetrik ve Asimetrik Veri şifreleme Algoritmaları
-		Temelde şifreleme deşifrelemede aynı anahtarın kullanıldığı algoritmalara simetrik algoritma ve hep şifreleme hem de deşifreleme işlemi için farklı şifreleme anahtarının kullanıldığı algoritmalara 
-	        asimetrik algoritma adı verilir. 
+		Temelde hem şifreleme(Encryption) hem de deşifreleme(Decryption) için aynı anahtarın kullanıldığı algoritmalara simetrik algoritma adı verilir. Diğer taraftan hep şifreleme hem de deşifreleme 
+                işlemi için farklı şifreleme anahtarının kullanıldığı algoritmalara asimetrik algoritma denilmektedir. Kısaca Asimetrik algoritmalarda iki farklı anahtar kullanır bu da simetrik algoritmaya göre 
+                daha güvenlikli olmasına sebep olur. Bunun sebebi şifreleme ve deşifrelemede farklı anahtar kullanıldığı durumda bu bilgiye erişmek isteyen 3.kişilerin şifreyi çözmesini zorlaştırır. Buna karşın 
+                her zaman simetrik algoritmalar asimetriklere göre kıyasla daha güvensizdir demek de çok doğru bir argüman olmaz çünkü algoritmanın güvenliğini etkileyen diğer bir faktör de algoritmada üretilen 
+                anahtarın uzunluğu ve karmaşıklığıdır. Örneğin son derece karmaşık bir anahtara sahip olan simetrik bir algoritma şüphesiz ki asimetrik bir başka algoritmadan daha güvenli olabilir.   
 		 
 		- Hashing Nedir?
 			- Fingerprint
 			- MAC Msg Auth Code 
 			- Authentication
 		- Data Integrity
-		- Encryption(Şifreleme) ve Decryption(Deşifreleme)
+		- Yazılarda Encryption(Şifreleme) ve Decryption(Deşifreleme)
 		Bir yazının şifrelenmeden önceki hali Plain Text olarak adlandırılırken, bu yazının şifrelendikten sonraki hali Cipher Text olarak isimlendirilir. Plain Text aynı zamanda Şifrelenmiş bir Cipher 
 		Text'in deşifrelenmesiyle elde edilen yazı olarak da isimlendirilebilir. Şifrelemenin en bilinen tiplerinden biri basit şifrelemedir. Bu şifreleme bir veri tüm kullanıcılara aynı şifreleme 
 		algoritması kullanılarak gönderilmektedir. Bu şüphesiz ki güvenlik açısından son derece tehlikeli bir yöntemdir. Bu sebeple mümkün mertebe veri şifreleme algoritmalarının değişiklik göstermesi 
