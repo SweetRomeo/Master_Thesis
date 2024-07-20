@@ -42,6 +42,11 @@ Tarih---------------------------------------------------------------------------
 - Referanslar
 
 Giriş
-Tarih boyunca insanlar birbirlere gizli verileri gönderirken özellikle 3.kişilerin ellerine geçmemesini hedeflenmiştir. 
+Tarih boyunca insanlar birbirlere gizli verileri gönderirken özellikle 3.kişilerin ellerine geçmemesini hedeflenmiştir. Verilerin gizlenmesinde geçmişten günümüze çok sayıda farklı yöntem kullanılmıştır. 
+Bunların en örneklerinden bir tanesi Almanların 2. Dünya savaşında kullanmış olduğu Enigma makinesidir. Bu makine verileri gönderirken o zamanın teknolojisiyle çözülmesi son derece zor bir algoritma ile 
+verileri göndermekteydi. Bu örnek aynı zamanda haberleşirken veri şifreleme yönteminin önemli bir örneğidir. O zamandan günümüze şifreleme algoritmalarında ciddi anlamda bir gelişme göze çarpmaktadır. 
+Bu tez çalışmasında da hayatımıza yeni yeni girmekte olan 5G ve Wireless teknolojilerde hangi algoritmaların kullanıma daha elverişli olduğunun analizi yapılmıştır.
+
+Veri Şifreleme algoritmaları, 
 
 Abstract
