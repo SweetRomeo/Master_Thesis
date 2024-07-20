@@ -24,6 +24,17 @@ Tarih---------------------------------------------------------------------------
         - 1.7.2 Wireless ile ilgili şifreleme algoritmalarıyla ilgili yapılmış olan çalışmalar
 2-) Metaryal ve Yöntem
     - 2.1 Kullanılacak olan şifreleme algoritmaları
+    - 2.2 Visual Studio IDE'si
     - 2.2 OpenSSL kütüphanesi
-    - 2.3 C++1
-        
+        - 2.2.1 OpenSSL'in Visual Studio IDE'sine entegre edilmesi
+        - 2.2.2 Entegrasyonun başarılı olup olmadığının test edilmesi
+    - 2.3 C++ Programlama Dili
+        - 2.3.1 C++ dilinin kullanım alanları
+        - 2.3.2 Neden C++ dilinin kullanıldığının açıklanması
+    - 2.4 Grafik tasarımı için geçerli 3.parti kütüphanenin eklenmesi
+3-) Bulgular ve Tartışma
+    - OpenSSL kütüphanesindeki algoritmaların testi sonucunda:
+        a-) performans açısından en iyi olan algoritma belirlenir.
+        b-) güvenilirlik açısından en iyi olan algoritma belirlenir.
+        c-) Bu iki parametrenin varsa ikisinde de en iyi olan yoksa güvenilirlik açısında iyi olup performans açısından da kötü olmayan algoritma seçilir.
+    - Elde edilen buldular d
