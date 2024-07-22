@@ -59,6 +59,13 @@ yer almadığından dolayı bu kütüphane kod yazmanın tek yolu bu kütüphane
 da güvenlik veri taşımada son derece önemli bir yere sahip SSL ve TLS protokollerini de içermektedir. Bu kütüphanede mevcut olup bu yüksek lisans tezinde de kullanılacak olan algoritmalardan bazıları: AES, RSA, Chacha20,
 DSA, Camellia, Seed gibi algoritmalardır. 
 
-Bu algoritmalar, analiz edilirken iki parametre çok önemli yere sahip olacaktır. Bunlar güveniliri ve performans parametreleridir.  
+Bu algoritmalar, analiz edilirken iki parametre çok önemli yere sahip olacaktır. Bunlar güvenilirlik ve performans parametreleridir. Bir veri şifreleme algoritması değerlendirilirken bir özellik bakımından çok iyi 
+ama diğeri açısından da en azından iyi olması gerekir. Bu tez kapsamından bu kriterler göz önünde bulundurularak bir analiz yapılmıştır. Elde edilen analiz sonuçlarından bir grafik elde edilip bir sonuca ulaşılacaktır.
+
+Semboller
+AES : Advanced Encryption Standards
+DH  : 
+
+
 
 Abstract
