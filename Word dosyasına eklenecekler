@@ -68,7 +68,25 @@ case durumları oluşturularak farklı durumlar için algoritmaların nasıl ça
 
 Semboller
 AES : Advanced Encryption Standards
-DH  : 
+DH  : Diffie Helman
+RSA : Rivest-Shamir-Adleman
+DES : Data Encryption Standards
+RC4 : Rivest Encryption 4
+DSA : Digital Signature Algorithm
+FTP : File Transfer Protocol
+TLS : Transfer Layer Protocol
+SSL : Secure Sockets Layers
+E   : Public Key
+D   : Private Key
+PT  : Plain Text(Şifrelememiş yazı)
+CT  : Cipher Text(Şifrelenmiş Yazı)
+T   : Totient 
+
+
+
+
+
+
 
 
 
