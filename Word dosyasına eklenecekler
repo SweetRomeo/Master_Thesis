@@ -54,4 +54,11 @@ her ne kadar tehlikelerden korunmak için de kullanmak bazen bu saldırıların 
 güvenlik açısından ne oranda yeterli olduğunun analiz edilmesidir. Bu algoritmaların hepsi farklı yöntemleri kullanarak verilerimizin güvenliği sağlamaktadır ancak bu algoritmaların sanal fidye programları gibi kötü
 amaçlar için de kullanılabileceği unutulmamalıdır. 
 
+Veri şifreleme algoritmaları, OpenSSL 3.parti kütüphanesinin de hayatımıza girmesiyle beraber programlamada sıkça kullanılır bir hale gelmiş oldu. OpenSSL kütüphanesi, herhangi bir programa dilinin SL(Standard Library)'inde
+yer almadığından dolayı bu kütüphane kod yazmanın tek yolu bu kütüphanenin çalışılan IDE(Integrated Development Environment)'ye entegre edilmesidir. OpenSSL kütüphanesi sadece veri şifreleme algoritmalarını değil aynı zamanda 
+da güvenlik veri taşımada son derece önemli bir yere sahip SSL ve TLS protokollerini de içermektedir. Bu kütüphanede mevcut olup bu yüksek lisans tezinde de kullanılacak olan algoritmalardan bazıları: AES, RSA, Chacha20,
+DSA, Camellia, Seed gibi algoritmalardır. 
+
+Bu algoritmalar, analiz edilirken iki parametre çok önemli yere sahip olacaktır. Bunlar güveniliri ve performans parametreleridir.  
+
 Abstract
