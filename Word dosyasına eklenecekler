@@ -1,7 +1,9 @@
 Önsöz Kısmı:
-Bana her daim moral anlamında destek olan ve yanımla olan babam Kemal Haldun Sertel, annem Fatma Kumsal Sertel ve kardeşim Kaya Sertel'e teşekür ederim.
-Tezi yazma sürecinde bana yardımcı olan, Huawei firmasındaki Yöneticim, Serhat Gül'e teşekkür ederim.
-Onun dışında bu yüksek lisans tezini ortaya çıkarmamda bana katkısı olan herkese,
+Bana her daim moral anlamında destek olan ve yanımla olan babam Kemal Haldun Sertel, annem Fatma Kumsal Sertel ve kardeşim Kaya Sertel'e,
+Tezi yazma sürecinde bana yardımcı olan, Huawei firmasındaki Yöneticim, Serhat Gül'e,
+Bana yardımlarını esirgemeyen değerli arkadaşım Mehmet Zeki Sildir ve Zeynep Güler'e,
+Bu yüksek lisans tezini ortaya çıkarmamda bana katkısı olan herkese,
+Ve son olarak tüm katılımcılara,
 teşekkürü borç bilirim.
 
 Tarih----------------------------------------------------------------------------------------İsim Soyad
@@ -47,6 +49,9 @@ Bunların en örneklerinden bir tanesi Almanların 2. Dünya savaşında kullanm
 verileri göndermekteydi. Bu örnek aynı zamanda haberleşirken veri şifreleme yönteminin önemli bir örneğidir. O zamandan günümüze şifreleme algoritmalarında ciddi anlamda bir gelişme göze çarpmaktadır. 
 Bu tez çalışmasında da hayatımıza yeni yeni girmekte olan 5G ve Wireless teknolojilerde hangi algoritmaların kullanıma daha elverişli olduğunun analizi yapılmıştır.
 
-Veri Şifreleme algoritmaları, 
+Veri Şifreleme algoritmaları, herhangi verinin taşınırken veya bilgisayarda kayıtlıyken dışardan gelebilecek saldırılara karşı korunmasını sağlayan ve pek çok farklı çeşidi olan algoritmalardır. Bu algoritmaların,
+her ne kadar tehlikelerden korunmak için de kullanmak bazen bu saldırıların engellenmesi mümkün olamayabilir. Bu yüzden bu tezin önemli kısımlarından biri de olası saldırı durumlarında söz konusu algoritmaların 
+güvenlik açısından ne oranda yeterli olduğunun analiz edilmesidir. Bu algoritmaların hepsi farklı yöntemleri kullanarak verilerimizin güvenliği sağlamaktadır ancak bu algoritmaların sanal fidye programları gibi kötü
+amaçlar için de kullanılabileceği unutulmamalıdır. 
 
 Abstract
