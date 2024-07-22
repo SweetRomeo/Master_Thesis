@@ -62,6 +62,10 @@ DSA, Camellia, Seed gibi algoritmalardır.
 Bu algoritmalar, analiz edilirken iki parametre çok önemli yere sahip olacaktır. Bunlar güvenilirlik ve performans parametreleridir. Bir veri şifreleme algoritması değerlendirilirken bir özellik bakımından çok iyi 
 ama diğeri açısından da en azından iyi olması gerekir. Bu tez kapsamından bu kriterler göz önünde bulundurularak bir analiz yapılmıştır. Elde edilen analiz sonuçlarından bir grafik elde edilip bir sonuca ulaşılacaktır.
 
+Bu yüksek lisans tezi temelde 3 adımdan oluşmaktadır. İlk olarak OpenSSL kütüphanesindeki şifreleme algoritmaları kullanılarak algoritmalara ilişkin sınıflar oluşturulacaktır. Oluşturulan sınıflar için çeşitli test 
+case durumları oluşturularak farklı durumlar için algoritmaların nasıl çalıştıkları test edilecektir. Elde edilen test sonuçlarına bağlı olarak farklı durumlar için farklı grafikler elde edilerek bir sonuca varılacaktır.
+
+
 Semboller
 AES : Advanced Encryption Standards
 DH  : 
