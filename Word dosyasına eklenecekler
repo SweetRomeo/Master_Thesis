@@ -34,6 +34,7 @@ Tarih---------------------------------------------------------------------------
         - 2.3.1 C++ dilinin kullanım alanları
         - 2.3.2 Neden C++ dilinin kullanıldığının açıklanması
     - 2.4 Grafik tasarımı için geçerli 3.parti kütüphanenin eklenmesi
+    - 2.5 Git Bash
 3-) Bulgular ve Tartışma
     - OpenSSL kütüphanesindeki algoritmaların testi sonucunda:
         a-) performans açısından en iyi olan algoritma belirlenir.
@@ -66,7 +67,16 @@ Bu yüksek lisans tezi temelde 3 adımdan oluşmaktadır. İlk olarak OpenSSL k�
 case durumları oluşturularak farklı durumlar için algoritmaların nasıl çalıştıkları test edilecektir. Elde edilen test sonuçlarına bağlı olarak farklı durumlar için farklı grafikler elde edilerek bir sonuca varılacaktır.
 
 
-Semboller
+Abstract
+
+//ingilizce
+
+Semboller 
+E   : Public Key
+D   : Private Key
+T   : Totient
+
+Kısaltmalar
 AES : Advanced Encryption Standards
 DH  : Diffie Helman
 RSA : Rivest-Shamir-Adleman
@@ -76,11 +86,23 @@ DSA : Digital Signature Algorithm
 FTP : File Transfer Protocol
 TLS : Transfer Layer Protocol
 SSL : Secure Sockets Layers
-E   : Public Key
-D   : Private Key
 PT  : Plain Text(Şifrelememiş yazı)
 CT  : Cipher Text(Şifrelenmiş Yazı)
-T   : Totient 
+
+Şekil Listesi
+Şekil 1.1 Şifreleme/Deşifreleme modeli(Encryption/Decryption Model)
+Şekil 1.2 Şifreleme algoritmalarının şeması
+Şekil 1.3 AES algoritması Modeli
+Şekil 1.4 RSA algoritması Modeli
+....
+
+Tablo Listesi
+Şekil 2.1 Simetrik/Asimetrik algoritmaların performans sütun grafiği
+Şekil 2.2 Simetrik/Asimetrik algoritmaların hız sütun grafiği
+
+1.Giriş 
+Veri şifreleme kullanıcılara ait özel verilerim bir yerden bir başka yere taşınırken dışardan gelebilecek saldırılara karşı alınmış olan, günümüzde son derece sık kullanılan bir veri koruma yöntemidir.
+Veriler şifrelemede geçmişten günümüze pek çok farklı yöntem kullanılmıştır. Bu yüksek lisans tezi kapsamında 
 
 
 
@@ -90,4 +112,3 @@ T   : Totient
 
 
 
-Abstract
