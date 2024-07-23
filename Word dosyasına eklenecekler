@@ -101,8 +101,15 @@ Tablo Listesi
 Şekil 2.2 Simetrik/Asimetrik algoritmaların hız sütun grafiği
 
 1.Giriş 
-Veri şifreleme kullanıcılara ait özel verilerim bir yerden bir başka yere taşınırken dışardan gelebilecek saldırılara karşı alınmış olan, günümüzde son derece sık kullanılan bir veri koruma yöntemidir.
-Veriler şifrelemede geçmişten günümüze pek çok farklı yöntem kullanılmıştır. Bu yüksek lisans tezi kapsamında 
+
+Kriptografi, güvenli iletişim verilerin korunmasını sağlayan bilim dalıdır. Kriptografi kelimesi aslında Antik yunanca'da gizli anlamına gelen "kriptos" ve yazı anlamına 
+gelen "graphi" kelimelerinden gelmektedir. Bu bilim dalının hayatımıza girişiyle birlikte veri şifreleme de hayatımıza girmiş oldu. 
+
+Veri şifreleme kullanıcılara ait özel verilerin bir yerden bir başka yere taşınırken dışardan gelebilecek saldırılara karşı alınmış olan bilgi koruma önlemidir. 
+Günümüzde son derece sık kullanılan bir veri koruma yöntemidir. Verileri şifrelemede geçmişten günümüze pek çok farklı yöntem kullanılmıştır. Veri şifreleme pek çok farklı algoritma
+kullanılmaktadır. Bu algoritmalar temelde asimetrik ve simetrik algoritma olmak üzere ikiye ayrılır.
+
+Simetrik algoritmada hem şifreleme hem de deşifreleme aynı anahtar kullanılarak yapılır. 
 
 
 
