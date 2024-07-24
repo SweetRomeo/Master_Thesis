@@ -109,7 +109,8 @@ Veri şifreleme kullanıcılara ait özel verilerin bir yerden bir başka yere t
 Günümüzde son derece sık kullanılan bir veri koruma yöntemidir. Verileri şifrelemede geçmişten günümüze pek çok farklı yöntem kullanılmıştır. Veri şifreleme pek çok farklı algoritma
 kullanılmaktadır. Bu algoritmalar temelde asimetrik ve simetrik algoritma olmak üzere ikiye ayrılır.
 
-Simetrik algoritmada hem şifreleme hem de deşifreleme aynı anahtar kullanılarak yapılır. 
+Simetrik algoritmada hem şifreleme hem de deşifreleme aynı anahtar kullanılarak yapılır. Ancak asimetrik algoritmalarda şifrelemede farklı anahtar deşifrelemede farklı anahtar 
+kullanılmaktadır. Her ne kadar asimetrik algoritmalar çoğunlukla daha güvenlidir denilse de bu durum her zaman böyle değildir.
 
 
 
