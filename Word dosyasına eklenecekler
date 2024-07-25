@@ -110,7 +110,9 @@ Günümüzde son derece sık kullanılan bir veri koruma yöntemidir. Verileri �
 kullanılmaktadır. Bu algoritmalar temelde asimetrik ve simetrik algoritma olmak üzere ikiye ayrılır.
 
 Simetrik algoritmada hem şifreleme hem de deşifreleme aynı anahtar kullanılarak yapılır. Ancak asimetrik algoritmalarda şifrelemede farklı anahtar deşifrelemede farklı anahtar 
-kullanılmaktadır. Her ne kadar asimetrik algoritmalar çoğunlukla daha güvenlidir denilse de bu durum her zaman böyle değildir.
+kullanılmaktadır. Her ne kadar asimetrik algoritmalar çoğunlukla daha güvenlidir denilse de bu durum her zaman böyle değildir. Çünkü güvenlik seviyesinin etkileyen bir başka 
+kavram da şifreleme algoritmasının kullanacağı anahtarın uzunluğudur. Anahtarların uzunlukları ve karmaşıklıkları arttıkça dolaylı olarak algoritmanın güvenliği de artmaktadır.
+
 
 
 
