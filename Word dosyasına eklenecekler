@@ -111,7 +111,12 @@ kullanılmaktadır. Bu algoritmalar temelde asimetrik ve simetrik algoritma olma
 
 Simetrik algoritmada hem şifreleme hem de deşifreleme aynı anahtar kullanılarak yapılır. Ancak asimetrik algoritmalarda şifrelemede farklı anahtar deşifrelemede farklı anahtar 
 kullanılmaktadır. Her ne kadar asimetrik algoritmalar çoğunlukla daha güvenlidir denilse de bu durum her zaman böyle değildir. Çünkü güvenlik seviyesinin etkileyen bir başka 
-kavram da şifreleme algoritmasının kullanacağı anahtarın uzunluğudur. Anahtarların uzunlukları ve karmaşıklıkları arttıkça dolaylı olarak algoritmanın güvenliği de artmaktadır.
+kavram da şifreleme algoritmasının kullanacağı anahtarın uzunluğudur. Anahtarların uzunlukları ve karmaşıklıkları arttıkça dolaylı olarak algoritmanın güvenliği de artmaktadır. 
+Anahtar uzunlukları veri şifreleme algoritmalarına bağlı olarak değişmektedir. 
+
+DES, AES, RSA, DH, RC4 gibi algoritmalar 5G ve Wireless teknolojilerde son derece sık kullanılan veri şifreleme algoritmalarından bazılarıdır. 
+
+
 
 
 
