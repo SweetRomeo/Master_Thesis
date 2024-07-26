@@ -114,7 +114,10 @@ kullanılmaktadır. Her ne kadar asimetrik algoritmalar çoğunlukla daha güven
 kavram da şifreleme algoritmasının kullanacağı anahtarın uzunluğudur. Anahtarların uzunlukları ve karmaşıklıkları arttıkça dolaylı olarak algoritmanın güvenliği de artmaktadır. 
 Anahtar uzunlukları veri şifreleme algoritmalarına bağlı olarak değişmektedir. 
 
-DES, AES, RSA, DH, RC4 gibi algoritmalar 5G ve Wireless teknolojilerde son derece sık kullanılan veri şifreleme algoritmalarından bazılarıdır. 
+DES, AES, RSA, DH, RC4 gibi algoritmalar 5G ve Wireless teknolojilerde son derece sık kullanılan veri şifreleme algoritmalarından bazılarıdır. DES algoritması anahtar uzunluğu 
+diğerlerine göre daha az olan bir simetrik algoritmadır. AES ise son derece popüler ve anahtar uzunluğu duruma göre farklılık gösteren bir algoritmadır. AES algoritmasının 
+anahtar uzunluğu 128 bit, 192 bit veya 256 bit olabilir. Bu algoritmanın kullanıladığı alana bağlı olarak farklı uzunluklarda anahtarla şifreleme yapabilme olanağı sağlamaktadır.
+DH algoritmasında gene simetrik bir algoritmadır ancak  
 
 
 
