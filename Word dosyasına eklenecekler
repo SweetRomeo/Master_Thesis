@@ -103,11 +103,17 @@ Tablo Listesi
 1.Giriş 
 
 Kriptografi, güvenli iletişim verilerin korunmasını sağlayan bilim dalıdır. Kriptografi kelimesi aslında Antik yunanca'da gizli anlamına gelen "kriptos" ve yazı anlamına 
-gelen "graphi" kelimelerinden gelmektedir. Bu bilim dalının hayatımıza girişiyle birlikte veri şifreleme de hayatımıza girmiş oldu. 
+gelen "graphi" kelimelerinden gelmektedir. Bu bilim dalının hayatımıza girişiyle birlikte veri şifreleme de hayatımıza girmiş oldu. Veri şifreleme geçmişte günümüze pek çok 
+farklı alanda kullanılmıştır çünkü tarih boyunca insan birbirleriyle haberleşirken verilerin gizli tutulmasına önem vermiştir. Kısacası veri şifreleme Alan Turing'in bilgisayarı
+icat etmesiyle hayatımıza girmemiştir aslında haberleşmede gizliliğin önemli olduğu her yerde veri şifreleme teknikleri kullanılmıştır. 
+
 
 Veri şifreleme kullanıcılara ait özel verilerin bir yerden bir başka yere taşınırken dışardan gelebilecek saldırılara karşı alınmış olan bilgi koruma önlemidir. 
 Günümüzde son derece sık kullanılan bir veri koruma yöntemidir. Verileri şifrelemede geçmişten günümüze pek çok farklı yöntem kullanılmıştır. Veri şifreleme pek çok farklı algoritma
-kullanılmaktadır. Bu algoritmalar temelde asimetrik ve simetrik algoritma olmak üzere ikiye ayrılır.
+kullanılmaktadır. 
+
+Şifreleme algoritmalar temelde asimetrik ve simetrik algoritma olmak üzere ikiye ayrılır. Bundan sonraki bölüm kapsamında bu farklı algoritma tiplerine detaylı bir şekilde 
+değineceğiz. 
 
 Simetrik algoritmada hem şifreleme hem de deşifreleme aynı anahtar kullanılarak yapılır. Ancak asimetrik algoritmalarda şifrelemede farklı anahtar deşifrelemede farklı anahtar 
 kullanılmaktadır. Her ne kadar asimetrik algoritmalar çoğunlukla daha güvenlidir denilse de bu durum her zaman böyle değildir. Çünkü güvenlik seviyesinin etkileyen bir başka 
