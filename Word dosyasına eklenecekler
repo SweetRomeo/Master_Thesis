@@ -118,15 +118,29 @@ kriptografik algoritmaların güvenlik ve performans analizini içermektedir.
 
 - 1.1 Şifreleme ve Deşifreleme 
 
-Şifreleme pek çok farklı araç için yapılabilir ancak bu yüksek lisans tez kapsamında bizim dikkate alacağımız kısım yazıların ve dosyaların şifrelenmesi ve deşifrelenmesini temel
-alarak ortaya konulacaktır. 
+Veri şifreleme kullanıcılara ait özel verilerin bir yerden bir başka yere taşınırken dışardan gelebilecek saldırılara karşı alınmış olan bilgi koruma önlemidir. Günümüzde son 
+derece sık kullanılan bir veri koruma yöntemidir. Şifreleme pek çok farklı araç için yapılabilir ancak bu yüksek lisans tez kapsamında bizim dikkate alacağımız kısım yazıların 
+ve dosyaların şifrelenmesi ve deşifrelenmesini temel alarak ortaya konulacaktır. 
 
-Bir yazı 
+Şifrelemenin en bilinen tiplerinden bir tanesi basit şifrelemedir. Bu tarz şifrelemelerde bir veri tüm kullanıcılara aynı şifreleme algoritmasını kullanarak gönderilmektedir. 
+Bu yöntem şüphesiz ki güvenlik açısından son derece tehlikeli bir yöntemdir. Bu sebeple mümkün mertebe veri şifreleme algoritmalarının değişiklik göstermesi tercih edilmelidir. 
+Basit şifrelemeden daha üstün olan bir yöntem ise anahtara dayalı şifreleme(Key Based Encryption(KYB)) yöntemidir. Bu tip şifrelemede rastgele üretilen anahtarlar 
+kullanılarak yapılan şifrelemeye verilen isimdir. Bu anahtarlar algoritmaların tipine bağlı olarak public veya private key olabilir. Bir yazı şifrelenirken kullanılacak en basit 
+yöntem anahtar kullanılarak yapılan şifrelemedir. Tahmin edebileceğimiz gibi anahtar karmaşıklığı arttıkça algoritmanın güvenliği de doğru oranlığı olarak artmaktadır. Günümüzde
+basit şifreleme yerine KYB tipi şifreleme tercih edilmektedir. Anahtara dayalı şifreleme yönteminde genelde makine tarafından rastgele üretilmiş son derece karmaşık ve ancak 
+matematiksel yollar kullanılarak bulunabilecek anahtarlarla yapılan şifrelemelerdir. Bu tarz anahtarları temel alarak yapılan şifrelemelere şifreleme algoritmaları bölümünde 
+değinilecektir. 
+
+Yazı şifreleme yapılırken temelde 3 temel eleman göze çarpmaktadır. Bunlar:
+1-) Anahtar(Key)
+2-) Şifrelenmemiş/Deşifrelenmiş Yazı(Plain Text)
+3-) Şifrelenmiş Yazı(Cipher Text)
+
+- 1.2 Şifreleme Algoritmaları
 
 
-Veri şifreleme kullanıcılara ait özel verilerin bir yerden bir başka yere taşınırken dışardan gelebilecek saldırılara karşı alınmış olan bilgi koruma önlemidir. 
-Günümüzde son derece sık kullanılan bir veri koruma yöntemidir. Verileri şifrelemede geçmişten günümüze pek çok farklı yöntem kullanılmıştır. Veri şifreleme pek çok farklı algoritma
-kullanılmaktadır. 
+
+
 
 Şifreleme algoritmalar temelde asimetrik ve simetrik algoritma olmak üzere ikiye ayrılır. Bundan sonraki bölüm kapsamında bu farklı algoritma tiplerine detaylı bir şekilde 
 değineceğiz. 
