@@ -118,6 +118,10 @@ kriptografik algoritmaların güvenlik ve performans analizini içermektedir.
 
 - 1.1 Şifreleme ve Deşifreleme 
 
+Şifreleme pek çok farklı araç için yapılabilir ancak bu yüksek lisans tez kapsamında bizim dikkate alacağımız kısım yazıların ve dosyaların şifrelenmesi ve deşifrelenmesini temel
+alarak ortaya konulacaktır. 
+
+Bir yazı 
 
 
 Veri şifreleme kullanıcılara ait özel verilerin bir yerden bir başka yere taşınırken dışardan gelebilecek saldırılara karşı alınmış olan bilgi koruma önlemidir. 
