@@ -14,6 +14,7 @@ Tarih---------------------------------------------------------------------------
     - 1.2 Şifreleme Algoritmaları
         - 1.2.1 Asimetrik Şifreleme Algoritmaları
         - 1.2.2 Simetrik Şifreleme Algoritmaları
+        - 1.2.3 Asimetrik/Simetrik Algoritmaların Avantajlarının/Dezavantajlarının İncelenmesi
     - 1.3 Public/Private Key
         - 1.3.1 Public Key Decryption
         - 1.3.2 Private Key Decryption
@@ -150,12 +151,28 @@ Anahtar uzunlukları veri şifreleme algoritmalarına bağlı olarak değişmekt
 
 1.2.1 Simetrik Şifreleme Algoritmaları
 
-Daha öncesinde değindiğim gibi simetrik şifreleme algoritmalarında tek bir key kullanılmaktadır. Bu anahtar hem şifrelemede 
+Daha öncesinde değindiğim gibi simetrik şifreleme algoritmalarında tek bir anahtar(key) kullanılmaktadır. Bu anahtar hem şifrelemede hem de deşifrelemede kullandığında buna simetrik
+şifreleme algoritması adı verilir. Yukarıdaki şekilde bununla ilgili bir örnek gösterilmiştir. Örnekte "hello" yazısı için şifreleme şifreleme ve deşifreleme yapılırsa anahtar 3 
+olarak alındığı takdirde hem şifreleme hem de deşifreleme bir anahtar kullanılarak yapılacaktır.
+hello -> khoor (Şifreleme Anahtarı(Encryption Key) : 3)
+hello <- khoor (Deşifreleme Anahtarı(Decryption Key) : 3)
+Burada anahtar(key) 3 olduğundan dolayı sırasıyla tüm karakterler 3 adım ilerideki karakterlere dönüşerek şifreleme işlemini gerçekleştirecektir. Örneğin burada sırasıyla h harfi 3 alfabede ileri giderek
+k, e harfi 3 adım ileri giderek h, l harfleri 3 adım giderek o harfi ve son olarak o harfi 3 adım ileri giderek r harfine dönüşmüştür.  Deşifreleme sırasında da durum tam tersidir. Şifrelemenmiş
+durumdaki harfler sırasıyla alfabede geri gelerek deşifreleme işlemini gerçekleştirirler. Aşağıdaki şekildeki alfabede örneğin 'h' harfi için ne kadar ileri gidileceği gösterilmiştir.
+Buna göre 3 adım ilerideki k harfi elde edilecektir. Ancak anahtar 5 olsaydı bu durumda 5 adım ileri gidilerek buradaki harf olan 'm' harfi elde edilecekti. 
 
-1.2.2 Asimetrik Şifreleme Algoritmarı
+Simetrik algoritmalar arasında en popüler olanları: DES, RC4, 3DES, AES, Seed, Camellia ve Chacha20 algoritmalarıdır. Bu algoritmaların çoğu bu yüksek lisans tezi kapsamında C++ 
+kodunda OpenSSL kütüphanesinin desteğiyle test edilmiştir. Günümüzde diğerlerine göre daha az kullanılan olan DES algoritmasıdır. Popülerliği en yüksek olanlardan biri ise 
+şüphesiz ki AES(Advanced Encryption Standards) algoritmasıdır. 
+
+
+1.2.2 Asimetrik Şifreleme Algoritmaları
 DES algoritması anahtar uzunluğu diğerlerine göre daha az olan bir simetrik algoritmadır. AES ise son derece popüler ve anahtar uzunluğu duruma göre farklılık gösteren bir algoritmadır. AES algoritmasının 
 anahtar uzunluğu 128 bit, 192 bit veya 256 bit olabilir. Bu algoritmanın kullanıldığı alana bağlı olarak farklı uzunluklarda anahtarla şifreleme yapabilme olanağı sağlamaktadır.
 DH algoritmasında gene simetrik bir algoritmadır ancak bu algoritmanın  
+
+1.2.3 Asimetrik/Simetrik Algoritmaların Avantajlarının/Dezavantajlarının İncelenmesi
+
 
 
 
