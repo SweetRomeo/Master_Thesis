@@ -138,20 +138,22 @@ Yazı şifreleme yapılırken temelde 3 temel eleman göze çarpmaktadır. Bunla
 
 - 1.2 Şifreleme Algoritmaları
 
-Bu yüksek lisans tez çalışması kapsamında OpenSSL kütüphanesinde bulunan algoritmalardan bazıları kullanılacaktır. 
-
-Şifreleme algoritmalar temelde asimetrik ve simetrik algoritma olmak üzere ikiye ayrılır. Bundan sonraki bölüm kapsamında bu farklı algoritma tiplerine detaylı bir şekilde 
-değineceğiz. 
+Bu yüksek lisans tez çalışması kapsamında OpenSSL kütüphanesinde bulunan algoritmalardan bazıları kullanılacaktır. Kullanılacak olan algoritmalar özellikle 5G ve Wireless 
+teknolojilerinde sıkça tercih edilen algoritmalar olmasına dikkat edilmiştir. Örneğin OpenSSL kütüphanesinde bulunan DES, AES, RSA, DH, RC4 gibi algoritmalar 5G ve Wireless 
+teknolojilerde son derece sık kullanılan veri şifreleme algoritmalarından bazılarıdır. Bu algoritmaların çalışma prensipleri ve kategori analizleri bölüm 1.2.1 ve bölüm 1.2.2'de yapılacaktır.
+Şifreleme algoritmaları temelde asimetrik ve simetrik algoritma olmak üzere ikiye ayrılır. 
 
 Simetrik algoritmada hem şifreleme hem de deşifreleme aynı anahtar kullanılarak yapılır. Ancak asimetrik algoritmalarda şifrelemede farklı anahtar deşifrelemede farklı anahtar 
 kullanılmaktadır. Her ne kadar asimetrik algoritmalar çoğunlukla daha güvenlidir denilse de bu durum her zaman böyle değildir. Çünkü güvenlik seviyesinin etkileyen bir başka 
 kavram da şifreleme algoritmasının kullanacağı anahtarın uzunluğudur. Anahtarların uzunlukları ve karmaşıklıkları arttıkça dolaylı olarak algoritmanın güvenliği de artmaktadır. 
 Anahtar uzunlukları veri şifreleme algoritmalarına bağlı olarak değişmektedir. 
 
-DES, AES, RSA, DH, RC4 gibi algoritmalar 5G ve Wireless teknolojilerde son derece sık kullanılan veri şifreleme algoritmalarından bazılarıdır. Bu algoritmaların çalışma prensibleri 
-ve kategori analizleri bölüm 1.2.1
-DES algoritması anahtar uzunluğu 
-diğerlerine göre daha az olan bir simetrik algoritmadır. AES ise son derece popüler ve anahtar uzunluğu duruma göre farklılık gösteren bir algoritmadır. AES algoritmasının 
+1.2.1 Simetrik Şifreleme Algoritmaları
+
+Daha öncesinde değindiğim gibi simetrik şifreleme algoritmalarında tek bir key kullanılmaktadır. Bu anahtar hem şifrelemede 
+
+1.2.2 Asimetrik Şifreleme Algoritmarı
+DES algoritması anahtar uzunluğu diğerlerine göre daha az olan bir simetrik algoritmadır. AES ise son derece popüler ve anahtar uzunluğu duruma göre farklılık gösteren bir algoritmadır. AES algoritmasının 
 anahtar uzunluğu 128 bit, 192 bit veya 256 bit olabilir. Bu algoritmanın kullanıldığı alana bağlı olarak farklı uzunluklarda anahtarla şifreleme yapabilme olanağı sağlamaktadır.
 DH algoritmasında gene simetrik bir algoritmadır ancak bu algoritmanın  
 
