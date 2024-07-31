@@ -15,6 +15,7 @@ Tarih---------------------------------------------------------------------------
         - 1.2.1 Asimetrik Şifreleme Algoritmaları
         - 1.2.2 Simetrik Şifreleme Algoritmaları
         - 1.2.3 Asimetrik/Simetrik Algoritmaların Avantajlarının/Dezavantajlarının İncelenmesi
+        - 1.2.4 5G ve Wireless Teknolojilerde amaca uygun olan algoritmalar
     - 1.3 Public/Private Key
         - 1.3.1 Public Key Decryption
         - 1.3.2 Private Key Decryption
@@ -173,7 +174,20 @@ DH algoritmasında gene simetrik bir algoritmadır ancak bu algoritmanın
 
 1.2.3 Asimetrik/Simetrik Algoritmaların Avantajlarının/Dezavantajlarının İncelenmesi
 
+Asimetrik algoritmalar yavaş çalışmasına karşın simetrik algoritmalara kıyasla daha güçlü olduklarından daha güvenli bir şifreleme yapılmasına imkan sağlarlar. Güçlü olmasının sebebi de temelde 
+daha karmaşık ve uzun anahtarlar kullanmasından kaynaklanmaktadır bu da şüphesiz CPU kullanımını arttırmaktadır. Simetrik algoritmalarda ise deşifrelem için bir private key kullanılacağı için bu 
+anahtarların paylaşılması gibi zorunluluk söz konusu değildir. Bu da bu algoritmaların daha güvenlikli bir şekilde çalışmasına imkan sağlamaktadır. Duruma bağlı seçilebilirlik açısından daha küçük 
+verilerin taşınmasında özellikle verim kritik yerlerde tercih edilebilir. Verimin çok da önemli olmadığı alanlarda biraz daha büyük verilerin de taşınmasında kullanılabilir. Güvenliğin verimden 
+çok daha önemli olduğu ayrıca bellek açısından bir problem yaşamıycağımız alanlar için büyük verilerin taşınmasında da kullanılabilir. Kısaca asimetrik algoritmalar simetriğe göre daha 
+güvenilirdir ancak simetrik algoritmalara göre verimsizlerdir.
 
+1.2.4 5G ve Wireless Teknolojilerde amaca uygun olan algoritmalar
+
+5G teknolojisinin çalıştığı baz istasyonlarını temel iki önemli bölümden oluşur. Biri BBU diğeri ise RRU. BBU yazılımların yüklendiği board'u temsil ederken RRU ise sinyallerin
+alınmasını sağlayan anten bölümünü temsil eder. 5G'nin kullanıldığı boardlar genellikle çok da büyük bellek alanına sahip olmazlar bu sebeple mümkün mertebe belleğin gereksiz yere
+doldurulmaması son derece kritik öneme sahiptir. Diğer taraftan belleğin az kullanılmasını hedefliyip, veri güvenliğini tehlikeye atıcak durumlar oluşturmamak da son derece 
+önemlidir. Bu sebeple bu alanda kullanılacak bir algoritma seçilirken, bu algoritma hem güvenlik açısından yeterli olmalı ancak belleği yüksek oranda da kullanmamalı. Bu yönden 
+bakıldığında DES algoritması çok büyük bir bellek alanı kullanmamaktadır ancak diğer yandan çözülmesi günümüzde son derece kolay bir hale gelmiştir. 
 
 
 
