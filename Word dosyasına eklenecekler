@@ -187,7 +187,9 @@ güvenilirdir ancak simetrik algoritmalara göre verimsizlerdir.
 alınmasını sağlayan anten bölümünü temsil eder. 5G'nin kullanıldığı boardlar genellikle çok da büyük bellek alanına sahip olmazlar bu sebeple mümkün mertebe belleğin gereksiz yere
 doldurulmaması son derece kritik öneme sahiptir. Diğer taraftan belleğin az kullanılmasını hedefliyip, veri güvenliğini tehlikeye atıcak durumlar oluşturmamak da son derece 
 önemlidir. Bu sebeple bu alanda kullanılacak bir algoritma seçilirken, bu algoritma hem güvenlik açısından yeterli olmalı ancak belleği yüksek oranda da kullanmamalı. Bu yönden 
-bakıldığında DES algoritması çok büyük bir bellek alanı kullanmamaktadır ancak diğer yandan çözülmesi günümüzde son derece kolay bir hale gelmiştir. 
+bakıldığında DES algoritması çok büyük bir bellek alanı kullanmamaktadır ancak diğer yandan çözülmesi günümüzde son derece kolay bir hale gelmiştir. Bu sebeple güvenlik açısında
+güvenilir olmadığını söyleyebilir. Bu algoritmanın bir alternatifi olarak çıkarılan ve DES algoritmasına göre daha güvenilir olan ... algoritması hem bellek optimizasyonu hem 
+güvenilirlik açısından Wireless teknolojilerinde son derece amaca uygun bir algoritmadır.
 
 
 
