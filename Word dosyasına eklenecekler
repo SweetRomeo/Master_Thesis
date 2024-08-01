@@ -118,6 +118,12 @@ Ancak daha sonralarında(M.Ö. 6. yüzyıl) askeri istihbarat son derece önemli
 beraber de kriptografi de bambaşka bir noktaya geldi. Bu yüksek lisans tezinin temeli de 5G ve Wireless teknolojilerinde kullanılmakta olan veya ilerde kullanılması muhtemel olan
 kriptografik algoritmaların güvenlik ve performans analizini içermektedir.
 
+Yapılan değerlendirmeler sonucunda algoritmalara ait farklı veriler farklı grafiklere dökülerek analiz edilecektir. Bu değerlendirmeler yapılırken algoritmaların private/public key kullanması ve algoritmaların verileri şifrelerken nasıl bir yol izleyeceği gibi konulara değinilecektir. Bu 
+durumlar incelenirken günümüzde son derece popüler bir programlama dili olan C++ programlama dili kullanılacaktır. C++ 'ın yanı sıra veri güvenliğinde son derece önemli bir yere sahip olan 
+OpenSSL 3.parti kütüphanesi de bu tez hayata geçirilirken kullanılmıştır. OpenSSL kütüphanesinin belli başlı elemanları verilerin güvenli taşınmasında kullanılan SSL/TLS protokolleri ve veriler taşınırken 
+kimsenin eline geçmemesini için verilerin şifrelenmesini sağlayan veri taşıma protokolleridir. Bu protokollere ek olarak bu kütüphane veri şifreleme algoritmalarını da içerisinde
+barındırmaktadır.
+
 - 1.1 Şifreleme ve Deşifreleme 
 
 Veri şifreleme kullanıcılara ait özel verilerin bir yerden bir başka yere taşınırken dışardan gelebilecek saldırılara karşı alınmış olan bilgi koruma önlemidir. Günümüzde son 
@@ -164,13 +170,21 @@ Buna göre 3 adım ilerideki k harfi elde edilecektir. Ancak anahtar 5 olsaydı 
 
 Simetrik algoritmalar arasında en popüler olanları: DES, RC4, 3DES, AES, Seed, Camellia ve Chacha20 algoritmalarıdır. Bu algoritmaların çoğu bu yüksek lisans tezi kapsamında C++ 
 kodunda OpenSSL kütüphanesinin desteğiyle test edilmiştir. Günümüzde diğerlerine göre daha az kullanılan olan DES algoritmasıdır. Popülerliği en yüksek olanlardan biri ise 
-şüphesiz ki AES(Advanced Encryption Standards) algoritmasıdır. 
-
+şüphesiz ki AES(Advanced Encryption Standards) algoritmasıdır. Bu yüksek lisans tezi kapsamında başta AES algoritması olmak üzere belirtilen tüm algoritmaların performans ve verimlilik
+açısından analizleri yapılacaktır.
 
 1.2.2 Asimetrik Şifreleme Algoritmaları
+
+Asimetrik algoritmalarda daha öncesinde bahsettiğimiz gibi şifreleme için farklı, deşifreleme için farklı bir anahtar kullanılır. Örneğin simetrik algoritmada verdiğimiz örneği
+Asimetrik algoritma için vericek olursak, bir "hello" yazısını ele alalım. Burada şifreleme kullanılan anahtar 5 olarak belirlenmiştir. Ancak deşifreleme için farklı bir anahtar 
+belirlenmiştir ve bu anahtar değeri de 21 olacaktır. Bunun sebebi aslında alfabede şifreleme için ileri deşifreleme için ise geri gidilmesi yerine ileri gidilmeye devam edilerek
+ilk baştaki harf elde edilecektir. Aşağıdaki şekilde bu şifrelemenin ve deşifrelemenin yapılması açıklanmıştır.
+
+Simetrik algoritmalardan bazıları: DSA, RSA, DH, ECDSA, ECDH algoritmalarıdır. Bu algoritmaların çoğu bu yüksek lisans tezi kapsamında C++ kodunda OpenSSL kütüphanesinin desteğiyle 
+test edilmiştir. 
 DES algoritması anahtar uzunluğu diğerlerine göre daha az olan bir simetrik algoritmadır. AES ise son derece popüler ve anahtar uzunluğu duruma göre farklılık gösteren bir algoritmadır. AES algoritmasının 
 anahtar uzunluğu 128 bit, 192 bit veya 256 bit olabilir. Bu algoritmanın kullanıldığı alana bağlı olarak farklı uzunluklarda anahtarla şifreleme yapabilme olanağı sağlamaktadır.
-DH algoritmasında gene simetrik bir algoritmadır ancak bu algoritmanın  
+DH algoritmasında gene simetrik bir algoritmadır ancak bu algoritmanın 
 
 1.2.3 Asimetrik/Simetrik Algoritmaların Avantajlarının/Dezavantajlarının İncelenmesi
 
@@ -190,6 +204,16 @@ doldurulmaması son derece kritik öneme sahiptir. Diğer taraftan belleğin az 
 bakıldığında DES algoritması çok büyük bir bellek alanı kullanmamaktadır ancak diğer yandan çözülmesi günümüzde son derece kolay bir hale gelmiştir. Bu sebeple güvenlik açısında
 güvenilir olmadığını söyleyebilir. Bu algoritmanın bir alternatifi olarak çıkarılan ve DES algoritmasına göre daha güvenilir olan ... algoritması hem bellek optimizasyonu hem 
 güvenilirlik açısından Wireless teknolojilerinde son derece amaca uygun bir algoritmadır.
+
+1.3 Public/Private Key
+
+Asimetrik algoritmalarda hem Prıvate key hem de public key kullanılırken simetrik algoritmalarda sadece public key kullanıldığını daha önce söylemiştik. Private key sadece kullanıcılar tarafından
+bilinen anahtarlardır. Örneğin  Bu da demek oluyor ki dünyada o kişiden başkası o public keye ait olan private keye sahip olmadığı için o veriyi deşifre edemez. Kısaca private key kişiye özgüdür. 
+Bir veri kişinin public keyi kullanılarak şifrelenmiş ise ancak onun private keyi kullanılarak deşifrelenebilir. Tersi durumda eğer bir veri private key ile şifrelendiyse ancak o kişinin public 
+keyi kullanılarak deşifrelenebilir. Bunun en önemli artısı mesajın üçüncü kişilerin eline geçmemiş olmasıdır. Bu şifreleme yöntemine Asimetrik şifreleme adı verilir. Private key kullanımı her ne  
+kadar güvenlik açısında iyi olsa da verim açısından o kadar kötüdür. Burada diğer bir alternatif simetrik şifreleme yöntemini kullanmaktır. Bu durumda private key kullanımı söz konusu 
+olmayacaktır. Her şifreleme hem de deşifrelemede public key kullanılması da verim olarak iyi bir durum olsa da güvenlik açısından son derece tehlikeli ve kırılması private key kullanan 
+algoritmalara göre çok daha kolaydır.
 
 
 
