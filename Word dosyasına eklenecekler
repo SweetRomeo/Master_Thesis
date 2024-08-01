@@ -49,8 +49,9 @@ Tarih---------------------------------------------------------------------------
 Giriş
 Tarih boyunca insanlar birbirlere gizli verileri gönderirken özellikle 3.kişilerin ellerine geçmemesini hedeflenmiştir. Verilerin gizlenmesinde geçmişten günümüze çok sayıda farklı yöntem kullanılmıştır. 
 Bunların en örneklerinden bir tanesi Almanların 2. Dünya savaşında kullanmış olduğu Enigma makinesidir. Bu makine verileri gönderirken o zamanın teknolojisiyle çözülmesi son derece zor bir algoritma ile 
-verileri göndermekteydi. Bu örnek aynı zamanda haberleşirken veri şifreleme yönteminin önemli bir örneğidir. O zamandan günümüze şifreleme algoritmalarında ciddi anlamda bir gelişme göze çarpmaktadır. 
-Bu tez çalışmasında da hayatımıza yeni yeni girmekte olan 5G ve Wireless teknolojilerde hangi algoritmaların kullanıma daha elverişli olduğunun analizi yapılmıştır.
+verileri göndermekteydi. Bu örnek aynı zamanda haberleşirken veri şifreleme yönteminin önemli bir örneğidir. O zamandan günümüze kıyasla şifreleme algoritmalarında ciddi anlamda bir gelişme göze çarpmaktadır. 
+Bu tez çalışmasında da hayatımıza yeni yeni girmekte olan 5G teknolojisi ve günlük hayatımızda sıkça kullandığımız ancak tehlikeli durumlara sebep olması en muhtemel teknolojilerden biri 
+olan Wireless teknolojisinde hangi algoritmaların kullanıma daha elverişli olduğunun analizi yapılmıştır.
 
 Veri Şifreleme algoritmaları, herhangi verinin taşınırken veya bilgisayarda kayıtlıyken dışardan gelebilecek saldırılara karşı korunmasını sağlayan ve pek çok farklı çeşidi olan algoritmalardır. Bu algoritmaların,
 her ne kadar tehlikelerden korunmak için de kullanmak bazen bu saldırıların engellenmesi mümkün olamayabilir. Bu yüzden bu tezin önemli kısımlarından biri de olası saldırı durumlarında söz konusu algoritmaların 
@@ -66,7 +67,9 @@ Bu algoritmalar, analiz edilirken iki parametre çok önemli yere sahip olacakt�
 ama diğeri açısından da en azından iyi olması gerekir. Bu tez kapsamından bu kriterler göz önünde bulundurularak bir analiz yapılmıştır. Elde edilen analiz sonuçlarından bir grafik elde edilip bir sonuca ulaşılacaktır.
 
 Bu yüksek lisans tezi temelde 3 adımdan oluşmaktadır. İlk olarak OpenSSL kütüphanesindeki şifreleme algoritmaları kullanılarak algoritmalara ilişkin sınıflar oluşturulacaktır. Oluşturulan sınıflar için çeşitli test 
-case durumları oluşturularak farklı durumlar için algoritmaların nasıl çalıştıkları test edilecektir. Elde edilen test sonuçlarına bağlı olarak farklı durumlar için farklı grafikler elde edilerek bir sonuca varılacaktır.
+case durumları oluşturularak farklı durumlar için algoritmaların nasıl çalıştıkları test edilecektir. Burada test caseler kullanılacak algoritma tipi şifreleme sırasında 
+kullanılacak anahtarın özellikleri veya şifrelenecek veri tipi vb. özellikler olacaktır. Yapılan testler sonucunda Elde edilen test sonuçlarına bağlı olarak farklı durumlar 
+için farklı grafikler elde edilerek bir sonuca varılacaktır. 
 
 
 Abstract
