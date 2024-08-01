@@ -126,6 +126,10 @@ barındırmaktadır.
 
 - 1.1 Şifreleme ve Deşifreleme 
 
+Geçmişten günümüze veri korunumu son derece önemli olmuştur. Veri korunmasında en popüler yöntemlerden biri de veri şifrelemedir. Günümüzde Wireless,  Bulut teknolojileri çok 
+yaygın bir şekilde kullanılması sadece faydalı görünse de aslında pek tehlikeyi de beraberinde getirmiştir. Özellikle bu tarz veri taşınması gereken alanlarda  Şifreleme veri 
+korunumunda son derece önemli bir yere sahiptir. Şifrelemenin hayatımıza girmesiyle birlikte veriler daha güvenilir bir şekilde taşınır hale gelmiştir. 
+
 Veri şifreleme kullanıcılara ait özel verilerin bir yerden bir başka yere taşınırken dışardan gelebilecek saldırılara karşı alınmış olan bilgi koruma önlemidir. Günümüzde son 
 derece sık kullanılan bir veri koruma yöntemidir. Şifreleme pek çok farklı araç için yapılabilir ancak bu yüksek lisans tez kapsamında bizim dikkate alacağımız kısım yazıların 
 ve dosyaların şifrelenmesi ve deşifrelenmesini temel alarak ortaya konulacaktır. 
@@ -163,6 +167,7 @@ Daha öncesinde değindiğim gibi simetrik şifreleme algoritmalarında tek bir 
 olarak alındığı takdirde hem şifreleme hem de deşifreleme bir anahtar kullanılarak yapılacaktır.
 hello -> khoor (Şifreleme Anahtarı(Encryption Key) : 3)
 hello <- khoor (Deşifreleme Anahtarı(Decryption Key) : 3)
+Şekil 1.1 -> Şifreleme resmi
 Burada anahtar(key) 3 olduğundan dolayı sırasıyla tüm karakterler 3 adım ilerideki karakterlere dönüşerek şifreleme işlemini gerçekleştirecektir. Örneğin burada sırasıyla h harfi 3 alfabede ileri giderek
 k, e harfi 3 adım ileri giderek h, l harfleri 3 adım giderek o harfi ve son olarak o harfi 3 adım ileri giderek r harfine dönüşmüştür.  Deşifreleme sırasında da durum tam tersidir. Şifrelemenmiş
 durumdaki harfler sırasıyla alfabede geri gelerek deşifreleme işlemini gerçekleştirirler. Aşağıdaki şekildeki alfabede örneğin 'h' harfi için ne kadar ileri gidileceği gösterilmiştir.
@@ -221,9 +226,16 @@ Public key kısaca hem şifrelemede hem şifrelemede hem de deşifrelemede kulla
 de bu her zaman böyle değildir. Bu noktada devreye giren önemli bir parametre de şifreleme için kullanılacak anahtarın uzunluğu ve karmaşıklığıdır. Söz konusu anahtarın karmaşıklığı
 arttıkça o şifrenin çözülmesi o oranda zorlaşacaktır. Simetrik algoritmalarda public key kullanarak şifreleme ve deşifreleme yapılmaktadır. 
 
-1.3.2 Private ile Deşifrelme
+1.3.2 Private Key ile Deşifrelme
 
-Private Key aslında sadece 
+Private Key aslında sadece deşifrelemede kullanılan anahtarlar için kullanıldığından ismi private keydir. Buna göre simetrik algoritmalarda private key kullanımın olmadığını söyleyebiliriz.
+Private key sadece asimetrik algoritmalara özgü bir anahtardır. Private kullanılarak yapılan deşifreleme işlemi public key ile yapılan deşifreleme işlemine göre şüphesiz ki 
+daha güvenliklidir. Çünkü public key hep şifreleme için hem de deşifreleme için var olduğundan dolayı dışardan gelebilecek saldırılara karşı çok daha güvenliksizdir. Ancak 
+Her daim private key kullanan algoritmalar public key kullanan algoritmalara göre daha güvenilirdir demek de çok doğru değildir. Burada gene önemli olan parametreler anahtarın
+karmaşıklığı ve uzunluğudur. Örneğin karmaşıklığı az olan bir anahtar private key kullanan bir algoritma bile olsa çözülmesi uzunluk değeri büyük olan ancak public key kullanan bir 
+algoritmaya kıyasla çözülmesi daha kolay olabilir. 
+
+
 
 
 
