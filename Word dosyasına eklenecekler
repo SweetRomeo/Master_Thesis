@@ -215,6 +215,15 @@ kadar güvenlik açısında iyi olsa da verim açısından o kadar kötüdür. B
 olmayacaktır. Her şifreleme hem de deşifrelemede public key kullanılması da verim olarak iyi bir durum olsa da güvenlik açısından son derece tehlikeli ve kırılması private key kullanan 
 algoritmalara göre çok daha kolaydır.
 
+1.3.1 Public Key ile Şifreleme
+
+Public key kısaca hem şifrelemede hem şifrelemede hem de deşifrelemede kullanılan anahtar anlamına gelmektedir. Bu tip şifrelemelerin çözülmesinin her daim kolay olması düşünülse
+de bu her zaman böyle değildir. Bu noktada devreye giren önemli bir parametre de şifreleme için kullanılacak anahtarın uzunluğu ve karmaşıklığıdır. Söz konusu anahtarın karmaşıklığı
+arttıkça o şifrenin çözülmesi o oranda zorlaşacaktır. Simetrik algoritmalarda public key kullanarak şifreleme ve deşifreleme yapılmaktadır. 
+
+1.3.2 Private ile Deşifrelme
+
+Private Key aslında sadece 
 
 
 
