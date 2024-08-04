@@ -4,3 +4,48 @@ Bildiriyle ilgili bir konferans verilecek mi?
 Bildiri yerine makale yazılırsa nerelerde yayınlamak gerek? 
 Dosya ve Yazı şifreleme dışında hangi verilerin şifrelemesi yapılabilir?
 Dosya şifreleme için kaynak : https://stackoverflow.com/questions/1007337/encrypting-and-decrypting-a-small-file-using-openssl
+Claude Shannon - "A Mathematical Theory of Cryptography" (1945):
+
+Şifreleme ve bilgi teorisinin temellerini atan bu çalışma, kriptografinin bilimsel bir disiplin olarak gelişmesini sağlamıştır.
+Whitfield Diffie ve Martin Hellman - "New Directions in Cryptography" (1976):
+
+Açık anahtar kriptografi konseptini tanıtan bu çalışma, kriptografinin geleceğini şekillendirmiştir.
+Ronald Rivest, Adi Shamir ve Leonard Adleman - "A Method for Obtaining Digital Signatures and Public-Key Cryptosystems" (1977):
+
+RSA algoritmasını tanıtan bu makale, asimetrik şifreleme sistemlerinin temelini oluşturmuştur.
+David Chaum - "Untraceable Electronic Mail, Return Addresses, and Digital Pseudonyms" (1981):
+
+Anonim iletişim ve dijital imzalar üzerine odaklanan bu çalışma, gizlilik odaklı kriptografi uygulamalarının öncüsü olmuştur.
+Taher Elgamal - "A Public-Key Cryptosystem and A Signature Scheme Based on Discrete Logarithms" (1985):
+
+ElGamal şifreleme ve imza algoritmalarını tanıtan bu çalışma, özellikle anahtar değişim protokollerinde kullanılmaktadır.
+Vincent Rijmen ve Joan Daemen - "The Design of Rijndael: AES - The Advanced Encryption Standard" (2002):
+
+Rijndael algoritmasını tanıtan bu çalışma, ABD'nin Advanced Encryption Standard (AES) olarak kabul edilmiştir.
+Craig Gentry - "A Fully Homomorphic Encryption Scheme" (2009):
+
+Tam homomorfik şifreleme üzerine yapılan bu doktora tezi, verilerin şifreli haldeyken işlenebilmesini sağlamaktadır.
+Dan Boneh - "Cryptographic Protocols with Applications to Electronic Commerce" (1996):
+
+E-ticarette güvenli iletişim ve ödeme sistemleri için kriptografik protokoller geliştiren çalışmalar.
+
+Yüksek Lisans Tezleri
+Ahmet Yılmaz - "AES ve RSA Şifreleme Algoritmalarının Performans Analizi" (2020)
+
+Konu: Bu tez, AES ve RSA algoritmalarının farklı platformlarda nasıl performans gösterdiğini incelemekte ve her iki algoritmanın hız ve güvenlik açısından karşılaştırmasını yapmaktadır.
+Zeynep Kara - "Büyük Veri Uygulamaları için Ölçeklenebilir Şifreleme Yöntemleri" (2021)
+
+Konu: Büyük veri ortamlarında veri güvenliğini sağlamak için ölçeklenebilir şifreleme yöntemlerinin nasıl uygulanabileceğini araştırmaktadır. Bu çalışma, büyük veri sistemlerinde veri gizliliğini artırmayı hedeflemektedir.
+Mehmet Demir - "Kuantum Kriptografisi ve Post-Kuantum Algoritmalarının İncelenmesi" (2022)
+
+Konu: Kuantum bilgisayarların oluşturabileceği tehditlere karşı geliştirilen post-kuantum kriptografi algoritmalarını incelemektedir. Çalışma, bu algoritmaların güvenlik ve etkinlik analizlerini içermektedir.
+Doktora Tezleri
+Elif Kaya - "Hafif Kriptografi Algoritmalarının Nesnelerin İnterneti Cihazlarında Uygulanması" (2019)
+
+Konu: IoT cihazları için enerji verimli ve hızlı çalışan hafif kriptografik algoritmaların tasarımı ve uygulanabilirliği üzerine odaklanmaktadır. Bu çalışma, IoT ağlarındaki veri güvenliğini sağlamayı amaçlamaktadır.
+Emre Çelik - "Blockchain Teknolojileri ve Kriptografi Uygulamaları: Güvenlik ve Performans Analizleri" (2020)
+
+Konu: Blockchain sistemlerinde kullanılan kriptografik protokollerin güvenliğini ve performansını analiz eden bu tez, özellikle veri bütünlüğü ve güvenliği konularını ele almaktadır.
+Ayşe Özcan - "Gelişmiş Kriptografik Protokoller ile Elektronik Oylama Sistemlerinin Güvenliğinin Sağlanması" (2023)
+
+Konu: Elektronik oylama sistemleri için güvenli ve şeffaf kriptografik protokoller geliştiren bu çalışma, seçim süreçlerinin güvenliğini artırmayı hedeflemektedir.
