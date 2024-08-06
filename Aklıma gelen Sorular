@@ -49,3 +49,19 @@ Konu: Blockchain sistemlerinde kullanılan kriptografik protokollerin güvenliğ
 Ayşe Özcan - "Gelişmiş Kriptografik Protokoller ile Elektronik Oylama Sistemlerinin Güvenliğinin Sağlanması" (2023)
 
 Konu: Elektronik oylama sistemleri için güvenli ve şeffaf kriptografik protokoller geliştiren bu çalışma, seçim süreçlerinin güvenliğini artırmayı hedeflemektedir.
+
+Worde eklenenler 06/08/2024
+
+1.1	Şifreleme ve Deşifreleme
+Geçmişten günümüze veri korunumu son derece önemli olmuştur. Veri korunmasında en popüler yöntemlerden biri de veri şifrelemedir. Günümüzde Wireless, Bulut teknolojileri çok yaygın bir şekilde kullanılması sadece faydalı görünse de aslında pek tehlikeyi de beraberinde getirmiştir. Özellikle bu tarz veri taşınması gereken alanlarda şifreleme veri korunumunda son derece önemli bir yere sahiptir. Şifrelemenin hayatımıza girmesiyle birlikte veriler daha güvenilir bir şekilde taşınır hale gelmiştir. [1]
+
+Veri Şifreleme ile ilgili yapılan ilk tez çalışmalarından bir tanesi 1945 yılında Claude Shannon tarafından yazılmış olan “A Mathematical Theory of Cryptography” isimli çalışmada şifreleme ve bilgi teorisinin temellerini atan bu çalışma, kriptografinin bilimsel bir disiplin olarak gelişmesini sağlayacaktır.[2]
+
+Bu çalışmadan sonra matematiksel şifreleme teorisinin temellerini atan, 1976 yılında, Whitfield Diffie ve Martin Hellman tarafından yazılmış olan “New Directions in Cryptograhy” isimli makale ile birlikte kriptografinin bilimsel bir disiplin olarak gelişmesi sağlanmıştır.[3]
+
+Akabinde 1977 yılında yazılmış olan, Açık anahtar kriptografi konseptini ilk defa ortaya atan, soyadlarıyla RSA algoritmasına da adını veren, Ronald Rivest, Adi Shamir ve Leonard Adleman tarafından yazılmış olan, “A Method for Obtaining Digital Signatures and Public-Key Cryptosystems” çalışmasıyla birlikte, kriptografinin geleceği şekillenmiştir. [4]
+
+1981 yılında ise, RSA algoritmasını tanıtan “Untraceable Electronic Mail, Return Addresses, and Digital Pseudonyms” isimli makaleyle birlikte asimetrik şifreleme sisteminin temel oluşturulmuştur.[5]
+
+Ülkemizde ise bu konuda önemli yüksek lisans tezlerinden biri Ahmet Yılmaz tarafından 2020 senesinde yazılmış olan “AES ve RSA Şifreleme Algoritmaların Performans Analizi” isimli tezdir. Bu tez, AES ve RSA algoritmalarının farklı platformlarda nasıl performans gösterdiğini incelemekte ve her iki algoritmanın hız ve güvenlik açısından karşılaştırmasını yapmaktadır.[6]
+
