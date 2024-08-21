@@ -244,7 +244,16 @@ algoritmaya kıyasla çözülmesi daha kolay olabilir.
 birlikte ilk ortaya çıkan teknoloji olan 1G teknolojisi mobil telefonlarla arama yapmayı mümkün kılmıştır. 
 Sekil 2.1 -> 1G to 5G Evolution
 
+--21/08/2024--
 
+Materyal ve Yöntem
+Bu yüksek lisans tez çalışmasında kodun yazılmasında Microsoft Visual Studio IDE(Kısaltmalar kısmına eklenecek) kullanılacaktır. Bu IDE windows apilerini barındırması ve sağladığı 
+kod yazım kolaylıkları göz önünde bulundurulduğunda seçilebilir olarak son derece uygundur. Visual Studio IDE'si ile birlikte 3.parti OpenSSL kütüphanesine yer verilecektir.
+OpenSSL kütüphanesi güvenli veri tanışmasında kullanılan TLS ve SSL veri taşıma protokollerinin yanı sıra bu tezin temelini oluşturan veri şifreleme algoritmalarını da barındıran
+bir 3.parti kütüphanedir. OpenSSL standart kütüphaneye ait olmadığından, IDE'ye entegre edilmesi bir mecburiyettir.
+
+
+Bunun yanı sıra günümüzde son derece popüler bir programlama dili olan C++ programlama dili kullanılacaktır. 
 
 
 
