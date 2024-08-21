@@ -253,7 +253,8 @@ OpenSSL kütüphanesi güvenli veri tanışmasında kullanılan TLS ve SSL veri 
 bir 3.parti kütüphanedir. OpenSSL standart kütüphaneye ait olmadığından, IDE'ye entegre edilmesi bir mecburiyettir.
 
 
-Bunun yanı sıra günümüzde son derece popüler bir programlama dili olan C++ programlama dili kullanılacaktır. 
+Bu araçların yanı sıra günümüzde son derece popüler bir programlama dili olan C++ programlama dili kullanılacaktır. C++ dilinin sürekli C++ standart komitesi tarafında
+gelişir durumda olması, programlama dillerinin temeli olan C dilini temel alarak ortaya çıkar bir dil olması şüphesiz ki seçilebilirliğini arttırmaktadır. 
 
 
 
