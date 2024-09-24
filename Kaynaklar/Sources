@@ -8,3 +8,35 @@ https://www.mdpi.com/2076-3417/14/2/534
 https://sixfab.com/product/raspberry-pi-5g-development-kit-5g-hat/
 
 https://dergipark.org.tr/tr/pub/jmm/article/995091
+
+
+Bu makalede kullanılan MQTTset veri seti, Kasım 2020'de oluşturulmuş ve MQTT 3.1.1 protokolüne ait ağ trafiğinden elde edilen verileri içermektedir. Veri seti, şifrelenmemiş (SSL/TLS içermeyen) trafik ile birlikte çeşitli saldırı tiplerine ait trafiği barındırmaktadır. Özellikle, bu veri seti, bir akıllı ev senaryosu ile 10 farklı sensörden (örneğin sıcaklık, ışık yoğunluğu, duman sensörleri) toplanan bir haftalık verileri içermektedir. Veri seti içerisinde Bruteforce, Malformed Data, Flooding, Slowite ve DoS saldırıları bulunmaktadır.
+
+Veri seti, dengelenmiş ve dengelenmemiş olmak üzere iki farklı formatta sunulmuştur. Dengelenmemiş veri setinde saldırı trafiği toplam trafiğin sadece %1'ini oluştururken, dengelenmiş versiyonda saldırı trafiği artırılmıştır. Çalışmada, normal ve DoS saldırılarını içeren dengeli veri seti kullanılmıştır​(10.55546-jmm.995091-197…).
+
+Python'da benzer bir veri setini oluşturmak için, Pandas ve Scikit-learn gibi kütüphaneleri kullanarak bir dengelemeli veri seti oluşturabiliriz. Örnek kod şu şekilde olabilir:
+#code
+
+import pandas as pd
+from sklearn.utils import resample
+
+# Veri setini yükleyin
+data = pd.read_csv('veri_seti.csv')
+
+# Normal ve DoS trafiğini ayırın
+normal_data = data[data['label'] == 'normal']
+dos_data = data[data['label'] == 'DoS']
+
+# DoS trafiğini yeniden örnekleme ile artırın (dengeli veri seti oluşturmak için)
+dos_data_resampled = resample(dos_data, 
+                              replace=True,     # Yedeklemeli örnekleme
+                              n_samples=len(normal_data),    # Normal verilerle eşitlenmesi için
+                              random_state=42)  # Sabit sonuç için
+
+# Yeniden örneklenen DoS ve normal verileri birleştirin
+balanced_data = pd.concat([normal_data, dos_data_resampled])
+
+# Yeni dengeli veri setini kaydedin
+balanced_data.to_csv('dengeli_veri_seti.csv', index=False)
+
+Bu kod ile, normal ve DoS trafiğini içeren dengeli bir veri seti oluşturabilirsiniz.
